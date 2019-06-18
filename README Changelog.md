@@ -1,7 +1,5 @@
 # ARK
-ARK Site Changelog
-
-Changelog Entries
+ARK Site Changelog Entries
 
 Web hosted changelog location: https://www.beisance.com/intelix/changelog/ark-changelog/
 
