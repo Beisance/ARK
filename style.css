@@ -57,6 +57,11 @@ h4{
 	font-weight: normal;
 	color: #000000;
 }
+blockquote{
+	margin: 0 auto 0 auto;
+	width: 95%;
+	display: block;
+}
 img{
 	border-style:none;
 }
@@ -699,6 +704,7 @@ a:hover{
 		height: 100%;
 		width: 100%;
 		overflow: hidden;
+		quotes: "'" "'";
 		clear: both;
 	}
 		#wrapper-content img{
