@@ -13,31 +13,52 @@ The loop that displays singles.
 		</div>
 	</div>
 	<?php
-		if (is_category (array('tba'))) {
-			//nothing
+		//thoughts sub categories
+		if (in_category('39')) {
+			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
+			echo '<a href="';
+			bloginfo('wpurl');
+			echo '/category/thoughts/thoughts-general">General</a>';
+			echo '</div>';
+		}
+		elseif (in_category('40')) {
+			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
+			echo '<a href="';
+			bloginfo('wpurl');
+			echo '/category/thoughts/thoughts-politics">Politics</a>';
+			echo '</div>';
+		}
+		elseif (in_category('41')) {
+			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
+			echo '<a href="';
+			bloginfo('wpurl');
+			echo '/category/thoughts/thoughts-professional">Professional</a>';
+			echo '</div>';
+		}
+		//messages sub categories
+		elseif (in_category('34')) {
+			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
+			echo '<a href="';
+			bloginfo('wpurl');
+			echo '/category/messages/messages-couples/">Couples</a>';
+			echo '</div>';
+		}
+		elseif (in_category('33')) {
+			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
+			echo '<a href="';
+			bloginfo('wpurl');
+			echo '/category/messages/messages-faith/">Faith</a>';
+			echo '</div>';
+		}
+		elseif (in_category('35')) {
+			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
+			echo '<a href="';
+			bloginfo('wpurl');
+			echo '/category/messages/messages-professional/">Professional</a>';
+			echo '</div>';
 		}
 		else{
-			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
-					// tech
-					if (in_category('40')) {
-						echo '<a href="';
-						bloginfo('wpurl');
-						echo '/category/olive-notes/news">News</a>';
-					}
-					elseif (in_category('41')) {
-						echo '<a href="';
-						bloginfo('wpurl');
-						echo '/category/olive-notes/advisory">Advisory</a>';
-					}
-					elseif (in_category('42')) {
-						echo '<a href="';
-						bloginfo('wpurl');
-						echo '/category/olive-notes/living-healthy">Living Healthy</a>';
-					}
-					else{
-						//nothing
-					}
-			echo '</div>';
+			//nothing
 		}	
 	?>
 
@@ -48,12 +69,6 @@ The loop that displays singles.
 	</div>
 
 	<?php else : ?>
-
-	<div id="no-post-message" class="post"><!-- #start no-post-message-->
-		<div id="no-post-message-content">
-			<?php _e('There are no posts at this time. Please visit again soon.'); ?>
-		</div>	
-	</div><!-- end #no-post-message-->
 
 	<?php endif; ?>
 

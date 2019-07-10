@@ -7,7 +7,7 @@ The loop that displays posts.
 <div id="each-post-news-stack" class="post" id="post-<?php the_ID(); ?>"><!-- start #each-post-->
 	<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 	
-	<div id="each-post-title" class="ept ept-m ept-d ept-front-page"><!-- start #each-post-title-->
+	<div id="each-post-title" class="ept-m ept-d ept-front-page"><!-- start #each-post-title-->
 		<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 			<span class="each-post-title-span">
 				<?php the_title(); ?>
@@ -49,37 +49,59 @@ The loop that displays posts.
 		</div>
 	</div>
 	<?php
-		if (is_category (array('tba'))) {
-			//nothing
+		//messages sub categories
+		if (in_category('34')) {
+			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
+			echo '<a href="';
+			bloginfo('wpurl');
+			echo '/category/messages/messages-couples/">Couples</a>';
+			echo '</div>';
+		}
+		elseif (in_category('33')) {
+			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
+			echo '<a href="';
+			bloginfo('wpurl');
+			echo '/category/messages/messages-faith/">Faith</a>';
+			echo '</div>';
+		}
+		elseif (in_category('35')) {
+			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
+			echo '<a href="';
+			bloginfo('wpurl');
+			echo '/category/messages/messages-professional/">Professional</a>';
+			echo '</div>';
 		}
 		else{
-			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
-					// tech
-					if (in_category('40')) {
-						echo '<a href="';
-						bloginfo('wpurl');
-						echo '/category/olive-notes/news">News</a>';
-					}
-					elseif (in_category('41')) {
-						echo '<a href="';
-						bloginfo('wpurl');
-						echo '/category/olive-notes/advisory">Advisory</a>';
-					}
-					elseif (in_category('42')) {
-						echo '<a href="';
-						bloginfo('wpurl');
-						echo '/category/olive-notes/living-healthy">Living Healthy</a>';
-					}
-					else{
-						//nothing
-					}
-			echo '</div>';
+			//nothing
 		}	
 	?>
+	
+	<?php
+		if ($wp_query->current_post +1 == $wp_query->post_count) {
+		// check if this is the last post, if yes, do not output each post divider div
+		}
+		else {
+			echo ('<div id="spacer-1">
+			</div>');
+		}
+	?>	
+
 	<?php endwhile; ?>
 	<?php else : ?>
-	<?php _e('There are no posts at this time. Please visit again soon.'); ?><!--we're outputing a custom error message if nothing's found-->
+	
+	<?php 
+		echo('<div id="each-post-title" class="ept ept-m ept-d ept-front-page"><!-- start #each-post-title-->
+					<span class="each-post-title-span">
+						No Posts
+					</span>
+					</div><!-- end #each-post-title-->');
+		echo('<div id="each-post-excerpt">');
+			_e('There are no posts at this time. Please visit again soon.'); 
+		echo('</div>');	
+	?>
+	
 	<?php endif; ?>
+	
 	<div id="socket-call-to-action" class="scta scta-m scta-d">
 		<div id="socket-call-to-action-content" class="sctac sctac-m sctac-d">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>messages">MORE MESSAGES</a>

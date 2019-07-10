@@ -16,3 +16,4 @@
 		</a>	
 	</div><!-- end #main-showcase-content-->
 </div><!-- end #main-showcase-->
+

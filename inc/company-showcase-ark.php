@@ -21,13 +21,13 @@
 		</div><!--end #company-showcase-1-->
 		<div id="company-showcase-2" class="csc csc-m csc-d"><!--start #company-showcase-2-->
 			<div id="company-showcase-header" class ="csch csch-m csch-d">
-				Testimonies
+				Updates
 			</div>	
 			<div id="company-showcase-story" class="cscs cscs-m cscs-d">
-				Stories on Jesus' manifestations today
+				Information on whats new at ARK
 			</div>
 			<div id="company-showcase-more" class="cscm cscm-m cscm-d">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>testimonies">Read more</a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>updates">Read more</a>
 			</div>
 		</div><!--end #company-showcase-2-->	
 		<div id="company-showcase-3" class="csc csc-m csc-d csc-d3"><!--start #company-showcase-3-->
@@ -54,3 +54,6 @@
 		</div><!--end #company-showcase-4-->
 	</div><!--end #company-showcase-content-->
 </div><!--end #company-showcase-->
+
+<div id="spacer-2">
+</div>

@@ -7,7 +7,7 @@ The loop that displays singles.
 <div id="each-post-news-stack" class="post" id="post-<?php the_ID(); ?>"><!-- start #each-post-->
 	<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 	
-	<div id="each-post-title" class="ept ept-m ept-d ept-front-page"><!-- start #each-post-title-->
+	<div id="each-post-title" class="ept ept-m ept-d"><!-- start #each-post-title-->
 		<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 			<span class="each-post-title-span">
 				<?php the_title(); ?>
@@ -45,34 +45,6 @@ The loop that displays singles.
 			<?php the_content(); ?>
 		</div>
 	</div>
-	<?php
-		if (is_category (array('tba'))) {
-			//nothing
-		}
-		else{
-			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
-					// tech
-					if (in_category('40')) {
-						echo '<a href="';
-						bloginfo('wpurl');
-						echo '/category/olive-notes/news">News</a>';
-					}
-					elseif (in_category('41')) {
-						echo '<a href="';
-						bloginfo('wpurl');
-						echo '/category/olive-notes/advisory">Advisory</a>';
-					}
-					elseif (in_category('42')) {
-						echo '<a href="';
-						bloginfo('wpurl');
-						echo '/category/olive-notes/living-healthy">Living Healthy</a>';
-					}
-					else{
-						//nothing
-					}
-			echo '</div>';
-		}	
-	?>
 
 	<?php endwhile; ?>
 
@@ -81,12 +53,6 @@ The loop that displays singles.
 	</div>
 
 	<?php else : ?>
-
-	<div id="no-post-message" class="post"><!-- #start no-post-message-->
-		<div id="no-post-message-content">
-			<?php _e('There are no posts at this time. Please visit again soon.'); ?>
-		</div>	
-	</div><!-- end #no-post-message-->
 
 	<?php endif; ?>
 

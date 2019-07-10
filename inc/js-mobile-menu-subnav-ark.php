@@ -11,16 +11,14 @@
 				if (document.getElementById("subnav-menu-button-img").src == "');bloginfo('stylesheet_directory'); echo('/img/page-title-nav/img-subnav-menu-button-ark.png") 
 			{
 				document.getElementById("subnav-menu-button-img").src = "');bloginfo('stylesheet_directory'); echo('/img/page-title-nav/img-subnav-menu-button-collapse-ark.png";
-				$(".ptnc-m").css("border-bottom", "1px solid #CCCCCC");
 				$(".ovl-m").css("display", "block");
 				//Transitioning the overlay background-color with transition.min.js
-				transition.begin(overlay, "background-color #F2F2F2 rgba(0,0,0,0.5) 500ms ease-in-out");
+				transition.begin(overlay, "background-color #F2F2F2 rgba(32,33,37,0.8) 500ms ease-in-out");
 			}
 				else 
 			{
 				document.getElementById("subnav-menu-button-img").src = "');bloginfo('stylesheet_directory'); echo('/img/page-title-nav/img-subnav-menu-button-ark.png";
-				$(".ptnc-m").css("border-bottom", "1px solid #CCCCCC");
-				transition.begin(overlay, "background-color rgba(0,0,0,0.5) #F2F2F2 2000ms ease-out");
+				transition.begin(overlay, "background-color rgba(32,33,37,0.5) #F2F2F2 2000ms ease-out");
 				$(".ovl-m").css("display", "none");
 			}
 				//Toggling the mobile menu

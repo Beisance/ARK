@@ -3,7 +3,19 @@ ARK Site Changelog Entries
 
 Web hosted changelog location: https://www.beisance.com/intelix/changelog/ark-changelog/
 
-## ARK 2.0
+## ARK 2.1.0
+Monday, June 25th, 2019 at 5:54 pm
+
+V2.1 Release Summary
+
+Executions in this version:
+
+- Started coding for prefers-color-scheme. 
+- Still work in progress.
+- As at update date, prefers-color-scheme is compatible with Chrome 76, Fireforx 67, Safari 12.1, Android Webview 76, Chrome for Android 76, and Firefox for Android 67.
+- Various UI optimizations.
+
+## ARK 2.0.0
 Sunday, June 9th, 2019 at 8:37 pm
 
 V2.0 Release Summary
@@ -17,8 +29,7 @@ There are a number of significant executions in this version that we hope you wi
 - Web security enhancements in line with MDN recommendations.
 - Other optimizations and bug fixes.
 
-
-## ARK V1.0
+## ARK 1.0.0
 Sunday, March 10th, 2019 at 6:40 am
 
 V1.0 Release Summary

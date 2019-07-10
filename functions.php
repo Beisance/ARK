@@ -39,6 +39,20 @@
 	return $excerpt;
 	}
 	
+	//custom thoughts excerpt
+	function get_character_limited_excerpt_thoughts(){
+	$permalink = get_permalink($post->ID);
+	$excerpt = get_the_content();
+	$excerpt = preg_replace(" (\[.*?\])",'',$excerpt);
+	$excerpt = strip_shortcodes($excerpt);
+	$excerpt = strip_tags($excerpt);
+	$excerpt = substr($excerpt, 0, 200);
+	$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+	$excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
+	$excerpt = $excerpt.'... <a href="'.$permalink.'">Read More</a>';
+	return $excerpt;
+	}
+	
 	function getFeed($feed_url) {  
 		  
 		$content = file_get_contents($feed_url);  

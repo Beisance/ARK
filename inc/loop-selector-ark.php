@@ -14,11 +14,6 @@ if ( is_home() ) {
 	query_posts( array( 'cat' => 24, 'paged' => get_query_var('paged')));
 	get_template_part( 'loop-posts', 'index' );
 }
-//front page olive notes feed
-else if (is_front_page()) {
-	query_posts( array( 'cat' => 2, 'paged' => get_query_var('paged')));
-	get_template_part( 'loop-socket-messages', 'index' );
-}
 /* ARK media pages */
 else if (is_page( array('messages'))) {
 	query_posts( array( 'cat' => 2, 'paged' => get_query_var('paged')));
@@ -40,12 +35,20 @@ else if (is_page( array('resources'))) {
 	query_posts( array( 'cat' => 27, 'paged' => get_query_var('paged')));
 	get_template_part( 'loop-posts', 'index' );
 }
+else if (is_page( array('thoughts'))) {
+	query_posts( array( 'cat' => 37, 'paged' => get_query_var('paged')));
+	get_template_part( 'loop-posts', 'index' );
+}
+else if (is_page( array('updates'))) {
+	query_posts( array( 'cat' => 42, 'paged' => get_query_var('paged')));
+	get_template_part( 'loop-posts', 'index' );
+}
 /* pages with custom content switching */
 else if (is_page( array('sitemap'))) {
 	include("sitemap-ark.php");
 }
-/* start category switching */
-else if (is_category(array('messages', 'testimonies', 'events', 'news'))) {
+/* start category switching: if it is any category, since we're not specifying any */
+else if (is_category()) {
 	get_template_part( 'loop-posts', 'index' );
 }	
 /* start search switching */

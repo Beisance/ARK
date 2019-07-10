@@ -92,7 +92,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body>
+<body class="mb">
 
 <script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery-latest.min.js" integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6" crossorigin="anonymous"></script>
 
@@ -105,6 +105,8 @@
 <?php include("inc/js-mobile-menu-topnav-ark.php"); ?>
 
 <?php include("inc/js-mobile-menu-subnav-ark.php"); ?>
+
+<?php include("inc/js-mobile-menu-subnav-thoughts-ark.php"); ?>
 
 <div id="header-container"><!-- start #header-->
 	<div id="header-container-content" class="hcc hcc-m hcc-d">
