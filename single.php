@@ -57,7 +57,7 @@ Template Name: ARK SinglePage
 									echo('News');
 								}
 								else if (in_category( array('thoughts'))) {
-									echo('News');
+									echo('Thoughts');
 								}
 								else if (in_category( array('thoughts-general'))) {
 									echo('Thoughts: General');
