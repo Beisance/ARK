@@ -1013,7 +1013,7 @@ a:hover{
 				}
 				.post-categories a:hover{
 					color: #ffffff;
-					background: #313236;
+					background: #808080;
 				}
 			}	
 .news-stack-trending-active-sponsored{
@@ -1069,12 +1069,12 @@ a:hover{
 				color: #ffffff;
 				border-top: 1px solid #4d4d4d;
 			}
-			.sctac a:hover{
-				color: #80b3ff;
-			}
 			.sctac a:visited{
 				color: #ffffff;
 				border-top: 1px solid #4d4d4d;
+			}
+			.sctac a:hover{
+				color: #80b3ff;
 			}
 		}	
 /* end socket-call-to-action */	

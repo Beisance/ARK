@@ -46,7 +46,7 @@ The loop that displays posts.
 		</div>
 	</div>
 	<?php
-		//thoughts sub categories
+		//updates sub categories
 		if (in_category('39')) {
 			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
 			echo '<a href="';
