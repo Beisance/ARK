@@ -51,7 +51,7 @@
 			</div>
 		
 			<?php 
-				query_posts( array( 'cat' => 42, 'posts_per_page' => 5, 'paged' => get_query_var('paged')));
+				query_posts( array( 'cat' => 42, 'posts_per_page' => 2, 'paged' => get_query_var('paged')));
 				get_template_part( 'loop-socket-updates', 'index' );
 			?>
 		</div><!--end #socket-main-content-island-->	
