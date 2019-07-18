@@ -12,7 +12,7 @@ Executions in this version:
 
 - Started coding for prefers-color-scheme. 
 - Still work in progress.
-- As at update date, prefers-color-scheme is compatible with Chrome 76, Fireforx 67, Safari 12.1, Android Webview 76, Chrome for Android 76, and Firefox for Android 67.
+- As at update date, prefers-color-scheme is compatible with Chrome 76, Firefox 67, Safari 12.1, Android Webview 76, Chrome for Android 76, and Firefox for Android 67.
 - Various UI optimizations.
 
 ## ARK 2.0.0
