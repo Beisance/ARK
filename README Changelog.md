@@ -3,6 +3,16 @@ ARK Site Changelog Entries
 
 Web hosted changelog location: https://www.beisance.com/intelix/changelog/ark-changelog/
 
+## ARK 2.1.1
+Saturday, July 20th, 2019 at 2:30 am
+
+V2.1.1 Release Summary
+
+Executions in this version:
+
+- Open graph protocol update: "og:image:url" to fix Reddit link post thumbnail issue.
+- "Thoughts" posts content name/classification fix. 
+
 ## ARK 2.1.0
 Monday, June 25th, 2019 at 5:54 pm
 

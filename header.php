@@ -27,6 +27,8 @@
 				 <meta property="og:url" content="';echo get_permalink();echo'">
 				 <meta property="og:image" content="';
 				 echo get_template_directory_uri();echo'/img/social-media/social-sharing/img-social-sharing-ark.png"/>
+				 <meta property="og:image:url" content="';
+				 echo get_template_directory_uri();echo'/img/social-media/social-sharing/img-social-sharing-ark.png"/>
 				 <meta property="og:image:width" content="1920">
 				 <meta property="og:image:height" content="1920">
 				 <meta property="og:image:alt" content="';echo the_title();echo' logo"/>';
@@ -41,6 +43,7 @@
 					echo esc_html( $postcat[0]->name );   
 				}
 				 wp_title("|"); echo'"/>
+				 <meta property="og:type" content="image/png">
 				 <meta property="og:url" content="';echo get_permalink();echo'">
 				 <meta property="og:image" content="';
 				 if ( has_post_thumbnail() ) {
@@ -48,14 +51,25 @@
 				} 
 				else { 
 					echo get_template_directory_uri();echo'/img/social-media/social-sharing/img-social-sharing-ark.png"/>';
-				}		
-				 echo'<meta property="og:image:alt" content="';echo the_title(); echo' thumbnail"/>';
+				}	
+				echo'
+				 <meta property="og:image:url" content="';
+				 if ( has_post_thumbnail() ) {
+					echo get_the_post_thumbnail_url();echo'"/>';
+				} 
+				else { 
+					echo get_template_directory_uri();echo'/img/social-media/social-sharing/img-social-sharing-ark.png"/>';
+				}
+				 echo'
+				 <meta property="og:image:width" content="1920">
+				 <meta property="og:image:height" content="1920">
+				 <meta property="og:image:alt" content="';echo the_title(); echo' thumbnail"/>';
 	}
 ?>
 <!-- other -->
 <!-- browser header color customization -->
 <meta name="viewport" content="minimum-scale=1">
-<meta name="theme-color" content="#FFFFFF" />
+<meta name="theme-color" content="#e6e6e6" />
 <meta charset="<?php bloginfo( 'charset' ); ?>"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="description" content="ARK">
