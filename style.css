@@ -519,7 +519,7 @@ a:hover{
 		background: #e6e6e6;
 	}
 	.islandx{
-		background: #f4eed7;
+		background: #ffeeaa;
 	}
 		@media (prefers-color-scheme: dark){
 			#socket-main-content{
@@ -533,13 +533,13 @@ a:hover{
 /*START playlist */
 .wp-playlist{
 	margin: 0 0 10px 0!important;
-	border: 1px solid #ffffff!important;
+	border: 1px solid #ff9955!important;
 }
 .mejs-container, .mejs-container .mejs-controls, .mejs-embed, .mejs-embed body{
 	background: #808080!important;
 }
 .wp-playlist-light{
-	background: #f4eed7!important;
+	background: #ffeeaa!important;
 }
 /*END playlist */
 /*START page-title-nav */
@@ -1069,9 +1069,15 @@ a:hover{
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
+		box-sizing: border-box;
+	}
+	.scta-border-1{
 		padding: 8px 0 8px 0;
 		border-top: 1px solid #cccccc;
-		box-sizing: border-box;
+	}
+	.scta-border-2{
+		padding: 0 0 8px 0;
+		border-top: none;
 	}
 	.sctac a:visited{
 		color: #4d4d4d;
