@@ -12,6 +12,7 @@ Executions in this version:
 
 - Open graph protocol update: "og:image:url" to fix Reddit link post thumbnail issue.
 - "Thoughts" posts content name/classification fix. 
+- Preparations for podcast content update.
 
 ## ARK 2.1.0
 Monday, June 25th, 2019 at 5:54 pm
