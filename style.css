@@ -511,11 +511,15 @@ a:hover{
 		margin-left: auto;
 		padding: 5px 15px 5px 15px;
 		width: 95%;
+		text-align: left;
 		box-sizing: border-box;
 		max-width: 1015px;
 	}
 	.island{
 		background: #e6e6e6;
+	}
+	.islandx{
+		background: #f4eed7;
 	}
 		@media (prefers-color-scheme: dark){
 			#socket-main-content{
@@ -526,6 +530,18 @@ a:hover{
 			}
 		}
 /*END socket */
+/*START playlist */
+.wp-playlist{
+	margin: 0 0 10px 0!important;
+	border: 1px solid #ffffff!important;
+}
+.mejs-container, .mejs-container .mejs-controls, .mejs-embed, .mejs-embed body{
+	background: #808080!important;
+}
+.wp-playlist-light{
+	background: #f4eed7!important;
+}
+/*END playlist */
 /*START page-title-nav */
 #page-title-nav{
 	position: relative;
