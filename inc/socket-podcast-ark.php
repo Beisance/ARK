@@ -26,7 +26,10 @@
 			<?php 
 				echo do_shortcode("[playlist ids='358,357']");
 			?>
-			<div id="socket-call-to-action" class="scta scta-m scta-d scta-border-2">
+			<div id="podcast-subscription" class="ps ps-m ps-d"> 
+				Subscribe via <a href="<?php echo esc_url( home_url( '/' ) ); ?>deep-connections-itunes">Apple Podcasts</a>, <a href="<?php echo esc_url( home_url( '/' ) ); ?>deep-connections-play">Google Play</a>, or <a href="<?php echo esc_url( home_url( '/' ) ); ?>deep-connections-itunes-feed">RSS</a>.
+			</div>
+			<div id="socket-call-to-action" class="scta scta-m scta-d">
 				<div id="socket-call-to-action-content" class="sctac sctac-m sctac-d">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>podcast-audio">MORE PODCASTS</a>
 				</div>

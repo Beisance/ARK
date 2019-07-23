@@ -103,7 +103,7 @@ The loop that displays posts.
 	<?php endif; ?>
 	
 	<div id="socket-call-to-action" class="scta scta-m scta-d">
-		<div id="socket-call-to-action-content" class="sctac sctac-m sctac-d scta-border-1">
+		<div id="socket-call-to-action-content" class="sctac sctac-m sctac-d">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>messages">MORE MESSAGES</a>
 		</div>
 	</div>
