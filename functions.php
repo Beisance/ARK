@@ -72,4 +72,5 @@
 	add_filter('post_comments_feed_link','remove_comments_rss');
 
 	add_theme_support( 'menus' );
+	
 ?>

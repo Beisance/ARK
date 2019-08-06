@@ -1,4 +1,11 @@
 
-inc/google-analytics-ark.php
+*.svg
+*.dev.css
+dep/
+dev/
+fonts/
+_gsdata_/
 pages-post/
+/inc/google-analytics-ark.php
+*.ffs_lock
 podcast/

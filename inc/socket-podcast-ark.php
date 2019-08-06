@@ -24,7 +24,7 @@
 			</div>
 		
 			<?php 
-				echo do_shortcode("[playlist ids='358,357']");
+				echo do_shortcode("[playlist ids='375' style='light']");
 			?>
 			<div id="podcast-subscription" class="ps ps-m ps-d"> 
 				Subscribe via <a href="<?php echo esc_url( home_url( '/' ) ); ?>deep-connections-itunes">Apple Podcasts</a>, <a href="<?php echo esc_url( home_url( '/' ) ); ?>deep-connections-play">Google Play</a>, or <a href="<?php echo esc_url( home_url( '/' ) ); ?>deep-connections-itunes-feed">RSS</a>.
