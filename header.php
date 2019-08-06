@@ -4,6 +4,7 @@
  * @subpackage Beisance|Intelix Custom Theme For Beisance|ARK
  */
 ?>
+
 <!DOCTYPE html>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
