@@ -12,7 +12,7 @@ Template Name: ARK FrontPage
 
 <?php include("inc/socket-updates-ark.php"); ?>
 
-<?php include("inc/socket-podcast-ark.php"); ?>
+<?php /* include("inc/socket-podcast-ark.php"); this socket will be activated in the next main update */ ?>
 
 <?php include("inc/socket-messages-ark.php"); ?>
 

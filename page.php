@@ -27,7 +27,7 @@ Template Name: ARK DefaultPage
 					<div id="subnav" class="snv snv-m snv-d">
 						<div id="subnav-content" class="snvc snvc-m snvc-d snvc-front-page snv">
 							<?php
-								 if (is_page( array('messages'))) {
+								if (is_page( array('messages'))) {
 									wp_nav_menu( array(
 										'menu' => 'subnav-messages',
 										'class' => 'menu',
@@ -35,7 +35,7 @@ Template Name: ARK DefaultPage
 											)
 										);
 								}
-								 else if (in_category( array('messages', 'messages-faith', 'messages-professional', 'messages-couples'))) {
+								else if (in_category( array('messages', 'messages-faith', 'messages-professional', 'messages-couples'))) {
 									wp_nav_menu( array(
 										'menu' => 'subnav-messages',
 										'class' => 'menu',
@@ -43,7 +43,7 @@ Template Name: ARK DefaultPage
 											)
 										);
 								}
-								 else if (is_page( array('thoughts'))) {
+								else if (is_page( array('thoughts'))) {
 									wp_nav_menu( array(
 										'menu' => 'subnav-thoughts',
 										'class' => 'menu',
@@ -51,9 +51,25 @@ Template Name: ARK DefaultPage
 											)
 										);
 								}
-								 else if (in_category( array('thoughts', 'thoughts-general', 'thoughts-politics', 'thoughts-professional'))) {
+								else if (in_category( array('thoughts', 'thoughts-general', 'thoughts-politics', 'thoughts-professional'))) {
 									wp_nav_menu( array(
 										'menu' => 'subnav-thoughts',
+										'class' => 'menu',
+										'container' => 'subnav-mobile-menu-container'
+											)
+										);
+								}
+								else if (is_page( array('updates'))) {
+									wp_nav_menu( array(
+										'menu' => 'subnav-updates',
+										'class' => 'menu',
+										'container' => 'subnav-mobile-menu-container'
+											)
+										);
+								}
+								else if (in_category( array('updates', 'updates-services'))) {
+									wp_nav_menu( array(
+										'menu' => 'subnav-updates',
 										'class' => 'menu',
 										'container' => 'subnav-mobile-menu-container'
 											)
@@ -73,7 +89,7 @@ Template Name: ARK DefaultPage
 					<div id="subnav-mobile-menu" class="smm smm-m smm-d">
 						<div id="subnav-mobile-menu-container" class="smmc smmc-m smmc-d">
 							<?php
-								 if (is_page( array('messages'))) {
+								if (is_page( array('messages'))) {
 									wp_nav_menu( array(
 										'menu' => 'subnav-messages',
 										'class' => 'menu',
@@ -81,7 +97,7 @@ Template Name: ARK DefaultPage
 											)
 										);
 								}
-								 else if (in_category( array('messages', 'messages-faith', 'messages-professional', 'messages-couples'))) {
+								else if (in_category( array('messages', 'messages-faith', 'messages-professional', 'messages-couples'))) {
 									wp_nav_menu( array(
 										'menu' => 'subnav-messages',
 										'class' => 'menu',
@@ -100,6 +116,22 @@ Template Name: ARK DefaultPage
 								else if (in_category( array('thoughts', 'thoughts-general', 'thoughts-politics', 'thoughts-professional'))) {
 									wp_nav_menu( array(
 										'menu' => 'subnav-thoughts',
+										'class' => 'menu',
+										'container' => 'subnav-mobile-menu-container'
+											)
+										);
+								}
+								else if (is_page( array('updates'))) {
+									wp_nav_menu( array(
+										'menu' => 'subnav-updates',
+										'class' => 'menu',
+										'container' => 'subnav-mobile-menu-container'
+											)
+										);
+								}
+								else if (in_category( array('updates', 'updates-services'))) {
+									wp_nav_menu( array(
+										'menu' => 'subnav-updates',
 										'class' => 'menu',
 										'container' => 'subnav-mobile-menu-container'
 											)

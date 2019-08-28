@@ -104,6 +104,14 @@ Template Name: ARK SinglePage
 											)
 										);
 								}
+								else if (in_category( array('updates', 'updates-services'))) {
+									wp_nav_menu( array(
+										'menu' => 'subnav-updates',
+										'class' => 'menu',
+										'container' => 'subnav-mobile-menu-container'
+											)
+										);
+								}
 								else {
 									wp_nav_menu( array(
 										'menu' => 'subnav-activities',
@@ -129,6 +137,14 @@ Template Name: ARK SinglePage
 								if (in_category( array('messages', 'faith', 'professional', 'couples'))) {
 									wp_nav_menu( array(
 										'menu' => 'subnav-messages',
+										'class' => 'menu',
+										'container' => 'subnav-mobile-menu-container'
+											)
+										);
+								}
+								else if (in_category( array('updates', 'updates-services'))) {
+									wp_nav_menu( array(
+										'menu' => 'subnav-updates',
 										'class' => 'menu',
 										'container' => 'subnav-mobile-menu-container'
 											)

@@ -19,14 +19,14 @@
 					</div>
 					<div id="subnav-menu-button" class="snvmb snvmb-m snvmb-d">
 						<div id="subnav-menu-button-content" class="snvmbc snvmbc-m snvmbc-d">
-							<img id="subnav-menu-button-thoughts-img" onclick="mobileMenuSubnavThoughts()" class="snmb-m" src="<?php bloginfo('stylesheet_directory'); ?>/img/page-title-nav/img-subnav-menu-button-thoughts-ark.png">
+							<img id="subnav-menu-button-updates-img" onclick="mobileMenuSubnavUpdates()" class="snmb-m" src="<?php bloginfo('stylesheet_directory'); ?>/img/page-title-nav/img-subnav-menu-button-updates-ark.png">
 						</div>
 					</div>	
 					<div id="subnav" class="snv snv-m snv-d">
 						<div id="subnav-content" class="snvc snvc-m snvc-d snvc-front-page snv">
 							<?php
 								wp_nav_menu( array(
-									'menu' => 'subnav-activities',
+									'menu' => 'subnav-updates',
 									'class' => 'menu',
 									'container' => 'subnav-content',
 									'fallback_cb' => 'false'
@@ -35,11 +35,11 @@
 							?>
 						</div>
 					</div>
-					<div id="subnav-mobile-menu" class="smm smm-t-m">
+					<div id="subnav-mobile-menu" class="smm smm-u-m">
 						<div id="subnav-mobile-menu-container" class="smmc smmc-m smmc-d">
 							<?php
 								wp_nav_menu( array(
-									'menu' => 'subnav-activities',
+									'menu' => 'subnav-updates',
 									'class' => 'menu',
 									'container' => 'subnav-mobile-menu-container'
 									)
