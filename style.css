@@ -74,10 +74,15 @@ h4{
 		}
 	}
 blockquote{
-	margin: 0 auto 0 auto;
+	margin: 0 auto 10px auto;
 	width: 95%;
+	border-left: 5px solid #e6e6e6;
+	padding: 5px 5px 5px 15px;
 	display: block;
 }
+blockquote p{
+	margin: 0;
+}	
 img{
 	border-style:none;
 }
@@ -997,7 +1002,7 @@ a:hover{
 		padding: 0 10px 0 0;
 	}
 		.post-categories a:link{
-			margin: 0 0 10px 0;
+			margin: 0 10px 10px 0;
 			color: #ff5555;
 			font-size: 14px;
 			text-decoration: none;
@@ -1008,7 +1013,7 @@ a:hover{
 		}
 		.post-categories a:visited{
 			color: #ff5555;
-			border: 1px solid #ff5555;
+			border: 1px solid #FFCCAA;
 		}
 		.post-categories a:hover{
 			color: #ffffff;
@@ -1075,7 +1080,6 @@ a:hover{
 	}
 	.sctac a:visited{
 		color: #4d4d4d;
-		border-top: 1px solid #cccccc;
 	}	
 	.sctac a:hover{
 		color: #ff5555;
@@ -1083,12 +1087,10 @@ a:hover{
 		@media (prefers-color-scheme: dark){
 			.sctac a:link{
 				color: #ffffff;
-				border-top: 1px solid #4d4d4d;
 			}
 			.sctac a:visited{
 				color: #ffffff;
-				border-top: 1px solid #4d4d4d;
-			}
+				}
 			.sctac a:hover{
 				color: #80b3ff;
 			}

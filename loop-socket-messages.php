@@ -48,34 +48,40 @@ The loop that displays posts.
 			<?php echo get_character_limited_excerpt(); ?>
 		</div>
 	</div>
-	<?php
-		//messages sub categories
-		if (in_category('34')) {
-			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
-			echo '<a href="';
-			bloginfo('wpurl');
-			echo '/category/messages/messages-couples/">Couples</a>';
-			echo '</div>';
-		}
-		elseif (in_category('33')) {
-			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
-			echo '<a href="';
-			bloginfo('wpurl');
-			echo '/category/messages/messages-faith/">Faith</a>';
-			echo '</div>';
-		}
-		elseif (in_category('35')) {
-			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
-			echo '<a href="';
-			bloginfo('wpurl');
-			echo '/category/messages/messages-professional/">Professional</a>';
-			echo '</div>';
-		}
-		else{
-			//nothing
-		}	
-	?>
-	
+	<div id="post-categories-socket-messages-front-page" class="post-categories">
+		<?php
+			//messages sub categories 1
+			if (in_category('34')) {
+				echo '<a href="';
+				bloginfo('wpurl');
+				echo '/category/messages/messages-couples/">Couples</a>';
+			}
+			elseif (in_category('33')) {
+				echo '<a href="';
+				bloginfo('wpurl');
+				echo '/category/messages/messages-faith/">Faith</a>';
+			}
+			elseif (in_category('35')) {
+				echo '<a href="';
+				bloginfo('wpurl');
+				echo '/category/messages/messages-professional/">Professional</a>';
+			}
+			else{
+				//nothing
+			}	
+		?>
+		<?php
+			//messages sub categories 2
+			if (in_category('46')) {
+				echo '<a href="';
+				bloginfo('wpurl');
+				echo '/category/messages/guest-ministry-harvesters-ikeja/">Guest Ministry Message - Harvesters Ikeja</a>';
+			}
+			else{
+				//nothing
+			}	
+		?>
+	</div>
 	<?php
 		if ($wp_query->current_post +1 == $wp_query->post_count) {
 		// check if this is the last post, if yes, do not output each post divider div

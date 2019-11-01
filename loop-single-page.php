@@ -45,6 +45,8 @@ The loop that displays singles.
 			<?php the_content(); ?>
 		</div>
 	</div>
+	
+	<?php include("inc/custom-content-selector-footer-ark.php"); ?>
 
 	<?php endwhile; ?>
 

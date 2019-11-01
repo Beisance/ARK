@@ -1,6 +1,5 @@
 <?php
 /**
- * The Sidebar containing the primary and secondary widget areas.
  * @package WordPress
  * @subpackage Beisance|Intelix Custom Theme For Beisance|ARK
  */
@@ -17,7 +16,7 @@
 		echo '</div><!--end #custom-content-content-->
 		</div><!--end #custom-content-->';
 	}
-	//messages sub categories
+	//messages sub categories 1
 		elseif (in_category(array('messages', 'messages-couples', 'messages-faith', 'messages-professional'))) {
 			echo '<div id="custom-content"><!--start #custom-content-->
 			<div id="custom-content-content">';
