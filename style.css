@@ -1006,37 +1006,40 @@ a:hover{
 			color: #ffffff;
 			font-size: 14px;
 			text-decoration: none;
-			padding: 5px 10px 5px 10px;
+			padding: 6px 11px 6px 11px;
 			display: inline-block;
-			background: #999999;
-			border: 1px solid #999999;
+			background: #bb86fc;
 			list-style: none;
 		}
 			#post-categories-socket-front-page-feed > a:hover:nth-child(1n){
-				background: #000000;
+				background: #9955ff;
 			}	
 		#post-categories-socket-front-page-feed > a:nth-child(2n){
 			margin: 0 10px 10px 0;
-			color: #ff5555;
+			color: #ffffff;
 			font-size: 14px;
 			text-decoration: none;
-			padding: 5px 10px 5px 10px;
+			padding: 6px 11px 6px 11px;
 			display: inline-block;
-			background: #ffccaa;
-			border: 1px solid #ffccaa;
+			background: #2ca089;
 			list-style: none;
 		}
+			#post-categories-socket-front-page-feed > a:hover:nth-child(2n){
+				background: #217867;
+			}
 		#post-categories-socket-front-page-feed > a:nth-child(3n){
 			margin: 0 10px 10px 0;
 			color: #ffffff;
 			font-size: 14px;
 			text-decoration: none;
-			padding: 5px 10px 5px 10px;
+			padding: 6px 11px 6px 11px;
 			display: inline-block;
-			background: #2ca089;
-			border: 1px solid #2ca089;
+			background: #5f8dd3;
 			list-style: none;
 		}
+			#post-categories-socket-front-page-feed > a:hover:nth-child(3n){
+				background: #2a7fff;
+			}
 		.post-categories li{
 			display: inline-block;
 		}
