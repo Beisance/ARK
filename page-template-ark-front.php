@@ -10,13 +10,9 @@ Template Name: ARK FrontPage
 
 <?php include("inc/company-showcase-ark.php"); ?>
 
-<?php include("inc/socket-updates-ark.php"); ?>
-
-<?php include("inc/socket-thoughts-ark.php"); ?>
-
 <?php /* include("inc/socket-podcast-ark.php"); this socket will be activated in the next main update */ ?>
 
-<?php include("inc/socket-messages-ark.php"); ?>
+<?php include("inc/socket-front-page-feed-ark.php"); ?>
 
 <?php include("inc/downnav-ark.php"); ?>
 

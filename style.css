@@ -85,7 +85,7 @@ blockquote p{
 }	
 img{
 	border-style:none;
-}
+}  
 a:link{
 	text-decoration: none;
 	color: #000000;
@@ -985,7 +985,7 @@ a:hover{
 		.wp-block-image{
 			margin-bottom: 5px!important;
 		}
-	#post-categories-socket-messages-front-page{
+	#post-categories-socket-front-page-feed{
 		position: relative;
 		margin: 10px auto 5px auto;
 		width: 100%;
@@ -1001,6 +1001,39 @@ a:hover{
 		width: 280px;
 		padding: 0 10px 0 0;
 	}
+		#post-categories-socket-front-page-feed > a:nth-child(1n){
+			margin: 0 10px 10px 0;
+			color: #ffffff;
+			font-size: 14px;
+			text-decoration: none;
+			padding: 5px 10px 5px 10px;
+			display: inline-block;
+			background: #999999;
+			border: 1px solid #999999;
+			list-style: none;
+		}
+		#post-categories-socket-front-page-feed > a:nth-child(2n){
+			margin: 0 10px 10px 0;
+			color: #ff5555;
+			font-size: 14px;
+			text-decoration: none;
+			padding: 5px 10px 5px 10px;
+			display: inline-block;
+			background: #ffccaa;
+			border: 1px solid #ffccaa;
+			list-style: none;
+		}
+		#post-categories-socket-front-page-feed > a:nth-child(3n){
+			margin: 0 10px 10px 0;
+			color: #ffffff;
+			font-size: 14px;
+			text-decoration: none;
+			padding: 5px 10px 5px 10px;
+			display: inline-block;
+			background: #2ca089;
+			border: 1px solid #2ca089;
+			list-style: none;
+		}
 		.post-categories a:link{
 			margin: 0 10px 10px 0;
 			color: #ff5555;
