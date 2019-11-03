@@ -1012,6 +1012,9 @@ a:hover{
 			border: 1px solid #999999;
 			list-style: none;
 		}
+			#post-categories-socket-front-page-feed > a:hover:nth-child(1n){
+				background: #000000;
+			}	
 		#post-categories-socket-front-page-feed > a:nth-child(2n){
 			margin: 0 10px 10px 0;
 			color: #ff5555;
@@ -1033,25 +1036,6 @@ a:hover{
 			background: #2ca089;
 			border: 1px solid #2ca089;
 			list-style: none;
-		}
-		.post-categories a:link{
-			margin: 0 10px 10px 0;
-			color: #ff5555;
-			font-size: 14px;
-			text-decoration: none;
-			padding: 5px 10px 5px 10px;
-			display: inline-block;
-			border: 1px solid #FFCCAA;
-			list-style: none;
-		}
-		.post-categories a:visited{
-			color: #ff5555;
-			border: 1px solid #FFCCAA;
-		}
-		.post-categories a:hover{
-			color: #ffffff;
-			border: 1px solid #808080;
-			background-color: #808080;
 		}
 		.post-categories li{
 			display: inline-block;
