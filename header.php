@@ -119,6 +119,12 @@
 
 <?php include("inc/js-mobile-menu-topnav-ark.php"); ?>
 
+<?php include("inc/js-mobile-menu-subnav-ark.php"); ?>
+
+<?php include("inc/js-mobile-menu-subnav-thoughts-ark.php"); ?>
+
+<?php include("inc/js-mobile-menu-subnav-updates-ark.php"); ?>
+
 <div id="header-container"><!-- start #header-->
 	<div id="header-container-content" class="hcc hcc-m hcc-d">
 		<div id="topnav-menu-button" class="tnmb tnmb-m tnmb-d">
