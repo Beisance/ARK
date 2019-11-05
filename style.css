@@ -952,11 +952,13 @@ a:hover{
 		margin-top:15px;
 		width: 100%;
 		height: auto;
-		border-top: 1px solid #ff5555;
-		border-right: 1px solid #80b3ff;
-		border-bottom: 1px solid #ff9955;
-		border-left: 1px solid #80b3ff;
+		border: 1px solid #ffccaa;
 	}
+		@media (prefers-color-scheme: dark){
+			#each-post-thumbnail img{
+				border: 1px solid #4d4d4d;
+			}
+		}
 	#each-post-excerpt{
 		position: relative;
 		margin: 10px auto 10px auto;
@@ -1059,8 +1061,42 @@ a:hover{
 				.post-categories a:hover{
 					color: #ffffff;
 					background: #808080;
+					text-decoration: none;
 				}
 			}	
+	#post-navigation{
+		margin: 5px 0 10px 0;
+		padding: 10px 0 0 0;
+		text-align: center;
+		border-top: 1px solid #ffccaa;
+	}		
+		.navigation a:link{
+			color: #4d4d4d;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+		.navigation a:visited{
+			color: #4d4d4d;
+			text-transform: uppercase;
+		}
+		.navigation a:hover{
+			color: #ff5555;
+			text-transform: uppercase;
+		}
+		@media (prefers-color-scheme: dark){
+			#post-navigation{
+				border-top: 1px solid #4d4d4d;
+			}
+			.navigation a:link{
+				color: #ffffff;
+			}
+			.navigation a:visited{
+				color: #ffffff;
+				}
+			.navigation a:hover{
+				color: #80b3ff;
+			}
+		}	
 .news-stack-trending-active-sponsored{
 	margin-top: 10px;
 	width: 100%;

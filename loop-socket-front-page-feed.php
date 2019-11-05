@@ -148,6 +148,11 @@ The loop that displays posts.
 	?>	
 
 	<?php endwhile; ?>
+
+	<div id="post-navigation" class="navigation">
+		<?php posts_nav_link(' - ','Previous Page','Next Page'); ?> 
+	</div>
+
 	<?php else : ?>
 	
 	<?php 
