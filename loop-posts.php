@@ -48,56 +48,45 @@ The loop that displays posts.
 			<?php echo get_character_limited_excerpt(); ?>
 		</div>
 	</div>
+	<div id="post-categories-socket-front-page-feed" class="post-categories">
 	<?php
 		//thoughts sub categories
 		if (in_category('39')) {
-			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
 			echo '<a href="';
 			bloginfo('wpurl');
 			echo '/category/thoughts/thoughts-general">General</a>';
-			echo '</div>';
 		}
 		elseif (in_category('40')) {
-			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
 			echo '<a href="';
 			bloginfo('wpurl');
 			echo '/category/thoughts/thoughts-politics">Politics</a>';
-			echo '</div>';
 		}
 		elseif (in_category('41')) {
-			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
 			echo '<a href="';
 			bloginfo('wpurl');
 			echo '/category/thoughts/thoughts-professional">Professional</a>';
-			echo '</div>';
 		}
 		//messages sub categories
 		elseif (in_category('34')) {
-			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
 			echo '<a href="';
 			bloginfo('wpurl');
 			echo '/category/messages/messages-couples/">Couples</a>';
-			echo '</div>';
 		}
 		elseif (in_category('33')) {
-			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
 			echo '<a href="';
 			bloginfo('wpurl');
 			echo '/category/messages/messages-faith/">Faith</a>';
-			echo '</div>';
 		}
 		elseif (in_category('35')) {
-			echo '<div id="post-categories-socket-messages-front-page" class="post-categories">';
 			echo '<a href="';
 			bloginfo('wpurl');
 			echo '/category/messages/messages-professional/">Professional</a>';
-			echo '</div>';
 		}
 		else{
 			//nothing
 		}	
 	?>
-	
+	</div>
 	<?php
 		if ($wp_query->current_post +1 == $wp_query->post_count) {
 		// check if this is the last post, if yes, do not output each post divider div

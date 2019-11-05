@@ -130,7 +130,7 @@ The loop that displays posts.
 			if (in_category('46')) {
 				echo '<a href="';
 				bloginfo('wpurl');
-				echo '/category/messages/guest-ministry-harvesters-ikeja/">Guest Ministry Message - Harvesters Ikeja</a>';
+				echo '/category/messages/guest-ministry-message-harvesters-ikeja/">Guest Ministry Message - Harvesters Ikeja</a>';
 			}
 			else{
 				//nothing
