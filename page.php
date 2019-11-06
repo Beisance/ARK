@@ -163,7 +163,7 @@ Template Name: ARK DefaultPage
 
 			</div><!-- end #wrapper-->
 
-			<div id="spacer-1">
+			<div id="spacer-3">
 			</div>	
 
 			<?php include("inc/bread-nav-ark.php"); ?>

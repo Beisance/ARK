@@ -100,7 +100,7 @@ The loop that displays posts.
 	<?php endwhile; ?>
 
 	<div id="post-navigation" class="navigation">
-		<?php posts_nav_link(' - ','Previous Page','Next Page'); ?> 
+		<?php wp_pagenavi() ?>
 	</div>
 	
 	<?php else : ?>

@@ -139,7 +139,7 @@ The loop that displays posts.
 	</div>
 	<?php
 		if ($wp_query->current_post +1 == $wp_query->post_count) {
-		// check if this is the last post, if yes, do not output each post divider div
+		// check if this is the last post, if yes, do not output spacer-1 div
 		}
 		else {
 			echo ('<div id="spacer-1">

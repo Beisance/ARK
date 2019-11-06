@@ -11,37 +11,77 @@
 
 /* start posts pages switching */	
 if ( is_home() ) {
-	query_posts( array( 'cat' => 24, 'paged' => get_query_var('paged')));
+	query_posts( array( 
+		'category__in' => array(24), 
+		'posts_per_page' => 10, 
+		'paged' => get_query_var('page')
+	));
 	get_template_part( 'loop-posts', 'index' );
+	wp_reset_query();
 }
 /* ARK media pages */
 else if (is_page( array('messages'))) {
-	query_posts( array( 'cat' => 2, 'paged' => get_query_var('paged')));
+	query_posts( array( 
+		'category__in' => array(2), 
+		'posts_per_page' => 10, 
+		'paged' => get_query_var('page')
+	));
 	get_template_part( 'loop-posts', 'index' );
+	wp_reset_query();
 }
 else if (is_page( array('testimonies'))) {
-	query_posts( array( 'cat' => 3, 'paged' => get_query_var('paged')));
+	query_posts( array( 
+		'category__in' => array(3), 
+		'posts_per_page' => 10, 
+		'paged' => get_query_var('page')
+	));
 	get_template_part( 'loop-posts', 'index' );
+	wp_reset_query();
 }
 else if (is_page( array('events'))) {
-	query_posts( array( 'cat' => 15, 'paged' => get_query_var('paged')));
+	query_posts( array( 
+		'category__in' => array(15), 
+		'posts_per_page' => 10, 
+		'paged' => get_query_var('page')
+	));
 	get_template_part( 'loop-posts', 'index' );
+	wp_reset_query();
 }
 else if (is_page( array('news'))) {
-	query_posts( array( 'cat' => 17, 'paged' => get_query_var('paged')));
+	query_posts( array( 
+		'category__in' => array(17), 
+		'posts_per_page' => 10, 
+		'paged' => get_query_var('page')
+	));
 	get_template_part( 'loop-posts', 'index' );
+	wp_reset_query();
 }
 else if (is_page( array('resources'))) {
-	query_posts( array( 'cat' => 27, 'paged' => get_query_var('paged')));
+	query_posts( array( 
+		'category__in' => array(27), 
+		'posts_per_page' => 10, 
+		'paged' => get_query_var('page')
+	));
 	get_template_part( 'loop-posts', 'index' );
+	wp_reset_query();
 }
 else if (is_page( array('thoughts'))) {
-	query_posts( array( 'cat' => 37, 'paged' => get_query_var('paged')));
+	query_posts( array( 
+		'category__in' => array(37), 
+		'posts_per_page' => 10, 
+		'paged' => get_query_var('page')
+	));
 	get_template_part( 'loop-posts', 'index' );
+	wp_reset_query();
 }
 else if (is_page( array('updates'))) {
-	query_posts( array( 'cat' => 42, 'paged' => get_query_var('paged')));
+	query_posts( array( 
+		'category__in' => array(42), 
+		'posts_per_page' => 10, 
+		'paged' => get_query_var('page')
+	));
 	get_template_part( 'loop-posts', 'index' );
+	wp_reset_query();
 }
 /* pages with custom content switching */
 else if (is_page( array('sitemap'))) {
