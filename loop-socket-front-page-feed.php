@@ -22,7 +22,7 @@ The loop that displays posts.
 				?>
 				<?php
 				/* sponsored */
-					if (in_category('44')) {
+					if (in_category('47')) {
 						echo '<span class="sponsored-stack">SPONSORED</span>';
 					}
 					else{
@@ -150,9 +150,9 @@ The loop that displays posts.
 	<?php endwhile; ?>
 
 	<div id="post-navigation" class="navigation">
-		<?php posts_nav_link(' - ','Previous Page','Next Page'); ?> 
+		<?php wp_pagenavi() ?>
 	</div>
-
+    
 	<?php else : ?>
 	
 	<?php 

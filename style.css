@@ -430,7 +430,7 @@ a:hover{
 #post-header{
 	width: 100%;
 	height: 5px;
-	border-bottom: 1px solid #FFCCAA;
+	border-bottom: 1px solid #ffccaa;
 	background: #ffffff;
 }
 /*END Post-Header */
@@ -1065,11 +1065,37 @@ a:hover{
 				}
 			}	
 	#post-navigation{
-		margin: 5px 0 10px 0;
+		margin: 5px 0 5px 0;
 		padding: 10px 0 0 0;
 		text-align: center;
 		border-top: 1px solid #ffccaa;
 	}		
+		/* START wp-pagenavi customisations */
+		.wp-pagenavi {
+			margin: 7px 0 10px 0;
+			clear: both;
+		}
+		.wp-pagenavi a, .wp-pagenavi span {
+			text-decoration: none;
+			border: 1px solid #cccccc;
+			padding: 3px 5px;
+			margin: 2px;
+		}
+		.wp-pagenavi a:hover, .wp-pagenavi span.current {
+			border-color: #ff9955;
+		}
+		.wp-pagenavi span.current {
+			font-weight: normal;
+		}
+		@media (prefers-color-scheme: dark){
+			.wp-pagenavi a, .wp-pagenavi span {
+				border: 1px solid #4d4d4d;
+			}	
+			.wp-pagenavi a:hover, .wp-pagenavi span.current {
+				border-color: #ffccaa;
+			}
+		}
+		/* END wp-pagenavi customisations */	
 		.navigation a:link{
 			color: #4d4d4d;
 			text-transform: uppercase;
