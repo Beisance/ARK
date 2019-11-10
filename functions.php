@@ -21,7 +21,7 @@
 		global $post;
 		$text = get_the_excerpt($post->ID);
 		if (strlen($text) > $length) {
-		$text = substr($text,0,strpos($text,' ',$length)) . '<a href="' . get_permalink() . '"> Read More...</a>'; } ;
+		$text = substr($text,0,strpos($text,' ',$length)) . '<a href="' . get_permalink() . '"> Read More  »</a>'; } ;
 		return apply_filters('the_excerpt',$text);
 	}
 
@@ -35,7 +35,7 @@
 	$excerpt = substr($excerpt, 0, 300);
 	$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
 	$excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
-	$excerpt = $excerpt.'... <a href="'.$permalink.'">Read More</a>';
+	$excerpt = $excerpt.'... <a href="'.$permalink.'">Read More  »</a>';
 	return $excerpt;
 	}
 	
@@ -49,7 +49,7 @@
 	$excerpt = substr($excerpt, 0, 200);
 	$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
 	$excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
-	$excerpt = $excerpt.'... <a href="'.$permalink.'">Read More</a>';
+	$excerpt = $excerpt.'... <a href="'.$permalink.'">Read More  »</a>';
 	return $excerpt;
 	}
 	

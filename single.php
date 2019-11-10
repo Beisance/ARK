@@ -174,6 +174,14 @@ Template Name: ARK SinglePage
 
 			</div><!-- end #wrapper-->
 
+			<div id="page-title" class="ptl ptl-m ptl-d ptl-front-page">
+				<div id="page-title-content" class="ptlc ptlc-m ptlc-d ptlc-front-page">
+					Recent Posts
+				</div>	
+			</div>
+			
+			<?php echo do_shortcode( ' [rpwe limit="5" length="30" thumb_height="100" thumb_width="246" excerpt="true" thumb_default="https://ark.beisance.com/wp-content/themes/ark/img/pages-posts/posts/default-posts-image-template-ark.png" styles_default="false" readmore="true"] ' ); ?> 
+
 			<div id="spacer-3">
 			</div>	
 
