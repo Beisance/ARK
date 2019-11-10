@@ -51,7 +51,7 @@ The loop that displays singles.
 	<?php endwhile; ?>
 
 	<div id="post-navigation" class="navigation">
-		<?php posts_nav_link(' - ','Previous Page','Next Page'); ?> 
+		<?php posts_nav_link( $sep, $prelabel, $nextlabel ); ?> 
 	</div>
 
 	<?php else : ?>
