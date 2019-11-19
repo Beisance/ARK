@@ -804,6 +804,17 @@ a:hover{
 			background: #333333;
 		}
 	}
+#spacer-4{
+	position: relative;
+	margin: 7px 0 0 0;
+	width: 100%;
+	height: 1px;
+	background: #ffccaa;
+	z-index: 4;
+}
+#spacer-5{
+	height: 1px !important;
+}
 	/*START Wrapper */
 #wrapper{
 	position: relative;
@@ -964,6 +975,24 @@ h3.rpwe-title{
 .rpwe-clearfix{
 	zoom: 1;
 }
+@media screen and (max-width: 400px){
+	h3.rpwe-title{
+		float: left;
+	}
+	.rpwe-thumb{
+		margin: 2px 10px 2px 0;
+		width: 150px;
+		height: auto;	
+		float: right;	
+	}
+}
+@media screen and (min-width: 768px){
+	.rpwe-thumb{
+		margin: 2px 10px 2px 0;
+		width: 246px;
+		height: 100px;		
+	}
+}	
 /*END recent posts extended */	
 /*START loop */
 #each-post-news-stack{
@@ -1048,15 +1077,30 @@ h3.rpwe-title{
 		width: 100%;
 		max-width: 985px;
 	}
-	#each-post-thumbnail img{
-		margin-top:15px;
-		width: 100%;
-		height: auto;
-		border: 1px solid #ffccaa;
-		box-sizing: border-box;
-	}
+		.epthumb-standard img{
+			margin-top:15px;
+			width: 100%;
+			height: auto;
+			border: 1px solid #ffccaa;
+			box-sizing: border-box;
+		}		
+		.epthumb-recent img{
+			float: left;
+		}
+		@media screen and (max-width: 767px){
+				.epthumb-recent img{
+				width: 180px;
+				height: auto;
+			}
+		}
+		@media screen and (min-width: 768px){
+				.epthumb-recent img{
+				width: 300px;
+				height: auto;
+			}
+		}		
 		@media (prefers-color-scheme: dark){
-			#each-post-thumbnail img{
+			.epthumb-standard img{
 				border: 1px solid #4d4d4d;
 			}
 		}

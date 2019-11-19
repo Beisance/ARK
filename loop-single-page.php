@@ -50,10 +50,6 @@ The loop that displays singles.
 
 	<?php endwhile; ?>
 
-	<div id="post-navigation" class="navigation">
-		
-	</div>
-
 	<?php else : ?>
 
 	<?php endif; ?>
