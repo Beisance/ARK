@@ -21,6 +21,7 @@ The loop that displays recent posts, excluding the post current;y being displaye
 		'post__not_in' => array($currentID)));
 	while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 	
+<div id="each-post">
 <div id="each-post-title" class="ept ept-m ept-d"><!-- start #each-post-title-->
 	<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 		<span class="each-post-title-span">
@@ -109,6 +110,7 @@ The loop that displays recent posts, excluding the post current;y being displaye
 		</div>');
 	}
 ?>	
+</div>
 </div>
 
 <?php endwhile; ?>
