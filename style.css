@@ -14,7 +14,6 @@ Text Domain: ARK-2-X
 
 /*START Classes */
 .highlight{color: #ffffff; background-color:#cccccc;}
-.menu-downnav-visited  a:visited{text-decoration: none; color:#7E7F82}
 .youtube-player {text-align: center}
 /*END Classes */
 
@@ -30,14 +29,21 @@ body{
 	margin: 0;
 	height: 100%;
 	min-height: 100%;
-	font-family: 'Abel', sans-serif;
-	font-size: 17px;
+	font-family: 'Arimo', sans-serif;
+	font-size: 20px;
+	line-height: 26px;
+	word-spacing: 1px;
+	font-kerning: normal;
 	text-align: center;
 	vertical-align: top;
 	color: #4d4d4d;
-	line-height: 20px;
 	background: #e6e6e6;
 }
+	@media screen and (max-width: 767px){	
+		body{
+			font-size: 17px;
+		}
+	}	
 	@media (prefers-color-scheme: dark){
 		body{
 			background: #313236;
@@ -49,16 +55,15 @@ p{
 }
 h2{
 	padding: 0 0 10px 0;
-	font-size: 20px;
+	font-size: 1em;
 	font-weight: normal;
-	line-height: 30px;
 	color: #000000;
 }
 h3{
 	padding: 0 0 10px 0;
-	font-size: 18px;
+	font-size: 0.9em;
 	font-weight: normal;
-	line-height: 27px;
+	line-height: 1em;
 	color: #000000;
 }
 h4{
@@ -190,7 +195,7 @@ a:hover{
 		#topnav{
 			position: relative;
 			font-weight: normal;
-			font-size: 17px;
+			font-size: 0.8em;
 			text-transform: none;
 		}
 			@media screen and (max-width: 926px){
@@ -266,8 +271,6 @@ a:hover{
 					height: 100%;
 				}
 				#topnav-mobile li{
-					font-size: 20px;
-					line-height: 20px;
 					padding: 10px 0 10px 0;
 					border-bottom: 1px solid #808080;
 				}
@@ -560,7 +563,7 @@ a:hover{
 		max-width: 985px;
 		height: 100%;
 		min-height: 60px;
-		font-family: 'Abel', sans-serif;
+		font-family: 'Roboto', sans-serif;
 		text-align: left;
 	}			
 		.ptnc{
@@ -585,10 +588,11 @@ a:hover{
 			width: 100%;
 			max-width: 985px;
 			height: auto;
-			color: #333333;
-			font-size: 40px;
+			color: #999999;
+			font-size: 2em;
+			font-weight: bold;
 			line-height: 40px;
-			font-family: 'Fjalla One', sans-serif;
+			font-family: 'Roboto', sans-serif;
 			padding-top: 10px;
 			z-index: 5;
 		}
@@ -640,15 +644,16 @@ a:hover{
 				width: 100%;
 				max-width: 985px;
 				height: 20px;
-				font-size: 20px;
+				font-size: 0.88em;
+				font-family: 'Arimo', sans-serif;
 				text-align: left;
 			}
 				.snvc li{
 					display: inline-block;
 				}
 				.snvc li:first-letter{
-					padding: 0 2px 0 2px;
-					border-bottom: 1px solid #ff5555;
+					padding: 0 1px 0 1px;
+					border-bottom: 1px solid #000000;
 				}
 					@media (prefers-color-scheme: dark){
 						.snvc li:first-letter{
@@ -663,11 +668,11 @@ a:hover{
 				}	
 				.snvc li a:link{
 					display: block;
-					color: #000000;
+					color: #999999;
 				}
 				.snvc li a:visited{
 					display: block;
-					color: #000000;
+					color: #999999;
 				}
 				.snvc li a:hover{
 					display: block;
@@ -815,7 +820,7 @@ a:hover{
 #spacer-5{
 	height: 1px !important;
 }
-	/*START Wrapper */
+/*START Wrapper */
 #wrapper{
 	position: relative;
 	width: 100%;
@@ -890,14 +895,6 @@ a:hover{
 			}
 /*END Wrapper */
 /*START loop */
-#each-post{
-	margin-bottom: 1px;
-	height: auto;
-	display: block;
-	min-height: 1px;
-	padding: 1px 0 1px 0;
-	clear: both;
-}
 #each-post-news-stack{
 	width: 100%;
 	text-align: left;
@@ -906,12 +903,12 @@ a:hover{
 	position: relative;
 	max-width: 985px;
 	width: 100%;
-	font-size: 40px;
-	font-family: 'Abel', sans-serif;
+	font-size: 2em;
+	font-family: 'Roboto', sans-serif;
 	font-weight: normal;
 	text-align: left;
 	line-height: 40px;
-	color: #333333;
+	color: #000000;
 }
 	@media screen and (max-width: 767px){
 			#each-post-title{
@@ -981,14 +978,14 @@ a:hover{
 		max-width: 985px;
 	}
 		.epthumb-standard img{
-			margin-top:15px;
+			margin-top: 15px;
 			width: 100%;
 			height: auto;
 			border: 1px solid #ffccaa;
 			box-sizing: border-box;
 		}		
 		.epthumb-recent img{
-			margin-right: 10px;
+			margin-right: 1px;
 		}
 		@media screen and (max-width: 767px){
 			.epthumb-recent img{
@@ -1012,18 +1009,30 @@ a:hover{
 		margin: 10px auto 10px auto;
 		padding-bottom: 3px;
 		width: 100%;
-		font-size: 19px;
-		line-height: 21px;
 		max-width: 985px;
+		color: #999999;
 		text-align: left;
 	}
+		#each-post-excerpt a:link{
+			color: #999999;
+		}
+		#each-post-excerpt a:visited{
+			color: #999999;
+		}
+		#each-post-excerpt a:hover{
+			color: #000000;
+			text-decoration: none;
+		}
+		@media (prefers-color-scheme: dark){
+			#each-post-excerpt{
+				color: #ffffff;
+			}
+		}	
 	#each-post-excerpt-single{
 		position: relative;
 		margin: 10px auto 10px auto;
 		width: 100%;
 		max-width: 985px;
-		font-size: 19px;
-		line-height: 21px;
 		text-align: left;
 	}
 		@media screen and (max-width: 767px){
@@ -1055,10 +1064,15 @@ a:hover{
 		width: 280px;
 		padding: 0 10px 0 0;
 	}
+	#post-categories{
+		margin: 0 0 17px 0;
+	}
+		#post-categories-socket-front-page-feed{
+			font-size: 0.7em;		
+		}
 		#post-categories-socket-front-page-feed > a:nth-child(1n){
-			margin: 0 10px 10px 0;
+			margin: 0 -5px 0 0;
 			color: #ffffff;
-			font-size: 14px;
 			text-decoration: none;
 			padding: 6px 11px 6px 11px;
 			display: inline-block;
@@ -1069,9 +1083,8 @@ a:hover{
 				background: #9955ff;
 			}	
 		#post-categories-socket-front-page-feed > a:nth-child(2n){
-			margin: 0 10px 10px 0;
+			margin: 0 -5px 0 0;
 			color: #ffffff;
-			font-size: 14px;
 			text-decoration: none;
 			padding: 6px 11px 6px 11px;
 			display: inline-block;
@@ -1082,9 +1095,7 @@ a:hover{
 				background: #217867;
 			}
 		#post-categories-socket-front-page-feed > a:nth-child(3n){
-			margin: 0 10px 10px 0;
 			color: #ffffff;
-			font-size: 14px;
 			text-decoration: none;
 			padding: 6px 11px 6px 11px;
 			display: inline-block;
@@ -1115,6 +1126,7 @@ a:hover{
 	#post-navigation{
 		margin: 5px 0 5px 0;
 		padding: 10px 0 0 0;
+		font-size: 0.88em;
 		text-align: center;
 		border-top: 1px solid #ffccaa;
 	}		
@@ -1206,7 +1218,7 @@ a:hover{
 	.sctac a:link{
 		width: 100%;
 		color: #4d4d4d;
-		font-size: 14px;
+		font-size: 0.8em;
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
@@ -1237,8 +1249,6 @@ a:hover{
 /* end podcast-subsscription */
 #the-content{
 	margin: 10px 0 0 0;
-	font-size: 18px;
-	line-height: 23px;
 }
 	#the-content a:link{
 		color: #000000;
@@ -1252,7 +1262,6 @@ a:hover{
 	}
 #no-post-message{
 	width: 100%;
-	font-size: 18px;
 }	
 	#no-post-message-content{
 		margin: 0 auto 0 auto;
@@ -1274,29 +1283,31 @@ a:hover{
 		max-width: 985px;
 		height: auto;
 		min-height: 30px;
+		font-size: 0.8em;
 		font-weight: normal;
 		text-align: left;
 		overflow: hidden;
 	}
+		#bread-nav-content img{
+			margin-top: 0;
+			vertical-align: middle;
+		}
 		#bread-nav-home{
 			position: relative;
 			width: 22px;
 			height: 22px;
 			float: left;
 		}
-			#bread-nav-home img{
-				vertical-align: middle;
-			}
 		#bread-nav-separator{
 			position: relative;
-			margin: 1px 0 0 10px;
+			margin: 0 0 0 10px;
 			width: 10px;
 			height: 22px;
 			float: left;
 		}	
 		#bread-nav-trail{
 			position: relative;
-			margin: 0 0 0 2px;
+			margin: 3px 0 0 2px;
 			display: block;
 			height: 100%;
 			min-height: 22px;
@@ -1307,7 +1318,6 @@ a:hover{
 		}
 			#bread-nav-trail a:link{
 				display: inline-block;
-				font-size: 15px;
 				height: 22px;
 				padding: 0 15px 0 0;
 				margin: 0 5px 0 0;
@@ -1380,16 +1390,14 @@ a:hover{
 	/* header */
 	.csch{
 		color: #ffffff;
-		font-size: 1.2em;
+		font-size: 0.88em;
 		padding-top: 5px;
 	}
 	/* story */	
 	.cscs{
 		margin: 5px 5px 5px 5px;
 		color: #ffffff;
-		font-size: 1.1em;
-		line-height: 18px;
-		line-height: 30px;
+		font-size: 0.88em;
 	}
 	/* more */
 	.cscm{
@@ -1398,6 +1406,7 @@ a:hover{
 	}	
 		.cscm a:link{
 			display: inline-block;
+			font-size: 0.88em;
 			color: #ffffff;
 			border: 1px solid #ffffff;
 			padding: 2px 10px;
@@ -1546,11 +1555,11 @@ div.wpcf7 {
 /*START sitemap navigation menus */
 #sitemap{
 	width: 100%;
+	font-family: 'Arimo', sans-serif;
 }
 	#sitemap-content{
 		margin: 0 auto 0 auto;
 		max-width: 985px;
-		font-size: 18px;
 		text-align: left;
 	}
 		#sitemap-stack-1{
@@ -1574,8 +1583,16 @@ div.wpcf7 {
 			padding: 5px 10px 0 0;
 		}
 		.smp-ssh{
-			font-size: 19px;
 			color: #000000;
+		}
+		.smp-ssc a:link{
+			color: #999999;
+		}
+		.smp-ssc a:visited{
+			color: #999999;
+		}
+		.smp-ssc a:hover{
+			color: #999999;
 		}
 			@media (prefers-color-scheme: dark){
 				.smp-ssh{
@@ -1623,9 +1640,18 @@ div.wpcf7 {
 	position: relative;
 	padding: 5px 0 5px 0;
 	font-weight: normal;
-	font-size: 1em;
 	color: #000000;
 }
+	@media screen and (max-width:767px){
+		#downnav{
+			font-size: 0.9em;
+		}
+	}
+	@media screen and (min-width:768px){
+		#downnav{
+			font-size: 0.8em;
+		}
+	}
 	#downnav-content{
 		margin: 0 auto 25px auto;
 		width: 90%;
@@ -1633,13 +1659,12 @@ div.wpcf7 {
 		text-align: left;
 	}
 		#downnav-call-to-action{
-			padding: 7px 0 7px 0;
 			width: 100%;
 			text-align: left;
+			padding: 5px 0 5px 0;
 		}
 			@media screen and (max-width:926px){
 				.dca-m{
-					font-size: 15px;
 					border-bottom: 1px solid #b3b3b3;
 				}
 			}
@@ -1659,6 +1684,7 @@ div.wpcf7 {
 				float: left;
 			}
 			#downnav-menu li{
+				margin: 0!important;
 				display: inline-block;
 			}	
 				#downnav-menu li a{
@@ -1680,7 +1706,6 @@ div.wpcf7 {
 			@media screen and (max-width: 926px){	
 				#downnav-menu{
 					margin-top: 0;
-					font-size: 15px;
 					border-bottom: none;
 				}
 				#downnav-menu ul{
@@ -1699,10 +1724,9 @@ div.wpcf7 {
 				#downnav li a:link{
 					color: #000000;
 				}
-						
 				#downnav li a:visited{
 					color: #000000;
-				}				
+				}
 				#downnav li a:hover{
 					color: #000000;
 					text-decoration: none;

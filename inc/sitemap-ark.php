@@ -64,12 +64,18 @@
 						?>
 					</div>
 				</div>
-				<div id="sitemap-stack-4" class="smp smp-d smp-m smp-hidden">
+				<div id="sitemap-stack-4" class="smp smp-d smp-m">
 					<div id="sitemap-stack-header-4" class="smp-ssh smp-ssh-d smp-ssh-m">
-						Project X
+						Resources
 					</div>
 					<div id="sitemap-stack-content" class="smp-ssc smp-ssc-d smp-ssc-m">
-						
+					<?php wp_nav_menu( array(
+							'menu' => 'sitemap-resources',
+							'class' => 'menu',
+							'container' => 'sitemap-stack-content'
+							)
+						);
+						?>
 					</div>
 				</div>
 				<div id="sitemap-stack-5" class="smp smp-d smp-m smp-hidden">

@@ -148,8 +148,8 @@ Template Name: ARK DefaultPage
 							?>	
 						</div>
 					</div>	
-				</div>
-			</div>
+				</div><!-- end #page-title-nav-content -->
+			</div><!-- end #page-title-nav -->
 	
 			<div id="wrapper"><!-- start #wrapper -->
 				

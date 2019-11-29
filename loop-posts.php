@@ -41,61 +41,63 @@ The loop that displays posts.
 		</div>
 	</div>
 	<div id="each-post-summary-news-stack">
-		<div id="each-post-thumbnail">
+		<div id="each-post-thumbnail" class="epthumb-standard epthumb-recent">
 			<?php the_post_thumbnail(); ?>
 		</div>
 		<div id="each-post-excerpt">
 			<?php echo get_character_limited_excerpt(); ?>
 		</div>
 	</div>
-	<div id="post-categories-socket-front-page-feed" class="post-categories">
-	<?php
-		//thoughts sub categories
-		if (in_category('39')) {
-			echo '<a href="';
-			bloginfo('wpurl');
-			echo '/category/thoughts/thoughts-general">General</a>';
-		}
-		elseif (in_category('40')) {
-			echo '<a href="';
-			bloginfo('wpurl');
-			echo '/category/thoughts/thoughts-politics">Politics</a>';
-		}
-		elseif (in_category('41')) {
-			echo '<a href="';
-			bloginfo('wpurl');
-			echo '/category/thoughts/thoughts-professional">Professional</a>';
-		}
-		//messages sub categories
-		elseif (in_category('34')) {
-			echo '<a href="';
-			bloginfo('wpurl');
-			echo '/category/messages/messages-couples/">Couples</a>';
-		}
-		elseif (in_category('33')) {
-			echo '<a href="';
-			bloginfo('wpurl');
-			echo '/category/messages/messages-faith/">Faith</a>';
-		}
-		elseif (in_category('35')) {
-			echo '<a href="';
-			bloginfo('wpurl');
-			echo '/category/messages/messages-professional/">Professional</a>';
-		}
-		else{
-			//nothing
-		}	
-	?>
-	</div>
-	<?php
-		if ($wp_query->current_post +1 == $wp_query->post_count) {
-		// check if this is the last post, if yes, do not output each post divider div
-		}
-		else {
-			echo ('<div id="spacer-1">
-			</div>');
-		}
-	?>	
+	<div id="post-categories">
+		<div id="post-categories-socket-front-page-feed" class="post-categories">
+			<?php
+				//thoughts sub categories
+				if (in_category('39')) {
+					echo '<a href="';
+					bloginfo('wpurl');
+					echo '/category/thoughts/thoughts-general">General</a>';
+				}
+				elseif (in_category('40')) {
+					echo '<a href="';
+					bloginfo('wpurl');
+					echo '/category/thoughts/thoughts-politics">Politics</a>';
+				}
+				elseif (in_category('41')) {
+					echo '<a href="';
+					bloginfo('wpurl');
+					echo '/category/thoughts/thoughts-professional">Professional</a>';
+				}
+				//messages sub categories
+				elseif (in_category('34')) {
+					echo '<a href="';
+					bloginfo('wpurl');
+					echo '/category/messages/messages-couples/">Couples</a>';
+				}
+				elseif (in_category('33')) {
+					echo '<a href="';
+					bloginfo('wpurl');
+					echo '/category/messages/messages-faith/">Faith</a>';
+				}
+				elseif (in_category('35')) {
+					echo '<a href="';
+					bloginfo('wpurl');
+					echo '/category/messages/messages-professional/">Professional</a>';
+				}
+				else{
+					//nothing
+				}	
+			?>
+		</div>
+	</div>	
+		<?php
+			if ($wp_query->current_post +1 == $wp_query->post_count) {
+			// check if this is the last post, if yes, do not output each post divider div
+			}
+			else {
+				echo ('<div id="spacer-1">
+				</div>');
+			}
+		?>	
 
 	<?php endwhile; ?>
 
