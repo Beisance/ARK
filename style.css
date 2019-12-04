@@ -1,11 +1,11 @@
 ﻿/*
 Theme Name: ARK-2-X
-Theme URI: Theme URI: https://www.beisance.com/
+Theme URI: https://ark.beisance.com/
 Author: Beisance | Intelix
-Author URI: Theme URI: https://www.beisance.com/intelix/
+Author URI: https://www.beisance.com/intelix/
 Github Theme URI: https://github.com/Beisance/ARK
 Description: Full Custom Theme for Beisance | ARK
-Version: 2.1.0
+Version: 2.3.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: custom theme, beisance, intelix
@@ -315,32 +315,53 @@ a:hover{
 					display: none;
 				}
 			}
-		/*topnav menu mobile*/
+		/*topnav menu mobile - search is a different beast hence the different media query points*/
 		#search{
 			position: relative;
 			height: 30px;
 		}
 			@media screen and (max-width: 926px){
 				.tns-m{
-					margin: 0 auto 0 auto;
-					width: 100%;
-					max-width: 259px;
 					display: none;
 				}
 			}
-			@media screen and (min-width: 927px){
+			@media screen and (min-width: 927px) and (max-width: 930px){
+				.tns-d{
+					margin: -38px 0 0 0;
+					width: 205px;
+					float: right;
+				}
+			}
+			@media screen and (min-width: 931px) and (max-width: 990px){
+				.tns-d{
+					margin: 4px 0 0 0;
+					width: 205px;
+					float: right;
+				}
+			}
+			@media screen and (min-width: 991px){
 				.tns-d{
 					margin: 4px 0 0 0;
 					width: 259px;
 					float: right;
 				}
 			}
+				/* search submit */
 				#search-submit{
-					margin: 6px -215px 0 0;
 					position: relative;
 					height: 20px;
 					width: 20px;
 					float: right;
+				}
+				@media screen and (min-width: 927px) and (max-width: 990px){
+					#search-submit{
+						margin: 6px -195px 0 0;
+					}
+				}
+				@media screen and (min-width: 991px){
+					#search-submit{
+						margin: 6px -215px 0 0;
+					}
 				}
 				#search-box{
 					position: relative;
@@ -358,21 +379,36 @@ a:hover{
 							background: #000000;
 						}
 					}
-				@media screen and (min-width: 927px){
-					#search-box{
-						margin-top: 3px;
-						width: 180px;
-						height: 14px;
-						padding: 5px 30px 5px 10px;
+					@media screen and (min-width: 927px) and (max-width: 990px){
+						#search-box{
+							margin-top: 3px;
+							width: 160px;
+							height: 14px;
+							padding: 5px 30px 5px 10px;
+							float: right;
+						}
+					}
+					@media screen and (min-width: 991px){
+						#search-box{
+							margin-top: 3px;
+							width: 180px;
+							height: 14px;
+							padding: 5px 30px 5px 10px;
+							float: right;
+						}
+					}
+			#custom-mobile-right-icon{
+				padding-top: 0;
+			}
+				@media screen and (max-width: 767px){
+					.crmi-m{
+						margin: -30px 0 0 0;
 						float: right;
 					}
 				}
-			#custom-mobile-right-icon{
-				padding-top: 8px;
-			}
-				@media screen and (max-width: 926px){
+				@media screen and (min-width: 768px){
 					.crmi-m{
-						margin: -33px 0 0 0;
+						margin: -29px 0 0 0;
 						float: right;
 					}
 				}
@@ -453,10 +489,18 @@ a:hover{
 		overflow: hidden;
 	}
 		#main-showcase-content img{
-		width: 100%;
-		height: auto;
-		display: block;
-	}
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+		@media (prefers-color-scheme: dark){
+			#main-showcase-content{
+				background: #202125;
+			}
+			#main-showcase-content img{
+				opacity: 0.8;
+			}
+		}
 	#picture-showcase{
 		max-height: 1px;
 	}
@@ -482,8 +526,16 @@ a:hover{
 			height: auto;
 			display: block;
 		}
+		@media (prefers-color-scheme: dark){
+			#page-showcase-content{
+				background: #202125;
+			}
+			#page-showcase-content img{
+				opacity: 0.8;
+			}
+		}
 /*END page-showcase */
-/*START overlay */
+/*START overlays */
 #overlay{
 	position: absolute;
 	top: 0;
@@ -497,7 +549,7 @@ a:hover{
 	display: none;
 	z-index: 4;
 }
-/*END overlay */
+/*END overlays */
 /*START socket */
 #socket-main{
 	width: 100%;
@@ -598,7 +650,7 @@ a:hover{
 		}
 			@media (prefers-color-scheme: dark){
 				.ptlc{
-					color: #ffffff;
+					color: #999999;
 				}
 			}
 /*END page-title-nav */
@@ -653,7 +705,7 @@ a:hover{
 				}
 				.snvc li:first-letter{
 					padding: 0 1px 0 1px;
-					border-bottom: 1px solid #000000;
+					border-bottom: 1px solid #999999;
 				}
 					@media (prefers-color-scheme: dark){
 						.snvc li:first-letter{
@@ -1002,6 +1054,7 @@ a:hover{
 		@media (prefers-color-scheme: dark){
 			.epthumb-standard img{
 				border: 1px solid #4d4d4d;
+				opacity: 0.7;
 			}
 		}
 	#each-post-excerpt{
@@ -1105,9 +1158,14 @@ a:hover{
 			#post-categories-socket-front-page-feed > a:hover:nth-child(3n){
 				background: #2a7fff;
 			}
-		.post-categories li{
-			display: inline-block;
+		@media (prefers-color-scheme: dark){
+			#post-categories-socket-front-page-feed > a:link{
+				opacity: 0.8;
+			}
 		}
+			.post-categories li{
+				display: inline-block;
+			}
 			@media (prefers-color-scheme: dark){
 				.post-categories a:link{
 					color: #ffffff;
@@ -1335,6 +1393,11 @@ a:hover{
 	background: #ffffff;
 	overflow: hidden;
 }
+	@media (prefers-color-scheme: dark){
+		#company-showcase{
+			background: #202125;
+		}	
+	}	
 	#company-showcase-content{
 		width: 100%;		
 	}
@@ -1386,6 +1449,20 @@ a:hover{
 			min-height: 30px;
 			line-height: 30px;
 		}
+	}
+	@media (prefers-color-scheme: dark){
+		#company-showcase-1{
+			opacity: 0.8;
+		}
+		#company-showcase-2{
+			opacity: 0.8;
+		}
+		#company-showcase-3{
+			opacity: 0.8;
+		}
+		#company-showcase-4{
+			opacity: 0.8;
+		}	
 	}	
 	/* header */
 	.csch{

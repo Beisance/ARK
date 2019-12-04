@@ -1,7 +1,28 @@
 # ARK
 ARK Site Changelog Entries
 
-Web hosted changelog location: https://www.beisance.com/intelix/changelog/ark-changelog/
+ARK hosted updates location: https://ark.beisance.com/category/updates/updates-code-dev/
+
+## ARK 2.3.0
+Friday, November 29th, 2019 at 12:06 pm
+
+V2.3.0 Release Summary
+
+There are a number of significant executions in this version that we hope you will like, some of the key highlights include:
+
+- Refactored the front page.
+- Refactored main showcase images.
+- Refactored a post + featured image.
+- Resolved guest ministry category page.
+- Fixed other pages post categories.
+- Beautified post images.
+- Refactored dark theme regarding all changes made.
+- Moved non-word thoughts elsewhere.
+- Company showcase bug fixes.
+- Added post pagination to front page, other post pages.
+- Various loop fixes.
+- Sitemap updates.
+- Various other UI optimizations & fixes.
 
 ## ARK 2.1.1
 Saturday, July 20th, 2019 at 2:30 am

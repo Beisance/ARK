@@ -83,6 +83,22 @@ The loop that displays posts.
 					bloginfo('wpurl');
 					echo '/category/messages/messages-professional/">Professional</a>';
 				}
+				//updates sub categories
+				elseif (in_category('44')) {
+					echo '<a href="';
+					bloginfo('wpurl');
+					echo '/category/updates/updates-services/">Services</a>';
+				}
+				elseif (in_category('45')) {
+					echo '<a href="';
+					bloginfo('wpurl');
+					echo '/category/updates/updates-content/">Content</a>';
+				}
+				elseif (in_category('48')) {
+					echo '<a href="';
+					bloginfo('wpurl');
+					echo '/category/updates/updates-code-dev/">Code & Dev</a>';
+				}
 				else{
 					//nothing
 				}	

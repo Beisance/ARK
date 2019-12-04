@@ -136,6 +136,11 @@ The loop that displays recent posts, excluding the post current;y being displaye
 				bloginfo('wpurl');
 				echo '/category/updates/updates-content">Content</a>';
 			}
+			elseif (in_category('48')) {
+				echo '<a href="';
+				bloginfo('wpurl');
+				echo '/category/updates/updates-code-dev">Code & Dev</a>';
+			}
 			else{
 				//nothing
 			}	
@@ -164,6 +169,8 @@ The loop that displays recent posts, excluding the post current;y being displaye
 ?>	
 
 <?php endwhile; ?>
+
+<?php wp_reset_query(); ?>
 
 <div id="post-navigation" class="navigation">
 	<?php wp_pagenavi() ?>
