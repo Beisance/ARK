@@ -8,16 +8,16 @@
 	<script>
 		function mobileMenuSubnav() {
 				//Switching menu buttons to open & close states
-				if (document.getElementById("subnav-menu-button-img").src == "');bloginfo('stylesheet_directory'); echo('/img/page-title-nav/img-subnav-menu-button-ark.png") 
+				if (document.getElementById("subnav-menu-button-img").src == "');bloginfo('stylesheet_directory'); echo('/img/page-title-nav/subnav-menu-button.png") 
 			{
-				document.getElementById("subnav-menu-button-img").src = "');bloginfo('stylesheet_directory'); echo('/img/page-title-nav/img-subnav-menu-button-collapse-ark.png";
+				document.getElementById("subnav-menu-button-img").src = "');bloginfo('stylesheet_directory'); echo('/img/page-title-nav/subnav-menu-button-collapse.png";
 				$(".ovl-m").css("display", "block");
 				//Transitioning the overlay background-color with transition.min.js
 				transition.begin(overlay, "background-color #F2F2F2 rgba(32,33,37,0.8) 500ms ease-in-out");
 			}
 				else 
 			{
-				document.getElementById("subnav-menu-button-img").src = "');bloginfo('stylesheet_directory'); echo('/img/page-title-nav/img-subnav-menu-button-ark.png";
+				document.getElementById("subnav-menu-button-img").src = "');bloginfo('stylesheet_directory'); echo('/img/page-title-nav/subnav-menu-button.png";
 				transition.begin(overlay, "background-color rgba(32,33,37,0.5) #F2F2F2 2000ms ease-out");
 				$(".ovl-m").css("display", "none");
 			}

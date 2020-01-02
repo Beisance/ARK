@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * @package WordPress
  * @subpackage Beisance|Intelix Custom Theme For Beisance|ARK
  */
@@ -94,7 +94,7 @@
 		_e('Uh-oh, we don\'t seem to have the page you\'re looking for. Please try searching or using the sitemap below.');
 		echo '</div><!--end #custom-content-content-->
 		</div><!--end #custom-content-->';
-		include("sitemap-ark.php");
+		include("sitemap.php");
 	}
 	else {
 	//nothing; 

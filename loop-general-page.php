@@ -1,6 +1,6 @@
 <?php
 /*
-The loop that displays singles.
+The loop that displays general pages
  */
 ?>
 

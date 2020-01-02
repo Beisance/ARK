@@ -6,7 +6,7 @@ Template Name: ARK SearchPage
 
 <?php get_header(); ?>
 
-<?php include("inc/page-showcase-selector-ark.php"); ?>
+<?php include("inc/page-showcase-selector.php"); ?>
 
 <div id="socket-main" class="sm-gray"><!--start #socket-main-->	
 	<div id="socket-main-content">
@@ -26,7 +26,7 @@ Template Name: ARK SearchPage
 
 				<div id="wrapper-content" class="wrp wrp-m wrp-d"><!-- start #wrapper-content -->
 
-					<?php include("inc/loop-selector-ark.php"); ?>		
+					<?php include("inc/loop-selector.php"); ?>		
 					
 				</div><!-- end #wrapper-content -->
 
@@ -35,17 +35,17 @@ Template Name: ARK SearchPage
 			<div id="spacer-3">
 			</div>	
 
-			<?php include("inc/bread-nav-ark.php"); ?>
+			<?php include("inc/bread-nav.php"); ?>
 
 		</div><!--end #socket-main-content-island-->	
 	</div><!--end #socket-main-content-->
 </div><!--end #socket-main-->
 
-<?php include("inc/downnav-ark.php"); ?>
+<?php include("inc/downnav.php"); ?>
 
-<?php include("inc/footer-ark.php"); ?>
+<?php include("inc/footer.php"); ?>
 
-<?php include("inc/google-analytics-ark.php"); ?>
+<?php include("inc/google-analytics.php"); ?>
 
 <div id="overlay" class="ovl ovl-m ovl-d">
 </div>

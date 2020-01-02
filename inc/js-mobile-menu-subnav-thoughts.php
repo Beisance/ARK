@@ -8,16 +8,16 @@
 	<script>
 		function mobileMenuSubnavThoughts() {
 				//Switching menu buttons to open & close states
-				if (document.getElementById("subnav-menu-button-thoughts-img").src == "');bloginfo('stylesheet_directory'); echo('/img/page-title-nav/img-subnav-menu-button-thoughts-ark.png") 
+				if (document.getElementById("subnav-menu-button-thoughts-img").src == "');bloginfo('stylesheet_directory'); echo('/img/page-title-nav/subnav-menu-button-thoughts.png") 
 			{
-				document.getElementById("subnav-menu-button-thoughts-img").src = "');bloginfo('stylesheet_directory'); echo('/img/page-title-nav/img-subnav-menu-button-collapse-thoughts-ark.png";
+				document.getElementById("subnav-menu-button-thoughts-img").src = "');bloginfo('stylesheet_directory'); echo('/img/page-title-nav/subnav-menu-button-collapse-thoughts.png";
 				$(".ovl-m").css("display", "block");
 				//Transitioning the overlay background-color with transition.min.js
 				transition.begin(overlay, "background-color #FFFFFF rgba(32,33,37,0.8) 500ms ease-in-out");
 			}
 				else 
 			{
-				document.getElementById("subnav-menu-button-thoughts-img").src = "');bloginfo('stylesheet_directory'); echo('/img/page-title-nav/img-subnav-menu-button-thoughts-ark.png";
+				document.getElementById("subnav-menu-button-thoughts-img").src = "');bloginfo('stylesheet_directory'); echo('/img/page-title-nav/subnav-menu-button-thoughts.png";
 				transition.begin(overlay, "background-color rgba(32,33,37,0.5) #F2F2F2 2000ms ease-out");
 				$(".ovl-m").css("display", "none");
 			}

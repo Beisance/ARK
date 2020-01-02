@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * @package WordPress
  * @subpackage Beisance|Intelix Custom Theme For Beisance|ARK
  */
@@ -8,13 +8,13 @@
 <!DOCTYPE html>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/header/favicons/favicon-ark.png"/>
-<link href="<?php echo get_template_directory_uri(); ?>/img/header/favicons/favicon-touch-icon-iphone-114x114-ark.png" rel="apple-touch-icon" />
-<link href="<?php echo get_template_directory_uri(); ?>/img/header/favicons/favicon-normal-128x128-ark.png" rel="icon" sizes="128x128" />
-<link href="<?php echo get_template_directory_uri(); ?>/img/header/favicons/favicon-touch-icon-ipad-152x152-ark.png" rel="apple-touch-icon" sizes="152x152" />
-<link href="<?php echo get_template_directory_uri(); ?>/img/header/favicons/favicon-touch-icon-ipad-retina-167x167-ark.png" rel="apple-touch-icon" sizes="167x167" />
-<link href="<?php echo get_template_directory_uri(); ?>/img/header/favicons/favicon-touch-icon-iphone-retina-180x180-ark.png" rel="apple-touch-icon" sizes="180x180" />
-<link href="<?php echo get_template_directory_uri(); ?>/img/header/favicons/favicon-hires-192x192-ark.png" rel="icon" sizes="192x192" />
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/header/favicons/favicon.png"/>
+<link href="<?php echo get_template_directory_uri(); ?>/img/header/favicons/favicon-touch-icon-iphone-114x114.png" rel="apple-touch-icon" />
+<link href="<?php echo get_template_directory_uri(); ?>/img/header/favicons/favicon-normal-128x128.png" rel="icon" sizes="128x128" />
+<link href="<?php echo get_template_directory_uri(); ?>/img/header/favicons/favicon-touch-icon-ipad-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+<link href="<?php echo get_template_directory_uri(); ?>/img/header/favicons/favicon-touch-icon-ipad-retina-167x167.png" rel="apple-touch-icon" sizes="167x167" />
+<link href="<?php echo get_template_directory_uri(); ?>/img/header/favicons/favicon-touch-icon-iphone-retina-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="<?php echo get_template_directory_uri(); ?>/img/header/favicons/favicon-hires-192x192.png" rel="icon" sizes="192x192" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css" media="screen" />
 <!-- our foray into web type/fonts -->
 <link href="https://fonts.googleapis.com/css?family=Abel|Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
@@ -29,9 +29,9 @@
 				 <meta property="og:type" content="image/png">
 				 <meta property="og:url" content="';echo get_permalink();echo'">
 				 <meta property="og:image" content="';
-				 echo get_template_directory_uri();echo'/img/social-media/social-sharing/img-social-sharing-ark.png"/>
+				 echo get_template_directory_uri();echo'/img/social-media/social-sharing/social-sharing.png"/>
 				 <meta property="og:image:url" content="';
-				 echo get_template_directory_uri();echo'/img/social-media/social-sharing/img-social-sharing-ark.png"/>
+				 echo get_template_directory_uri();echo'/img/social-media/social-sharing/social-sharing.png"/>
 				 <meta property="og:image:width" content="1920">
 				 <meta property="og:image:height" content="1920">
 				 <meta property="og:image:alt" content="';echo the_title();echo' logo"/>';
@@ -53,7 +53,7 @@
 					echo get_the_post_thumbnail_url();echo'"/>';
 				} 
 				else { 
-					echo get_template_directory_uri();echo'/img/social-media/social-sharing/img-social-sharing-ark.png"/>';
+					echo get_template_directory_uri();echo'/img/social-media/social-sharing/social-sharing.png"/>';
 				}	
 				echo'
 				 <meta property="og:image:url" content="';
@@ -61,7 +61,7 @@
 					echo get_the_post_thumbnail_url();echo'"/>';
 				} 
 				else { 
-					echo get_template_directory_uri();echo'/img/social-media/social-sharing/img-social-sharing-ark.png"/>';
+					echo get_template_directory_uri();echo'/img/social-media/social-sharing/social-sharing.png"/>';
 				}
 				 echo'
 				 <meta property="og:image:width" content="1920">
@@ -117,29 +117,29 @@
 
 <script src="<?php bloginfo('stylesheet_directory'); ?>/js/transition.min.js" integrity="sha384-NPE7kZ78ILrFxabO0opdsBBAelo+t0qkXxFuRayJWG/P7Oi4xo45O2JiQYZaSgSl" crossorigin="anonymous"></script>
 
-<?php include("inc/js-window-resize-ark.php"); ?>
+<?php include("inc/js-window-resize.php"); ?>
 
-<?php include("inc/js-mobile-menu-topnav-ark.php"); ?>
+<?php include("inc/js-mobile-menu-topnav.php"); ?>
 
-<?php include("inc/js-mobile-menu-subnav-ark.php"); ?>
+<?php include("inc/js-mobile-menu-subnav.php"); ?>
 
-<?php include("inc/js-mobile-menu-subnav-thoughts-ark.php"); ?>
+<?php include("inc/js-mobile-menu-subnav-thoughts.php"); ?>
 
-<?php include("inc/js-mobile-menu-subnav-updates-ark.php"); ?>
+<?php include("inc/js-mobile-menu-subnav-updates.php"); ?>
 
 <div id="header-container"><!-- start #header-->
 	<div id="header-container-content" class="hcc hcc-m hcc-d">
 		<div id="topnav-menu-button" class="tnmb tnmb-m tnmb-d">
-			<img id="topnav-menu-button-img" onclick="mobileMenuTopnav()" class="tnmb-m" src="<?php echo get_template_directory_uri(); ?>/img/header/img-topnav-menu-button-ark.png">
+			<img id="topnav-menu-button-img" onclick="mobileMenuTopnav()" class="tnmb-m" src="<?php echo get_template_directory_uri(); ?>/img/header/topnav-menu-button.png">
 		</div>
 		<div id="logo" class="tnl tnl-m tnl-d"><!-- start #logo-->
 			<a href ="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/header/img-ark-logo-icon-ark.png" id="img1" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img1',/*url*/'<?php echo get_template_directory_uri(); ?>/img/header/img-ark-logo-icon-mouseover-ark.png')"/>
+				<img src="<?php echo get_template_directory_uri(); ?>/img/header/logo-icon.png" id="img1" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img1',/*url*/'<?php echo get_template_directory_uri(); ?>/img/header/logo-icon-mouseover.png')"/>
 			</a>
 		</div><!-- end #logo-->
 		<div id="topnav" class="tnm tnm-m tnm-d"><!-- start #topnav-->
 			<?php wp_nav_menu( array(
-				'menu' => 'topnav-ark',
+				'menu' => 'topnav',
 				'class' => 'menu',
 				'container' => 'topnav'
 				)
@@ -151,7 +151,7 @@
 		</div><!-- end #search-->
 		<div id="custom-mobile-right-icon" class="crmi crmi-m crmi-d">
 		<a href ="<?php echo esc_url( home_url( '/' ) ); ?>messages">
-			<img id="custom-mobile-right-icon-img" class="mmb-m" src="<?php echo get_template_directory_uri(); ?>/img/header/img-messages-icon-mobile-ark.png">
+			<img id="custom-mobile-right-icon-img" class="mmb-m" src="<?php echo get_template_directory_uri(); ?>/img/header/messages-icon-mobile.png">
 		</a>
 		</div>
 	</div>
@@ -167,7 +167,7 @@
 			<div id="topnav-mobile-container-content" class="tnmcc tnmcc-m tnmcc-d">	
 				<div id="topnav-mobile" class="tnmm tnmm-m tnmm-d">
 					<?php wp_nav_menu( array(
-						'menu' => 'topnav-ark',
+						'menu' => 'topnav',
 						'class' => 'menu',
 						'container' => 'topnav-mobile'
 						)

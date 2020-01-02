@@ -7,7 +7,7 @@
 		<div id="search-container">
 			<input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="search-box" class="tnsfsb tnsfsb-m tnsfsb-blue-border" />	
 		</div>
-		<input type="image" src="<?php bloginfo('template_directory'); ?>/img/header/img-search-button-topnav-ark.png" id="search-submit" value="Search" />	
+		<input type="image" src="<?php bloginfo('template_directory'); ?>/img/header/search-button-topnav.png" id="search-submit" value="Search" />	
 	</div>
 </form>
 

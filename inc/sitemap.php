@@ -1,8 +1,7 @@
 <?php
-/**
+/*
  * @package WordPress
  * @subpackage Beisance|Intelix Custom Theme For Beisance|ARK
- * Subnav selector code
  */
 ?>
 
@@ -16,7 +15,7 @@
 					</div>   
 					<div id="sitemap-stack-content" class="smp-ssc smp-ssc-d smp-ssc-m">
 						<?php wp_nav_menu( array(
-							'menu' => 'topnav-ark',
+							'menu' => 'topnav',
 							'class' => 'menu',
 							'container' => 'sitemap-stack-content'
 							)

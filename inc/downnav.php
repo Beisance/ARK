@@ -1,6 +1,5 @@
 <?php
-/**
- * The Sidebar containing the primary and secondary widget areas.
+/*
  * @package WordPress
  * @subpackage Beisance|Intelix Custom Theme For Beisance|ARK
  */
@@ -16,7 +15,7 @@
 		<div id="downnav-menu" class="dnm dnm-m dnm-d">
 			<?php
 				wp_nav_menu( array(
-					'menu' => 'downnav-ark',
+					'menu' => 'downnav',
 					'class' => 'menu',
 					'container' => 'downnav-menu'
 					)

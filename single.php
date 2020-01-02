@@ -6,7 +6,7 @@ Template Name: ARK SinglePage
 
 <?php get_header(); ?>
 
-<?php include("inc/page-showcase-selector-ark.php"); ?>
+<?php include("inc/page-showcase-selector.php"); ?>
 
 <div id="socket-main" class="sm-gray"><!--start #socket-main-->	
 	<div id="socket-main-content">
@@ -82,7 +82,7 @@ Template Name: ARK SinglePage
 					</div>
 					<div id="subnav-menu-button" class="snvmb snvmb-m snvmb-d">
 						<div id="subnav-menu-button-content" class="snvmbc snvmbc-m snvmbc-d">
-							<img id="subnav-menu-button-img" onclick="mobileMenuSubnav()" class="snmb-m" src="<?php bloginfo('stylesheet_directory'); ?>/img/page-title-nav/img-subnav-menu-button-ark.png">
+							<img id="subnav-menu-button-img" onclick="mobileMenuSubnav()" class="snmb-m" src="<?php bloginfo('stylesheet_directory'); ?>/img/page-title-nav/subnav-menu-button.png">
 						</div>
 					</div>	
 					<div id="subnav" class="snv snv-m snv-d">
@@ -168,7 +168,7 @@ Template Name: ARK SinglePage
 
 				<div id="wrapper-content" class="wrp wrp-m wrp-d"><!-- start #wrapper-content -->
 					
-					<?php include("inc/loop-selector-ark.php"); ?>	
+					<?php include("inc/loop-selector.php"); ?>	
 							
 				</div><!-- end #wrapper-content -->
 
@@ -179,17 +179,17 @@ Template Name: ARK SinglePage
 			<div id="spacer-3">
 			</div>	
 
-			<?php include("inc/bread-nav-ark.php"); ?>
+			<?php include("inc/bread-nav.php"); ?>
 
 		</div><!--end #socket-main-content-island-->	
 	</div><!--end #socket-main-content-->
 </div><!--end #socket-main-->
 
-<?php include("inc/downnav-ark.php"); ?>
+<?php include("inc/downnav.php"); ?>
 
-<?php include("inc/footer-ark.php"); ?>
+<?php include("inc/footer.php"); ?>
 
-<?php include("inc/google-analytics-ark.php"); ?>
+<?php include("inc/google-analytics.php"); ?>
 
 <div id="overlay" class="ovl ovl-m ovl-d">
 </div>

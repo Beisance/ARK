@@ -1,7 +1,6 @@
 <?php
-/**
- * The Sidebar containing the primary and secondary widget areas.
- * @package WordPress
+/*
+  * @package WordPress
  * @subpackage Beisance|Intelix Custom Theme For Beisance|ARK
  */
 ?>
@@ -46,7 +45,7 @@
 				Membership
 			</div>
 			<div id="company-showcase-story" class="cscs cscs-m cscs-d">
-				Join our interactive group on WhatsApp
+				Join our group on WhatsApp
 			</div>
 			<div id="company-showcase-more" class="cscm cscm-m cscm-d">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>membership">Click for options</a>

@@ -126,11 +126,11 @@ The loop that displays posts.
 		<?php 
 			if (is_search()) {
 				_e('There are no results matching your search term[s]. Please try again using a different term or terms, or navigate using the sitemap below.');
-				include("inc/sitemap-ark.php");
+				include("inc/sitemap.php");
 			}
 			else if (is_404()) {
 				_e('Oh-dear, we don\'t seem to have the page you\'re looking for. Please try searching or using the sitemap below.'); 
-				include("inc/sitemap-ark.php");
+				include("inc/sitemap.php");
 			}
 			else {
 				echo('<div id="each-post-title" class="ept ept-m ept-d ept-front-page"><!-- start #each-post-title-->

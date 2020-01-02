@@ -10,7 +10,7 @@
 			$(window).resize(function () {
 				if ($(window).width() > 767) {
 					$("#topnav-mobile-menu").fadeOut();
-					document.getElementById("topnav-menu-button-img").src = "');bloginfo('stylesheet_directory'); echo('/img/header/img-topnav-menu-button-ark.png";
+					document.getElementById("topnav-menu-button-img").src = "');bloginfo('stylesheet_directory'); echo('/img/header/topnav-menu-button.png";
 				}
 				else
 				{}

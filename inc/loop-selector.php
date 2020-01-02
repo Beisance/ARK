@@ -1,8 +1,7 @@
 <?php
-/**
+/*
  * @package WordPress
  * @subpackage Beisance|Intelix Custom Theme For Beisance|ARK
- * Subnav selector code
  */
 ?>
 
@@ -85,7 +84,7 @@ else if (is_page( array('updates'))) {
 }
 /* pages with custom content switching */
 else if (is_page( array('sitemap'))) {
-	include("sitemap-ark.php");
+	include("sitemap.php");
 }
 /* start category switching: if it is any category, since we're not specifying any */
 else if (is_category()) {
@@ -97,7 +96,7 @@ else if (is_search()) {
 }
 /* start 404 switching */
 else if (is_404()) {
-	include("custom-content-selector-ark.php");
+	include("custom-content-selector.php");
 }
 /* start single pages switching */	
 else if (is_single()) {

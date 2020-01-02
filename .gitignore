@@ -6,6 +6,6 @@ dev/
 fonts/
 _gsdata_/
 pages-post/
-/inc/google-analytics-ark.php
+/inc/google-analytics.php
 *.ffs_lock
 podcast/

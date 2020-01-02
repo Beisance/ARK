@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * @package WordPress
  * @subpackage Beisance|Intelix Custom Theme For Beisance|ARK
  */
