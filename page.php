@@ -35,7 +35,7 @@ Template Name: ARK DefaultPage
 											)
 										);
 								}
-								else if (in_category( array('messages', 'messages-faith', 'messages-professional', 'messages-couples'))) {
+								elseif (in_category( array('messages', 'messages-faith', 'messages-professional', 'messages-couples'))) {
 									wp_nav_menu( array(
 										'menu' => 'subnav-messages',
 										'class' => 'menu',
@@ -43,7 +43,7 @@ Template Name: ARK DefaultPage
 											)
 										);
 								}
-								else if (is_page( array('thoughts'))) {
+								elseif (is_page( array('thoughts'))) {
 									wp_nav_menu( array(
 										'menu' => 'subnav-thoughts',
 										'class' => 'menu',
@@ -51,7 +51,7 @@ Template Name: ARK DefaultPage
 											)
 										);
 								}
-								else if (in_category( array('thoughts', 'thoughts-general', 'thoughts-politics', 'thoughts-professional'))) {
+								elseif (in_category( array('thoughts', 'thoughts-general', 'thoughts-politics', 'thoughts-professional'))) {
 									wp_nav_menu( array(
 										'menu' => 'subnav-thoughts',
 										'class' => 'menu',
@@ -59,7 +59,7 @@ Template Name: ARK DefaultPage
 											)
 										);
 								}
-								else if (is_page( array('updates'))) {
+								elseif (is_page( array('updates'))) {
 									wp_nav_menu( array(
 										'menu' => 'subnav-updates',
 										'class' => 'menu',
@@ -67,7 +67,7 @@ Template Name: ARK DefaultPage
 											)
 										);
 								}
-								else if (in_category( array('updates', 'updates-services'))) {
+								elseif (in_category( array('updates', 'updates-services'))) {
 									wp_nav_menu( array(
 										'menu' => 'subnav-updates',
 										'class' => 'menu',
@@ -97,7 +97,7 @@ Template Name: ARK DefaultPage
 											)
 										);
 								}
-								else if (in_category( array('messages', 'messages-faith', 'messages-professional', 'messages-couples'))) {
+								elseif (in_category( array('messages', 'messages-faith', 'messages-professional', 'messages-couples'))) {
 									wp_nav_menu( array(
 										'menu' => 'subnav-messages',
 										'class' => 'menu',
@@ -105,7 +105,7 @@ Template Name: ARK DefaultPage
 											)
 										);
 								}
-								else if (is_page( array('thoughts'))) {
+								elseif (is_page( array('thoughts'))) {
 									wp_nav_menu( array(
 										'menu' => 'subnav-thoughts',
 										'class' => 'menu',
@@ -113,7 +113,7 @@ Template Name: ARK DefaultPage
 											)
 										);
 								}
-								else if (in_category( array('thoughts', 'thoughts-general', 'thoughts-politics', 'thoughts-professional'))) {
+								elseif (in_category( array('thoughts', 'thoughts-general', 'thoughts-politics', 'thoughts-professional'))) {
 									wp_nav_menu( array(
 										'menu' => 'subnav-thoughts',
 										'class' => 'menu',
@@ -121,7 +121,7 @@ Template Name: ARK DefaultPage
 											)
 										);
 								}
-								else if (is_page( array('updates'))) {
+								elseif (is_page( array('updates'))) {
 									wp_nav_menu( array(
 										'menu' => 'subnav-updates',
 										'class' => 'menu',
@@ -129,7 +129,7 @@ Template Name: ARK DefaultPage
 											)
 										);
 								}
-								else if (in_category( array('updates', 'updates-services'))) {
+								elseif (in_category( array('updates', 'updates-services'))) {
 									wp_nav_menu( array(
 										'menu' => 'subnav-updates',
 										'class' => 'menu',
