@@ -39,15 +39,9 @@
 	else {
 		echo '<meta property="og:title" content="';echo bloginfo('name');echo' | ';echo bloginfo('description');echo'"/>
 				 <meta property="og:description" content="';
-				 global $post;
-				 $postcat = get_the_category( $post->ID );
-				 // try print_r($postcat) ;  
-			     if ( ! empty( $postcat ) ) {
-					echo esc_html( $postcat[0]->name );   
-				}
-				 wp_title("|"); echo'"/>
+				 echo get_character_limited_excerpt_social_sharing();echo'"/>
 				 <meta property="og:type" content="image/png">
-				 <meta property="og:url" content="';echo get_permalink();echo'">
+				 <meta property="og:url" content="';echo get_permalink();echo'"/>
 				 <meta property="og:image" content="';
 				 if ( has_post_thumbnail() ) {
 					echo get_the_post_thumbnail_url();echo'"/>';

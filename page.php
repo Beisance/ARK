@@ -8,6 +8,8 @@ Template Name: ARK DefaultPage
 
 <?php include("inc/page-showcase-selector.php"); ?>
 
+<?php include("inc/company-showcase.php"); ?>
+
 <div id="socket-main" class="sm-gray"><!--start #socket-main-->	
 	<div id="socket-main-content">
 		<div id="socket-main-content-island" class="smci smci-d smci-m">
