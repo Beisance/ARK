@@ -39,7 +39,12 @@
 	else {
 		echo '<meta property="og:title" content="';echo bloginfo('name');echo' | ';echo bloginfo('description');echo'"/>
 				 <meta property="og:description" content="';
-				 echo get_character_limited_excerpt_social_sharing();echo'"/>
+				 if(have_posts()) : ?><?php while(have_posts()) : the_post();
+				 echo get_character_limited_excerpt_social_sharing();
+				 endwhile;
+				 endif; 
+				 
+				 echo'"/>
 				 <meta property="og:type" content="image/png">
 				 <meta property="og:url" content="';echo get_permalink();echo'"/>
 				 <meta property="og:image" content="';
@@ -128,7 +133,7 @@
 		</div>
 		<div id="logo" class="tnl tnl-m tnl-d"><!-- start #logo-->
 			<a href ="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/header/logo-icon.png" id="img1" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img1',/*url*/'<?php echo get_template_directory_uri(); ?>/img/header/logo-icon-mouseover.png')"/>
+				<img src="<?php echo get_template_directory_uri(); ?>/img/header/logo.png" id="img1" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img1',/*url*/'<?php echo get_template_directory_uri(); ?>/img/header/logo-mouseover.png')"/>
 			</a>
 		</div><!-- end #logo-->
 		<div id="topnav" class="tnm tnm-m tnm-d"><!-- start #topnav-->
@@ -172,3 +177,6 @@
 		</div>
 	</div><!-- end #topnav-mobile-menu-->	
 </div><!-- end #header-container-->
+
+<div id="post-header">
+</div>
