@@ -5,9 +5,6 @@
  */
 ?>
 
-<div id="spacer-2">
-</div>
-
 <div id="socket-main" class="sm-gray"><!--start #socket-main-->	
 	<div id="socket-main-content">
 		<div id="socket-main-content-island" class="smci smci-d smci-m">

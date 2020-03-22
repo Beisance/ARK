@@ -120,7 +120,7 @@ a:hover{
 	left: 0;
 	width: 100%;
 	height: 100vh;
-	background: #e6e6e6;
+	background: #87cdde;
 	z-index: 6;
 }
 	@media screen and (max-width: 926px){
@@ -143,8 +143,7 @@ a:hover{
 	position: fixed;
 	width: 100%;
 	min-height: 50px;
-	background: #ffffff;
-	border-bottom: 1px solid #cccccc;
+	background: #87cdde;
 	clear: both;
 	z-index: 6;
 }
@@ -223,12 +222,12 @@ a:hover{
 			}
 			#topnav li a:link{
 				display: block;
-				color: #000000;
+				color: #4d4d4d;
 				padding: 0 0.7em 0 0;
 			}
 			#topnav li a:visited{
 				display: block;
-				color: #000000;
+				color: #4d4d4d;
 				padding: 0 0.7em 0 0;
 			}
 			#topnav ul li a:hover{
@@ -249,7 +248,7 @@ a:hover{
 		#topnav-mobile-container{
 			width: 100%;
 			height: auto;
-			border-top: 1px solid #808080;
+			border-top: 1px solid #ffffff;
 		}
 		#topnav-mobile-container-content{
 			margin: 0 auto 0 auto;
@@ -272,7 +271,7 @@ a:hover{
 				}
 				#topnav-mobile li{
 					padding: 10px 0 10px 0;
-					border-bottom: 1px solid #808080;
+					border-bottom: 1px solid #ffffff;
 				}
 					#topnav-mobile li:last-child{
 						border-bottom: none;
@@ -366,8 +365,9 @@ a:hover{
 				#search-box{
 					position: relative;
 					color: #000000;
-					border: 1px solid #cccccc;
-					background: #ffffff;
+					border: 1px solid #ffffff;
+					border-radius: 10px;
+					background: #87cdde;
 				}
 					@media (prefers-color-scheme: dark){
 						#search-submit{
@@ -441,12 +441,12 @@ a:hover{
 							width: 100%;
 							height: 20px;
 							padding: 5px 30px 5px 10px;
-							border: 1px solid #cccccc;
-							background: #e6e6e6;
+							border: 1px solid #ffffff;
+							background: #87cdde;
 							float: left;
 						}
 							#search-box::placeholder{
-								color: #999999;
+								color: #4d4d4d;
 							}
 						#search-submit{
 							margin: -26px 10px 0 0;
@@ -470,7 +470,7 @@ a:hover{
 	padding-top: 50px;
 	width: 100%;
 	height: 1px;
-	background: #ffffff;
+	background: #87cdde;
 }
 	@media (prefers-color-scheme: dark){
 		#post-header{
@@ -481,7 +481,6 @@ a:hover{
 /*START main-showcase */
 #main-showcase{
 	position: relative;
-	padding-top: 50px;
 	height: auto;
 	background: #ffffff;
 	z-index: 2;
@@ -559,7 +558,9 @@ a:hover{
 /*END overlays */
 /*START socket */
 #socket-main{
+	position: relative;
 	width: 100%;
+	z-index: 5;
 }
 	.sm-gray{
 		border-top: none;
@@ -835,7 +836,7 @@ a:hover{
 	margin-bottom: 10px;
 	width: 100%;
 	height: 1px;
-	background: #ffccaa;
+	background: #cccccc;
 	z-index: 4;
 }
 	@media (prefers-color-scheme: dark){
@@ -1050,7 +1051,8 @@ a:hover{
 			margin-top: 15px;
 			width: 100%;
 			height: auto;
-			border: 1px solid #ffccaa;
+			border: 1px solid #cccccc;
+			border-radius: 20px;
 			box-sizing: border-box;
 		}		
 		.epthumb-recent img{
@@ -1106,7 +1108,7 @@ a:hover{
 		text-align: left;
 	}
 		#each-post-excerpt-single img{
-			border: 1px solid #ffccaa;
+			border: 1px solid #87cdde;
 			box-sizing: border-box;
 		}
 		@media (prefers-color-scheme: dark){
@@ -1138,7 +1140,7 @@ a:hover{
 		margin: 20px 0 20px 0;
 		height: 5px;
 		width: 100%;
-		background: #ff9955;
+		background: #87cdde;
 	}
 	#post-categories-search{
 		width: 280px;
@@ -1157,29 +1159,33 @@ a:hover{
 			padding: 6px 11px 6px 11px;
 			display: inline-block;
 			background: #bb86fc;
+			border-radius: 8px;
 			list-style: none;
 		}
 			#post-categories-socket-front-page-feed > a:hover:nth-child(1n){
 				background: #9955ff;
 			}	
 		#post-categories-socket-front-page-feed > a:nth-child(2n){
-			margin: 0 -5px 0 0;
+			margin: 0 0 0 10px;
 			color: #ffffff;
 			text-decoration: none;
 			padding: 6px 11px 6px 11px;
 			display: inline-block;
 			background: #2ca089;
+			border-radius: 8px;
 			list-style: none;
 		}
 			#post-categories-socket-front-page-feed > a:hover:nth-child(2n){
 				background: #217867;
 			}
 		#post-categories-socket-front-page-feed > a:nth-child(3n){
+			margin: 0 0 0 8px;
 			color: #ffffff;
 			text-decoration: none;
 			padding: 6px 11px 6px 11px;
 			display: inline-block;
 			background: #5f8dd3;
+			border-radius: 8px;
 			list-style: none;
 		}
 			#post-categories-socket-front-page-feed > a:hover:nth-child(3n){
@@ -1213,7 +1219,7 @@ a:hover{
 		padding: 10px 0 0 0;
 		font-size: 0.88em;
 		text-align: center;
-		border-top: 1px solid #ffccaa;
+		border-top: 1px solid #87cdde;
 	}		
 		/* START wp-pagenavi customisations */
 		.wp-pagenavi {
@@ -1223,11 +1229,12 @@ a:hover{
 		.wp-pagenavi a, .wp-pagenavi span {
 			text-decoration: none;
 			border: 1px solid #cccccc;
+			border-radius: 5px;
 			padding: 3px 5px;
 			margin: 2px;
 		}
 		.wp-pagenavi a:hover, .wp-pagenavi span.current {
-			border-color: #ff9955;
+			border-color: #ff5555;
 		}
 		.wp-pagenavi span.current {
 			font-weight: normal;
@@ -1386,12 +1393,14 @@ a:hover{
 /* END bread-nav */
 /*START company-showcase */
 #company-showcase{
-	margin: 0 auto 0 auto;
+	margin-top: -20px;
+	padding: 10px 0 30px 0;
 	position: relative;
 	width: 100%;
-	max-width: 1920px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 	background: #ffffff;
-	overflow: hidden;
+	z-index: 5;
 }
 	@media (prefers-color-scheme: dark){
 		#company-showcase{
@@ -1399,81 +1408,55 @@ a:hover{
 		}	
 	}	
 	#company-showcase-content{
-		width: 100%;		
+		margin: 0 auto 0 auto;
+		max-width: 985px;
+		width: 100%;	
+		height: 50px;
 	}
-	#company-showcase-1{
-		position: relative;
-		padding: 10px;
-		box-sizing: border-box;
-		background: #bb86fc;
-	}
-	#company-showcase-2{
-		position: relative;
-		padding: 10px;
-		box-sizing: border-box;
-		background: #2ca089;
-	}
-	#company-showcase-3{
-		position: relative;
-		padding: 10px;
-		box-sizing: border-box;
-		background: #5f8dd3;
-	}
-	#company-showcase-4{
-		position: relative;
-		padding: 10px;
-		box-sizing: border-box;
-		background: #9955ff;
-	}
-	@media screen and (max-width: 767px){
-		.csc{
-			width: 100%;
-			display: none;
-		}
-	}	
-	@media screen and (min-width: 768px){
-		.csc-m{
-			width: 25%;
-			max-width: 480px;
+		.csccs{
+			position: relative;
+			width: 50%;
+			padding: 10px;
+			box-sizing: border-box;
 			float: left;
 		}
-		.csc-s6{
-			display: none;
+			.csccs a:link{
+				font-size: 0.88em;
+				display: block;
+				color: #4d4d4d;
+				padding: 10px 0 10px 0;
+				border: 1px solid #cccccc;
+				border-radius: 20px;
+			}
+			.csccs a:visited{
+				color: #4d4d4d;
+			}
+			.csccs a:hover{
+				color: #999999;
+				text-decoration: none;
+			}	
+	@media screen and (max-width: 767px){
+		#company-showcase{
+			padding: 10px 0 15px 0;
 		}
-	}
-	@media screen and (max-width: 1173px) and (min-width: 986px){
-		.cscs-m{
-			min-height: 36px;
-			line-height: 36px;
+		.cscc{
+			margin: 0 auto 0 auto;
 		}
-	}
-	@media screen and (min-width: 1174px){
-		.cscs-m{
-			min-height: 30px;
-			line-height: 30px;
+		.csch{
+			margin: 0 auto 0 auto;
+			width: 80%;
+			padding: 0;
 		}
-	}
+		.csccs a:link{
+			padding: 5px 0 5px 0;
+			border-radius: 20px;
+			text-align: center;
+		}
+	}	
 	@media (prefers-color-scheme: dark){
 		.csc{
 			opacity: 1;
 		}
-	}	
-	/* header */
-	.csch{
-		color: #ffffff;
-		font-size: 1em;
-	}
-	.csch a:link{
-		display: inline-block;
-		font-size: 0.88em;
-		color: #ffffff;
-	}
-	.csch a:visited{
-		color: #ffffff;
-	}	
-	.csch a:hover{
-		color: #cccccc;
-		text-decoration: none;
 	}	
 /*END company-showcase */
 /*START Contact Form 7 customizations */
