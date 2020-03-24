@@ -126,57 +126,61 @@
 
 <?php include("inc/js-mobile-menu-subnav-updates.php"); ?>
 
-<div id="header-container"><!-- start #header-->
-	<div id="header-container-content" class="hcc hcc-m hcc-d">
-		<div id="topnav-menu-button" class="tnmb tnmb-m tnmb-d">
-			<img id="topnav-menu-button-img" onclick="mobileMenuTopnav()" class="tnmb-m" src="<?php echo get_template_directory_uri(); ?>/img/header/topnav-menu-button.png">
-		</div>
-		<div id="logo" class="tnl tnl-m tnl-d"><!-- start #logo-->
-			<a href ="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/header/logo.png" id="img1" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img1',/*url*/'<?php echo get_template_directory_uri(); ?>/img/header/logo-mouseover.png')"/>
+<div id="header-container-background"><!-- start #header-container-background-->
+	<div id="header-container"><!-- start #header-container-->
+		<div id="header-container-content" class="hcc hcc-m hcc-d">
+			<div id="topnav-menu-button" class="tnmb tnmb-m tnmb-d">
+				<img id="topnav-menu-button-img" onclick="mobileMenuTopnav()" class="tnmb-m" src="<?php echo get_template_directory_uri(); ?>/img/header/topnav-menu-button.png">
+			</div>
+			<div id="logo" class="tnl tnl-m tnl-d"><!-- start #logo-->
+				<a href ="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/header/logo.png" id="img1" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img1',/*url*/'<?php echo get_template_directory_uri(); ?>/img/header/logo-mouseover.png')"/>
+				</a>
+			</div><!-- end #logo-->
+			<div id="topnav" class="tnm tnm-m tnm-d"><!-- start #topnav-->
+				<?php wp_nav_menu( array(
+					'menu' => 'topnav',
+					'class' => 'menu',
+					'container' => 'topnav'
+					)
+				);
+				?>
+			</div><!-- end #topnav-->
+			<div id="search" class="tns tns-m tns-d"><!-- start #search-->
+				<?php include(TEMPLATEPATH . '/searchform-desktop.php'); ?>
+			</div><!-- end #search-->
+			<div id="custom-mobile-right-icon" class="crmi crmi-m crmi-d">
+			<a href ="<?php echo esc_url( home_url( '/' ) ); ?>messages">
+				<img id="custom-mobile-right-icon-img" class="mmb-m" src="<?php echo get_template_directory_uri(); ?>/img/header/messages-icon-mobile.png">
 			</a>
-		</div><!-- end #logo-->
-		<div id="topnav" class="tnm tnm-m tnm-d"><!-- start #topnav-->
-			<?php wp_nav_menu( array(
-				'menu' => 'topnav',
-				'class' => 'menu',
-				'container' => 'topnav'
-				)
-			);
-			?>
-		</div><!-- end #topnav-->
-		<div id="search" class="tns tns-m tns-d"><!-- start #search-->
-			<?php include(TEMPLATEPATH . '/searchform-desktop.php'); ?>
-		</div><!-- end #search-->
-		<div id="custom-mobile-right-icon" class="crmi crmi-m crmi-d">
-		<a href ="<?php echo esc_url( home_url( '/' ) ); ?>messages">
-			<img id="custom-mobile-right-icon-img" class="mmb-m" src="<?php echo get_template_directory_uri(); ?>/img/header/messages-icon-mobile.png">
-		</a>
-		</div>
-	</div>
-	<div id="topnav-mobile-menu" class="tmm tmm-m tmm-d"><!-- start #topnav-mobile-menu-->
-		<div id="search-mobile-container" class="smc smc-m smc-d">
-			<div id="search-mobile-container-content">
-				<div id="search-mobile" class="tnsm tnsm-m tnsm-d">
-					<?php include(TEMPLATEPATH . '/searchform-mobile.php'); ?>
-				</div>
 			</div>
 		</div>
-		<div id="topnav-mobile-container" class="tnmc tnmc-m tnmc-d">
-			<div id="topnav-mobile-container-content" class="tnmcc tnmcc-m tnmcc-d">	
-				<div id="topnav-mobile" class="tnmm tnmm-m tnmm-d">
-					<?php wp_nav_menu( array(
-						'menu' => 'topnav',
-						'class' => 'menu',
-						'container' => 'topnav-mobile'
-						)
-					);
-					?>
+			<div id="topnav-mobile-menu" class="tmm tmm-m tmm-d"><!-- start #topnav-mobile-menu-->
+				<div id="search-mobile-container" class="smc smc-m smc-d">
+					<div id="search-mobile-container-content">
+						<div id="search-mobile" class="tnsm tnsm-m tnsm-d">
+							<?php include(TEMPLATEPATH . '/searchform-mobile.php'); ?>
+						</div>
+					</div>
 				</div>
-			</div>	
-		</div>
-	</div><!-- end #topnav-mobile-menu-->	
-</div><!-- end #header-container-->
+				<div id="topnav-mobile-container" class="tnmc tnmc-m tnmc-d">
+					<div id="topnav-mobile-container-content" class="tnmcc tnmcc-m tnmcc-d">	
+						<div id="topnav-mobile" class="tnmm tnmm-m tnmm-d">
+							<?php wp_nav_menu( array(
+								'menu' => 'topnav',
+								'class' => 'menu',
+								'container' => 'topnav-mobile'
+								)
+							);
+							?>
+						</div>
+					</div>	
+				</div>
+			</div><!-- end #topnav-mobile-menu-->	
+	</div><!-- end #header-container-->
+</div><!-- end #header-container-background-->
 
 <div id="post-header">
+	<div id="post-header-content">
+	</div>
 </div>
