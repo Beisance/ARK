@@ -13,12 +13,12 @@
 				document.getElementById("subnav-menu-button-img").src = "');bloginfo('stylesheet_directory'); echo('/img/page-title-nav/subnav-menu-button-collapse.png";
 				$(".ovl-m").css("display", "block");
 				//Transitioning the overlay background-color with transition.min.js
-				transition.begin(overlay, "background-color #F2F2F2 rgba(32,33,37,0.8) 500ms ease-in-out");
+				transition.begin(overlay, "background-color #35434a rgba(32,33,37,0.8) 500ms ease-in-out");
 			}
 				else 
 			{
 				document.getElementById("subnav-menu-button-img").src = "');bloginfo('stylesheet_directory'); echo('/img/page-title-nav/subnav-menu-button.png";
-				transition.begin(overlay, "background-color rgba(32,33,37,0.5) #F2F2F2 2000ms ease-out");
+				transition.begin(overlay, "background-color rgba(32,33,37,0.5) #35434a 4000ms ease-out");
 				$(".ovl-m").css("display", "none");
 			}
 				//Toggling the mobile menu

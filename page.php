@@ -6,6 +6,13 @@ Template Name: ARK DefaultPage
 
 <?php get_header(); ?>
 
+<?php include("inc/page-showcase-selector.php"); ?>
+
+<?php include("inc/company-showcase.php"); ?>
+
+<div id="overlay" class="ovl ovl-m ovl-d">
+</div>
+
 <div id="socket-main" class="sm-gray"><!--start #socket-main-->	
 	<div id="socket-main-content">
 		<div id="socket-main-content-island" class="smci smci-d smci-m">
@@ -170,14 +177,15 @@ Template Name: ARK DefaultPage
 	</div><!--end #socket-main-content-->
 </div><!--end #socket-main-->
 
+
+
 <?php include("inc/downnav.php"); ?>
 
 <?php include("inc/footer.php"); ?>
 
 <?php include("inc/google-analytics.php"); ?>
 
-<div id="overlay" class="ovl ovl-m ovl-d">
-</div>
+
 
 </body>
 
