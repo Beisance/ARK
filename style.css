@@ -119,7 +119,7 @@ a:hover{
 	left: 0;
 	width: 100%;
 	height: 100vh;
-	background: #87cdde;
+	background: #00ead1;
 }
 	@media screen and (max-width: 926px){
 		.tmm-m, .tmmb-m{
@@ -142,7 +142,7 @@ a:hover{
 	width: 100%;
 	min-height: 50px;
 	padding: 5px 0 0 0;
-	background: #87cdde;
+	background: #00ead1;
 	clear: both;
 	z-index: 7;
 }
@@ -220,12 +220,12 @@ a:hover{
 			}
 			#topnav li a:link{
 				display: block;
-				color: #4d4d4d;
+				color: #000000;
 				padding: 0 0.7em 0 0;
 			}
 			#topnav li a:visited{
 				display: block;
-				color: #4d4d4d;
+				color: #000000;
 				padding: 0 0.7em 0 0;
 			}
 			#topnav ul li a:hover{
@@ -361,7 +361,7 @@ a:hover{
 					color: #000000;
 					border: 1px solid #ffffff;
 					border-radius: 10px;
-					background: #87cdde;
+					background: #00ead1;
 				}
 					@media (prefers-color-scheme: dark){
 						#search-submit{
@@ -436,7 +436,7 @@ a:hover{
 							height: 20px;
 							padding: 5px 30px 5px 10px;
 							border: 1px solid #ffffff;
-							background: #87cdde;
+							background: #00ead1;
 							float: left;
 						}
 							#search-box::placeholder{
@@ -460,7 +460,7 @@ a:hover{
 	padding-top: 50px;
 	width: 100%;
 	height: 1px;
-	background: #87cdde;
+	background: #00ead1;
 }
 	@media (prefers-color-scheme: dark){
 		#post-header-content{
@@ -548,11 +548,15 @@ a:hover{
 	margin-top: -20px;
 	position: relative;
 	width: 100%;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
 	background: #ffffff;
 	z-index: 6;
 }
+	@media screen and (max-width: 450px){
+		#socket-main{
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+		}
+	}
 	.sm-gray{
 		border-top: none;
 	}
@@ -562,7 +566,6 @@ a:hover{
 	#socket-main-content{
 		margin: 0 auto 0 auto;
 		width: 100%;
-		
 	}	
 	#socket-main-content-island{
 		position: relative;
@@ -955,6 +958,7 @@ a:hover{
 	text-align: left;
 }
 #each-post-title{
+	margin: 15px 0 0 15px;
 	position: relative;
 	max-width: 985px;
 	width: 100%;
@@ -1028,13 +1032,13 @@ a:hover{
 		position: relative;
 		margin: 0 auto 0 auto;
 		width: 100%;
-		max-width: 985px;
+		max-width: 400px;
+		float: left;
 	}
 		.epthumb-standard img{
 			margin-top: 15px;
-			width: 100%;
 			height: auto;
-			border-radius: 20px;
+			border-radius: 5px;
 			box-sizing: border-box;
 		}		
 		.epthumb-recent img{
@@ -1089,7 +1093,7 @@ a:hover{
 		text-align: left;
 	}
 		#each-post-excerpt-single img{
-			border: 1px solid #87cdde;
+			border: 1px solid #00ead1;
 			box-sizing: border-box;
 		}
 		@media (prefers-color-scheme: dark){
@@ -1121,7 +1125,7 @@ a:hover{
 		margin: 20px 0 20px 0;
 		height: 5px;
 		width: 100%;
-		background: #87cdde;
+		background: #00ead1;
 	}
 	#post-categories-search{
 		width: 280px;
@@ -1200,7 +1204,7 @@ a:hover{
 		padding: 10px 0 0 0;
 		font-size: 0.88em;
 		text-align: center;
-		border-top: 1px solid #87cdde;
+		border-top: 1px solid #00ead1;
 	}		
 		/* START wp-pagenavi customisations */
 		.wp-pagenavi {
@@ -1378,8 +1382,6 @@ a:hover{
 	padding: 10px 0 50px 0;
 	position: relative;
 	width: 100%;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
 	background: #ffec1b;
 	z-index: 5;
 }
@@ -1391,7 +1393,7 @@ a:hover{
 	#company-showcase-content{
 		margin: 0 auto 0 auto;
 		max-width: 985px;
-		width: 100%;	
+		width: 90%;	
 		height: 48px;
 	}
 		.csccs{
@@ -1433,6 +1435,12 @@ a:hover{
 				background: #808080;
 				text-decoration: none;
 			}	
+	@media screen and (max-width: 450px){
+		#company-showcase{
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+		}
+	}
 	@media screen and (max-width: 767px){
 		#company-showcase{
 			padding: 10px 0 38px 0;
@@ -1454,7 +1462,7 @@ a:hover{
 			border-radius: 20px;
 			text-align: center;
 		}
-	}	
+	}		
 	@media (prefers-color-scheme: dark){
 		.csccs-1 a:link{
 			background: #800000;
