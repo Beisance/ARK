@@ -6,17 +6,22 @@
 ?>
 
 <div id="socket-main" class="sm-gray"><!--start #socket-main-->	
-	<div id="socket-main-content">
-		<div id="socket-main-content-island" class="smci smci-d smci-m">
-			<?php
-				query_posts( array( 
-					'category__in' => array(2, 37, 41), 
-					'posts_per_page' => 10, 
-					'paged' => get_query_var('page')
-				));
-				get_template_part( 'loop-socket-front-page-feed', 'index' );
-				wp_reset_query();
-			?>
-		</div><!--end #socket-main-content-island-->	
+	<div id="socket-main-content"><!--start #socket-main-content-->	
+		<div id="socket-main-content-stack-1"><!--start #"socket-main-content-stack-1-->	
+			<?php include("sidenav.php"); ?>
+		</div><!--end #"socket-main-content-stack-1-->
+		<div id="socket-main-content-stack-2"><!--start #"socket-main-content-stack-2-->	
+			<div id="socket-main-content-stack-2-slice-1"><!--start #"socket-main-content-stack-2-slice-1-->	
+				<div id="socket-main-content-stack-2-slice-1-stack-1"><!--start #"socket-main-content-stack-2-slice-1-stack-1-->	
+				
+				</div><!--end #"socket-main-content-stack-2-slice-1-stack-1-->
+				<div id="socket-main-content-stack-2-slice-1-stack-2"><!--start #"socket-main-content-stack-2-slice-1-stack-2-->	
+				
+				</div><!--end #"socket-main-content-stack-2-slice-1-stack-2-->	
+			</div><!--end #"socket-main-content-stack-2-slice-1-->	
+			<div id="socket-main-content-stack-2-slice-2"><!--start #"socket-main-content-stack-2-slice-2-->	
+			
+			</div><!--end #"socket-main-content-stack-2-slice-2-->	
+		</div><!--end #socket-main-content-stack-2-->
 	</div><!--end #socket-main-content-->
 </div><!--end #socket-main-->
