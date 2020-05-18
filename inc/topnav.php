@@ -12,7 +12,7 @@
 		</div>
 		<div id="logo" class="tnl tnl-m tnl-d"><!-- start #logo-->
 			<a href ="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/header/logo.png" id="img1" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img1',/*url*/'<?php echo get_template_directory_uri(); ?>/img/header/logo-mouseover.png')"/>
+				<img src="<?php echo get_template_directory_uri(); ?>/img/header/logo.png"/>
 			</a>
 		</div><!-- end #logo-->
 		<div id="topnav" class="tnm tnm-m tnm-d"><!-- start #topnav-->
@@ -23,9 +23,12 @@
 				)
 			);
 			?>
+			<ul>
+				<li>Search</li>
+			</ul>	
 		</div><!-- end #topnav-->
 		<div id="search" class="tns tns-m tns-d"><!-- start #search-->
-			<?php include(TEMPLATEPATH . '/searchform-desktop.php'); ?>
+		
 		</div><!-- end #search-->
 		<div id="custom-mobile-right-icon" class="crmi crmi-m crmi-d">
 		<a href ="<?php echo esc_url( home_url( '/' ) ); ?>messages">
@@ -57,5 +60,3 @@
 	</div><!-- end #topnav-mobile-menu-->	
 </div><!-- end #header-container-->
 
-<div id="post-header">
-</div>

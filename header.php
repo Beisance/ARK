@@ -39,12 +39,12 @@
 	else {
 		echo '<meta property="og:title" content="';echo bloginfo('name');echo' - ';echo bloginfo('description');echo'"/>
 				 <meta property="og:description" content="';
-				 if(have_posts()) : ?><?php while(have_posts()) : the_post();
+				 if(have_posts()) : while(have_posts()) : the_post();
 				 echo get_character_limited_excerpt_social_sharing();
 				 endwhile;
 				 endif; 
 				 
-				 echo'"/>
+				 echo'"
 				 <meta property="og:type" content="image/png">
 				 <meta property="og:url" content="';echo get_permalink();echo'"/>
 				 <meta property="og:image" content="';
@@ -115,8 +115,6 @@
 <body class="mb">
 
 <script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery-latest.min.js" integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6" crossorigin="anonymous"></script>
-
-<script src="<?php bloginfo('stylesheet_directory'); ?>/js/image-hover.js" integrity="sha384-XdPauhRV0czGESkUFIcI6uCoZMji6LCPs49ILccFlhhtIA7oFfVGBSBAqkHsmGur" crossorigin="anonymous"></script>
 
 <script src="<?php bloginfo('stylesheet_directory'); ?>/js/transition.min.js" integrity="sha384-NPE7kZ78ILrFxabO0opdsBBAelo+t0qkXxFuRayJWG/P7Oi4xo45O2JiQYZaSgSl" crossorigin="anonymous"></script>
 

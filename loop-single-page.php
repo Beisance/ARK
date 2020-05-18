@@ -76,7 +76,7 @@ The loop that displays singles.
 	
 	<div id="each-post-title" class="ept ept-m ept-d"><!-- start #each-post-title-->
 		<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-			<span class="each-post-title-span">
+			<span class="epts-single">
 				<?php the_title(); ?>
 			</span>
 			<span class="news-stack-active-sponsored">
@@ -114,7 +114,7 @@ The loop that displays singles.
 	</div><!-- end #each-post-author-date-time-->
 	
 	<div id="each-post-summary-news-stack">
-		<div id="each-post-excerpt-single">
+		<div id="each-post-content">
 			<?php the_content(); ?>
 		</div>
 	</div>

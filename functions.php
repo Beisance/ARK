@@ -35,7 +35,7 @@
 	$excerpt = substr($excerpt, 0, 300);
 	$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
 	$excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
-	$excerpt = $excerpt.'... <a href="'.$permalink.'">Read More  »</a>';
+	$excerpt = $excerpt.'...';
 	return $excerpt;
 	}
 	
@@ -77,7 +77,7 @@
 		$excerpt = substr($excerpt, 0, 50);
 		$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
 		$excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
-		$excerpt = $excerpt.'... <a href="'.$permalink.'">Read More  »</a>';
+		$excerpt = $excerpt.'...';
 		return $excerpt;
 		}
 	
