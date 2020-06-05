@@ -37,6 +37,7 @@ body{
 	text-align: center;
 	vertical-align: top;
 	color: #4d4d4d;
+	background: #e6e6e6;
 }
 	@media screen and (max-width: 767px){	
 		body{
@@ -60,7 +61,7 @@ h2{
 }
 h3{
 	padding: 0 0 10px 0;
-	font-size: 1.05em;
+	font-size: 1.01em;
 	font-weight: normal;
 	line-height: 1em;
 	color: #000000;
@@ -124,14 +125,18 @@ a:hover{
 	/* socket-main-content */
 	.smc-frontpage{
 		position: relative;
-		margin: 20px auto 0 auto;
+		margin: 0 auto 0 auto;
+		padding-top: 20px;
 		width: 100%;
 		max-width: 1550px;
+		overflow: hidden;
 	}
 	.smc-single{
 		position: relative;
-		margin: 20px auto 0 auto;
+		margin: 0 auto 0 auto;
+		padding-top: 20px;
 		width: 100%;
+		overflow: hidden;
 	}	
 		/* topnav */
 		/* socket-main-content-stack-1 */
@@ -189,7 +194,7 @@ a:hover{
 					color: #000000;
 				}
 				.sh-latest{
-					color: #000000;
+					color: #003380;
 				}
 	#socket-main-content-island{
 		position: relative;
@@ -331,7 +336,7 @@ a:hover{
 			}
 			#topnav ul li a:hover{
 				display: block;
-				color: #00aa00;
+				color: #003380;
 				text-decoration: none;
 				padding: 0 0.7em 0 0;
 			}
@@ -866,6 +871,7 @@ a:hover{
 			}
 /*END page-title-nav */
 #spacer-1{
+	margin-bottom: 10px;
 	position: relative;
 	width: 100%;
 	height: 1px;
@@ -951,19 +957,19 @@ a:hover{
 			width: 100%;
 			height: auto;
 		}
-		#wrapper-content ol li{
+		#each-post-news-stack ol li{
 			margin: 0 0 10px 40px;
 			list-style-type: decimal;
 		}
-		#wrapper-content ol ol li{
+		#each-post-news-stack ol ol li{
 			margin: 10px 0 10px 20px;
 			list-style-type: decimal;
 		}
-		#wrapper-content ul li{
+		#each-post-news-stack ul li{
 			margin: 0 0 10px 15px;
 			list-style-image:url('img/icon-blue-bullet-point.png');
 		}
-		#wrapper-content ul ul li{
+		#each-post-news-stack ul ul li{
 			margin: 10px 0 0 15px;
 			list-style-image:url('img/icon-light-blue-bullet-point.png');
 		}	
@@ -986,9 +992,9 @@ a:hover{
 			width: 100%;
 		}
 			#custom-content-content{
-				margin: 0 auto 0 auto;
+				margin-top: 10px;
 				width: 100%;
-				max-width: 1030px;
+				text-align: left;
 			}
 			#custom-content-content h2{
 				width: 100%;
@@ -1189,6 +1195,16 @@ a:hover{
 			margin: 5px auto 5px auto;
 			width: 100%;
 			max-width: 1030px;
+		}
+		#post-categories a:link{
+				color: #d4aa00;
+		}
+		#post-categories a:visited{
+			color: #d4aa00;
+		}
+		#post-categories a:visited{
+			color: #ffffff;
+			text-decoration: none;
 		}
 		.pc-single{
 			position: relative;
@@ -1716,7 +1732,8 @@ a:hover{
 	margin: 0 0 15px 0;
 }	
 .send-button{
-	color: #666666;
+	margin-bottom: 15px;
+	olor: #666666;
 	padding: 5px 10px 5px 10px;
 	margin: 5px 0 0 0;
 	border: 1px solid #cccccc;
@@ -1744,10 +1761,10 @@ input[type="file"] {
     size: 5px;
 }
 .wpcf7 p{
-	margin: 5px 0 5px 0;
+	margin: 5px 0 20px 0;
 	line-height: 20px;
 }
-div.wpcf7 {
+div.wpcf7-form {
 	margin: 5px 0 0 0;
 	padding: 0;
 }

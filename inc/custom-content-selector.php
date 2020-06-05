@@ -10,9 +10,9 @@
 	if (is_page(array('messages'))) {
 		echo '<div id="custom-content"><!--start #custom-content-->
 		<div id="custom-content-content">';
-		echo '<h2>';
+		echo '<h3>';
 		_e('Insightful and inspired messages to equip and build you in your walk with Jesus.');
-		echo '</h2>';
+		echo '</h3>';
 		echo '</div><!--end #custom-content-content-->
 		</div><!--end #custom-content-->';
 	}
@@ -20,9 +20,9 @@
 		elseif (in_category(array('messages', 'messages-couples', 'messages-faith', 'messages-professional'))) {
 			echo '<div id="custom-content"><!--start #custom-content-->
 			<div id="custom-content-content">';
-			echo '<h2>';
+			echo '<h3>';
 			_e('Insightful and inspired messages to equip and build you in your walk with Jesus.');
-			echo '</h2>';
+			echo '</h3>';
 			echo '</div><!--end #custom-content-content-->
 			</div><!--end #custom-content-->';
 		}
@@ -30,9 +30,9 @@
 	elseif (is_page(array('thoughts'))) {
 		echo '<div id="custom-content"><!--start #custom-content-->
 		<div id="custom-content-content">';
-		echo '<h2>';
+		echo '<h3>';
 		_e('Our quick thoughts on general, political and professional topics.');
-		echo '</h2>';
+		echo '</h3>';
 		echo '</div><!--end #custom-content-content-->
 		</div><!--end #custom-content-->';
 	}
@@ -40,9 +40,9 @@
 		elseif (in_category(array('thoughts', 'thoughts-general', 'thoughts-politics', 'thoughts-professional'))) {
 			echo '<div id="custom-content"><!--start #custom-content-->
 			<div id="custom-content-content">';
-			echo '<h2>';
+			echo '<h3>';
 			_e('Our quick thoughts on general, political and professional topics.');
-			echo '</h2>';
+			echo '</h3>';
 			echo '</div><!--end #custom-content-content-->
 			</div><!--end #custom-content-->';
 		}
@@ -50,9 +50,9 @@
 	elseif (is_page(array('updates'))) {
 		echo '<div id="custom-content"><!--start #custom-content-->
 		<div id="custom-content-content">';
-		echo '<h2>';
+		echo '<h3>';
 		_e('Information on what\'s new at ARK');
-		echo '</h2>';
+		echo '</h3>';
 		echo '</div><!--end #custom-content-content-->
 		</div><!--end #custom-content-->';
 	}
@@ -60,9 +60,9 @@
 		elseif (in_category(array('updates'))) {
 			echo '<div id="custom-content"><!--start #custom-content-->
 			<div id="custom-content-content">';
-			echo '<h2>';
+			echo '<h3>';
 			_e('Information on what\'s new at ARK');
-			echo '</h2>';
+			echo '</h3>';
 			echo '</div><!--end #custom-content-content-->
 			</div><!--end #custom-content-->';
 		}
@@ -70,9 +70,9 @@
 	else if (is_page(array('testimonies'))) {
 		echo '<div id="custom-content"><!--start #custom-content-->
 		<div id="custom-content-content">';
-		echo '<h2>';
+		echo '<h3>';
 		_e('Stories, thoughts and testimonies about what Jesus is doing in our world and how we show that through our connect group.');
-		echo '</h2>';
+		echo '</h3>';
 		echo '</p>';
 		_e('If you would like to share a testimony with us, please send it to <a href="mailto:ark@beisance.com?Subject=Testimony..." target="_top">ark@beisance.com</a>.
 

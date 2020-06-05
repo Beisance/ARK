@@ -26,7 +26,7 @@
 					?>
 				</div><!--end #"socket-main-content-stack-2-slice-1-stack-1-->
 				<div id="socket-main-content-stack-2-slice-1-stack-2"><!--start #"socket-main-content-stack-2-slice-1-stack-2-->	
-					<div id="socket-header" class="sh-latest">
+					<div id="socket-header" class="sh-highlights">
 						Highlights
 					</div>
 					<?php

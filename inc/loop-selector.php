@@ -26,7 +26,6 @@ else if (is_page( array('messages'))) {
 		'paged' => get_query_var('page')
 	));
 	get_template_part( 'loop-posts', 'index' );
-	wp_reset_query();
 }
 else if (is_page( array('testimonies'))) {
 	query_posts( array( 
