@@ -47,105 +47,106 @@ The loop that displays posts.
 		</div><!-- end #each-post-news-stack-1-->	
 		
 		<div id="each-post-news-stack-2" class="epns-2-latest"><!-- start #each-post-news-stack-2-->
-		
-			<div id="each-post-summary-news-stack">
-				
-				<div id="each-post-excerpt">
-					<?php echo get_character_limited_excerpt(); ?>
+			<div id="stack-wrapper" class="sw-latest"><!--start #stack-wrapper-->
+				<div id="each-post-summary-news-stack">
+					
+					<div id="each-post-excerpt">
+						<?php echo get_character_limited_excerpt(); ?>
+					</div>
+					
 				</div>
-				
+				<div id="post-categories">
+					<div id="post-categories-socket-front-page-feed" class="post-categories">
+						<?php
+							//first category
+							if (in_category('2')) {
+								echo '<a href="';
+								bloginfo('wpurl');
+								echo '/category/messages/">Messages</a>';
+							}
+							elseif (in_category('37')) {
+								echo '<a href="';
+								bloginfo('wpurl');
+								echo '/category/thoughts/">Thoughts</a>';
+							}
+							elseif (in_category('42')) {
+								echo '<a href="';
+								bloginfo('wpurl');
+								echo '/category/Updates/">Updates</a>';
+							}
+							else{
+								//nothing
+							}	
+						?>
+						<?php
+							//next sub category: any under the main categories listed above
+							//messages sub categories
+							if (in_category('33')) {
+								echo '<a href="';
+								bloginfo('wpurl');
+								echo '/category/messages/messages-faith">Faith</a>';
+							}
+							elseif (in_category('34')) {
+								echo '<a href="';
+								bloginfo('wpurl');
+								echo '/category/messages/messages-couples">Couples</a>';
+							}
+							elseif (in_category('35')) {
+								echo '<a href="';
+								bloginfo('wpurl');
+								echo '/category/messages/messages-professional">Professional</a>';
+							}
+							else{
+								//nothing
+							}
+							//thoughts sub categories
+							if (in_category('39')) {
+								echo '<a href="';
+								bloginfo('wpurl');
+								echo '/category/thoughts/thoughts-general">General</a>';
+							}
+							elseif (in_category('40')) {
+								echo '<a href="';
+								bloginfo('wpurl');
+								echo '/category/thoughts/thoughts-politics">Politics</a>';
+							}
+							elseif (in_category('41')) {
+								echo '<a href="';
+								bloginfo('wpurl');
+								echo '/category/thoughts/thoughts-professional">Professional</a>';
+							}
+							else{
+								//nothing
+							}
+							//updates sub categories
+							if (in_category('44')) {
+								echo '<a href="';
+								bloginfo('wpurl');
+								echo '/category/updates/updates-services">Services</a>';
+							}
+							elseif (in_category('45')) {
+								echo '<a href="';
+								bloginfo('wpurl');
+								echo '/category/updates/updates-content">Content</a>';
+							}
+							else{
+								//nothing
+							}	
+						?>
+						<?php
+							//sub category 2: checking if this is a guest ministry post
+							if (in_category('46')) {
+								echo '<a href="';
+								bloginfo('wpurl');
+								echo '/category/messages/guest-ministry-message-harvesters-ikeja/">Guest Ministry Message - Harvesters Ikeja</a>';
+							}
+							else{
+								//nothing
+							}	
+						?>
+					</div>
+				</div>	
 			</div>
-			<div id="post-categories">
-				<div id="post-categories-socket-front-page-feed" class="post-categories">
-					<?php
-						//first category
-						if (in_category('2')) {
-							echo '<a href="';
-							bloginfo('wpurl');
-							echo '/category/messages/">Messages</a>';
-						}
-						elseif (in_category('37')) {
-							echo '<a href="';
-							bloginfo('wpurl');
-							echo '/category/thoughts/">Thoughts</a>';
-						}
-						elseif (in_category('42')) {
-							echo '<a href="';
-							bloginfo('wpurl');
-							echo '/category/Updates/">Updates</a>';
-						}
-						else{
-							//nothing
-						}	
-					?>
-					<?php
-						//next sub category: any under the main categories listed above
-						//messages sub categories
-						if (in_category('33')) {
-							echo '<a href="';
-							bloginfo('wpurl');
-							echo '/category/messages/messages-faith">Faith</a>';
-						}
-						elseif (in_category('34')) {
-							echo '<a href="';
-							bloginfo('wpurl');
-							echo '/category/messages/messages-couples">Couples</a>';
-						}
-						elseif (in_category('35')) {
-							echo '<a href="';
-							bloginfo('wpurl');
-							echo '/category/messages/messages-professional">Professional</a>';
-						}
-						else{
-							//nothing
-						}
-						//thoughts sub categories
-						if (in_category('39')) {
-							echo '<a href="';
-							bloginfo('wpurl');
-							echo '/category/thoughts/thoughts-general">General</a>';
-						}
-						elseif (in_category('40')) {
-							echo '<a href="';
-							bloginfo('wpurl');
-							echo '/category/thoughts/thoughts-politics">Politics</a>';
-						}
-						elseif (in_category('41')) {
-							echo '<a href="';
-							bloginfo('wpurl');
-							echo '/category/thoughts/thoughts-professional">Professional</a>';
-						}
-						else{
-							//nothing
-						}
-						//updates sub categories
-						if (in_category('44')) {
-							echo '<a href="';
-							bloginfo('wpurl');
-							echo '/category/updates/updates-services">Services</a>';
-						}
-						elseif (in_category('45')) {
-							echo '<a href="';
-							bloginfo('wpurl');
-							echo '/category/updates/updates-content">Content</a>';
-						}
-						else{
-							//nothing
-						}	
-					?>
-					<?php
-						//sub category 2: checking if this is a guest ministry post
-						if (in_category('46')) {
-							echo '<a href="';
-							bloginfo('wpurl');
-							echo '/category/messages/guest-ministry-message-harvesters-ikeja/">Guest Ministry Message - Harvesters Ikeja</a>';
-						}
-						else{
-							//nothing
-						}	
-					?>
-				</div>
-			</div>	
 		</div><!-- end #each-post-news-stack-2-->
 
 		<div id="each-post-news-stack-3" class="epns-3-latest"><!-- start #each-post-news-stack-3-->	

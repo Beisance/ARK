@@ -5,6 +5,11 @@
  */
 ?>
 
+<div id="header-container-background" class="hcb">
+	<div id="header-container-background-content" class="hcb-content">
+	</div>
+</div>
+
 <div id="header-container"><!-- start #header-container-->
 	<div id="header-container-content" class="hcc hcc-m hcc-d">
 		<div id="topnav-menu-button" class="tnmb tnmb-m tnmb-d">
@@ -23,12 +28,9 @@
 				)
 			);
 			?>
-			<ul>
-				<li>Search</li>
-			</ul>	
 		</div><!-- end #topnav-->
 		<div id="search" class="tns tns-m tns-d"><!-- start #search-->
-		
+			
 		</div><!-- end #search-->
 		<div id="custom-mobile-right-icon" class="crmi crmi-m crmi-d">
 		<a href ="<?php echo esc_url( home_url( '/' ) ); ?>messages">

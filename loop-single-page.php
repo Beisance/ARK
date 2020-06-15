@@ -74,30 +74,28 @@ The loop that displays singles.
 		</span>	
 	</div>
 	
-	<div id="each-post-title" class="ept ept-m ept-d"><!-- start #each-post-title-->
-		<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-			<span class="epts-single">
-				<?php the_title(); ?>
-			</span>
-			<span class="news-stack-active-sponsored">
-				<?php if(is_sticky()) {
-					echo '<span class="active-stack">ACTIVE</span>';
-					}
-					else{
-						// nothing
-					}
-				?>
-				<?php
-				/* sponsored */
-					if (in_category('44')) {
-						echo '<span class="sponsored-stack">SPONSORED</span>';
-					}
-					else{
-						// nothing
-					}
-				?>
-			</span>
-		</a>
+	<div id="each-post-title" class="ept ept-m ept-d epts-single"><!-- start #each-post-title-->
+		<span>
+			<?php the_title(); ?>
+		</span>
+		<span class="news-stack-active-sponsored">
+			<?php if(is_sticky()) {
+				echo '<span class="active-stack">ACTIVE</span>';
+				}
+				else{
+					// nothing
+				}
+			?>
+			<?php
+			/* sponsored */
+				if (in_category('44')) {
+					echo '<span class="sponsored-stack">SPONSORED</span>';
+				}
+				else{
+					// nothing
+				}
+			?>
+		</span>
 	</div><!-- end #each-post-title-->
 	
 	<div id="each-post-thumbnail" class="epthumb-single">

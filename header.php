@@ -122,8 +122,4 @@
 
 <?php include("inc/js-mobile-menu-topnav.php"); ?>
 
-<?php include("inc/js-mobile-menu-subnav.php"); ?>
-
-<?php include("inc/js-mobile-menu-subnav-thoughts.php"); ?>
-
-<?php include("inc/js-mobile-menu-subnav-updates.php"); ?>
+<?php include("inc/topnav.php"); ?>
