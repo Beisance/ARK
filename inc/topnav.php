@@ -20,6 +20,14 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/img/header/logo.png"/>
 			</a>
 		</div><!-- end #logo-->
+		<div id="search" class="tns tns-m tns-d"><!-- start #search-->
+			<div id="search-menu-cancel">
+				<img id="search-menu-cancel-img" onclick="searchMenuCancel()" class="smc-m" src="<?php echo get_template_directory_uri(); ?>/img/header/search-menu-cancel.png">
+			</div>
+			<div id="search-form">
+				<?php include(TEMPLATEPATH . '/searchform-desktop.php'); ?>
+			</div>
+		</div><!-- end #search-->
 		<div id="topnav" class="tnm tnm-m tnm-d"><!-- start #topnav-->
 			<?php wp_nav_menu( array(
 				'menu' => 'topnav',
@@ -28,34 +36,33 @@
 				)
 			);
 			?>
+			<ul>
+				<li onclick="searchMenuOpen">Search</li>
+			</ul>
 		</div><!-- end #topnav-->
-		<div id="search" class="tns tns-m tns-d"><!-- start #search-->
-			
-		</div><!-- end #search-->
-		<div id="custom-mobile-right-icon" class="crmi crmi-m crmi-d">
-		<a href ="<?php echo esc_url( home_url( '/' ) ); ?>messages">
-			<img id="custom-mobile-right-icon-img" class="mmb-m" src="<?php echo get_template_directory_uri(); ?>/img/header/messages-icon-mobile.png">
-		</a>
-		</div>
 	</div>
 	<div id="topnav-mobile-menu" class="tmm tmm-m tmm-d"><!-- start #topnav-mobile-menu-->
-		<div id="search-mobile-container" class="smc smc-m smc-d">
-			<div id="search-mobile-container-content">
-				<div id="search-mobile" class="tnsm tnsm-m tnsm-d">
-					<?php include(TEMPLATEPATH . '/searchform-mobile.php'); ?>
-				</div>
-			</div>
-		</div>
 		<div id="topnav-mobile-container" class="tnmc tnmc-m tnmc-d">
 			<div id="topnav-mobile-container-content" class="tnmcc tnmcc-m tnmcc-d">	
 				<div id="topnav-mobile" class="tnmm tnmm-m tnmm-d">
-					<?php wp_nav_menu( array(
-						'menu' => 'topnav',
-						'class' => 'menu',
-						'container' => 'topnav-mobile'
-						)
-					);
-					?>
+					<span class="jea">
+						<?php wp_nav_menu( array(
+							'menu' => 'topnav-extra',
+							'class' => 'menu',
+							'container' => 'topnav-mobile-container'
+							)
+						);
+						?>
+					</span>
+					<span class="smi">
+						<?php wp_nav_menu( array(
+							'menu' => 'topnav',
+							'class' => 'menu',
+							'container' => 'topnav-mobile-container'
+							)
+						);
+						?>
+					</span>
 				</div>
 			</div>	
 		</div>

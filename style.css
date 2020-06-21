@@ -211,20 +211,39 @@ a:hover{
 /*START mobile menu */	
 #topnav-mobile-menu{
 	position: absolute;
-	top: 55px;
-	left: 0;
-	width: 100%;
+	padding-top: 82px;
+	top: 0;
 	height: 100vh;
-	background: #00ead1;
+	background: #ffffff;
+	display: none;
+	z-index: 9;
 }
-	@media screen and (max-width: 926px){
+	/* start topnav mobile menu div widths */
+	@media screen and (min-width: 899px) and (max-width: 1099px){
+		.tmm-m{
+			width: 30%;
+			right: 0;
+		}
+	}
+	@media screen and (min-width: 701px) and (max-width: 898px){
+		.tmm-m{
+			width: 40%;
+			right: 0;
+		}
+	}
+	@media screen and (max-width: 700px){
+		.tmm-m{
+			width: 100%;
+		}
+	}	
+	@media screen and (max-width: 1099px){
 		.tmm-m, .tmmb-m{
 			display: none;
 		}
 	}	
-	@media screen and (min-width:927px){
+	@media screen and (min-width:1100px){
 		.tmm-d, .tmmb-d{
-			display: none;
+			display: block;
 		}	
 	}	
 	@media (prefers-color-scheme: dark){
@@ -255,7 +274,7 @@ a:hover{
 	top: 0;
 	width: 100%;
 	clear: both;
-	z-index: 8;
+	z-index: 9;
 }
 	@media (prefers-color-scheme: dark){
 		#header-container{
@@ -270,10 +289,13 @@ a:hover{
 		max-width: 1548px;
 		overflow: hidden;
 		padding: 10px 0 10px 0;
+		z-index: 10;
 	}
 		#topnav-menu-button{
-			padding-top: 8px;
-			float: left;
+			position: relative;
+			height: 60px;
+			float: right;
+			z-index: 9;
 		}
 			/* do not delete the media query below */		
 			@media screen and (min-width: 1100px){
@@ -283,12 +305,16 @@ a:hover{
 			}	
 		/*topnav menu only*/
 		#logo{
+			position: relative;
 			width: 96px;
 			height: 60px;
 			float: left;
+			z-index: 9;
 		}
 		#topnav{
-			position: relative;
+			position: absolute;
+			top: 11px;
+			left: 96px;
 			width: fit-content;
 			max-width: 1470px;
 			height: 60px;
@@ -334,6 +360,11 @@ a:hover{
 						color: #4d4d4d;
 					}
 				}
+		@media screen and (max-width: 1099px){
+			#topnav{
+				display: none;
+			}
+		}		
 		/*topnav menu mobile*/	
 		#topnav-mobile-container{
 			width: 100%;
@@ -341,119 +372,73 @@ a:hover{
 		}
 		#topnav-mobile-container-content{
 			margin: 0 auto 0 auto;
-			width: 77%;
+			width: 87%;
+			font-size: 0.8em;
+			text-align: left;
 		}
-			@media screen and (max-width: 926px){	
-				#topnav-mobile{
-					width: 100%;
-					max-width: 767px;
-					height: 100%;
-					text-align: left;
-					z-index: 2;
-				}
-			}       
-			@media screen and (max-width: 926px){
-				#topnav-mobile ul{
-					margin: 0;
-					width: 100%;
-					height: 100%;
-				}
-				#topnav-mobile li{
-					padding: 10px 0 10px 0;
-					border-bottom: 1px solid #37abc8;
-				}
-					#topnav-mobile li:last-child{
-						border-bottom: none;
-					}	
-				#topnav-mobile li a:link{
-					display: block;
-					color: #000000;
-				}
-				#topnav-mobile li a:visited{
-					display: block;
-					color: #000000;
-					padding: 0 0.7em 0 0;
-				}
-				#topnav-mobile ul li a:hover{
-					display: block;
-					color: #000000;
-					text-decoration: none;
-					padding: 0 0.7em 0 0;
-				}
-			}
-				@media screen and (max-width: 926px) and (prefers-color-scheme: dark){
-					#topnav-mobile li{
-						border-bottom: 1px solid #0088aa;
-					}
-					#topnav-mobile li a:link{
-						color: #000000;
-					}
-					#topnav-mobile li a:visited{
-						color: #000000;
-					}
-					#topnav-mobile li a:hover{
-						color: #000000;
-					}
-				}
-			@media screen and (min-width: 927px){
-				.tnmc-d{
-					display: none;
-				}
-			}
-		/*topnav menu mobile - search is a different beast hence the different media query points*/
+		/* join-extra-ark */
+		.jea a:link{
+			display: block;
+			color: #d4aa00;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		.jea a:visited{
+			display: block;
+			color: #d4aa00;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		/* other standard mobile menu items */
+		.smi li a:link{
+			display: block;
+			color: #b3b3b3;
+			text-decoration: none;
+		}
+		.smi li a:visited{
+			display: block;
+			color: #b3b3b3;
+			text-decoration: none;
+		}
+		/*topnav menu mobile search is a different beast hence the different media query points*/
 		#search{
 			position: relative;
-			height: 30px;
+			margin-left: 116px;
+			height: 60px;
+			width: 805px;
+			background: #ffffff;
+			display: none;
+			z-index: 9;
 		}
-			@media screen and (max-width: 926px){
-				.tns-m{
-					display: none;
-				}
+			#search-menu-cancel{
+				margin-left: 10px;
+				width: 22px;
+				float: right;
+			}	
+			#search-form{
+				width: 100%;
+				max-width: 773px;
+				height: 60px;
+				background: #cccccc;
+				float: right;
 			}
-			@media screen and (min-width: 927px) and (max-width: 930px){
-				.tns-d{
-					margin: -38px 0 0 0;
-					width: 205px;
-					float: right;
-				}
-			}
-			@media screen and (min-width: 931px) and (max-width: 990px){
-				.tns-d{
-					margin: 4px 0 0 0;
-					width: 205px;
-					float: right;
-				}
-			}
-			@media screen and (min-width: 991px){
-				.tns-d{
-					margin: 4px 0 0 0;
-					width: 259px;
-					float: right;
-				}
-			}
-				/* search submit */
+			/* search submit */
 				#search-submit{
 					position: relative;
-					height: 20px;
-					width: 20px;
+					margin: -62px 10px 0 0;
+					height: 60px;
+					width: 22px;
 					float: right;
-				}
-				@media screen and (min-width: 927px) and (max-width: 990px){
-					#search-submit{
-						margin: 6px -195px 0 0;
-					}
-				}
-				@media screen and (min-width: 991px){
-					#search-submit{
-						margin: 6px -215px 0 0;
-					}
 				}
 				#search-box{
 					position: relative;
+					width: 100%;
+					max-width: 731px;
+					height: 60px;
+					padding: 0 20px 0 20px;
 					color: #000000;
-					border: 1px solid #ffffff;
-					border-radius: 10px;
-					background: #00ead1;
+					border: 1px solid #cccccc;
+					border-radius: 5px;
 				}
 					@media (prefers-color-scheme: dark){
 						#search-submit{
@@ -464,88 +449,7 @@ a:hover{
 							border: 1px solid #ffffff;
 							background: #72acba;
 						}
-					}
-					@media screen and (min-width: 927px) and (max-width: 990px){
-						#search-box{
-							margin-top: 3px;
-							width: 160px;
-							height: 14px;
-							padding: 5px 30px 5px 10px;
-							float: right;
-						}
-					}
-					@media screen and (min-width: 991px){
-						#search-box{
-							margin-top: 3px;
-							width: 180px;
-							height: 14px;
-							padding: 5px 30px 5px 10px;
-							float: right;
-						}
-					}
-			#custom-mobile-right-icon{
-				padding-top: 0;
-			}
-				@media screen and (max-width: 767px){
-					.crmi-m{
-						margin: -30px 0 0 0;
-						float: right;
-					}
-				}
-				@media screen and (min-width: 768px){
-					.crmi-m{
-						margin: -29px 0 0 0;
-						float: right;
-					}
-				}
-				/* do not delete the media query below */
-				@media screen and (min-width: 927px){
-					.crmi-m{
-						display: none;
-					}
-				}			
-		#search-mobile-container{
-			width: 100%;
-			height: 32px;
-			padding: 5px 0 5px 0;
-		}
-			#search-mobile-container-content{
-				margin: 0 auto 0 auto;
-				width: 77%;
-				height: auto;
-			}
-				#search-mobile{
-					width: 100%;
-					height: 100%;
-				}
-					@media screen and (max-width: 926px){
-						#search-container{
-							padding-right: 40px;
-						}
-						#search-box{
-							margin: 0 auto 0 auto;
-							width: 100%;
-							height: 20px;
-							padding: 5px 30px 5px 10px;
-							border: 1px solid #ffffff;
-							background: #00ead1;
-							float: left;
-						}
-							#search-box::placeholder{
-								color: #4d4d4d;
-							}
-						#search-submit{
-							margin: -26px 10px 0 0;
-							height: 20px;
-							width: 20px;
-							float: right;
-						}	
-						@media (prefers-color-scheme: dark){
-							#search-box{
-								background: #72acba;
-							}	
-						}	
-					}
+					}			
 /*END Header */
 /*START main-showcase */
 #main-showcase{
@@ -619,7 +523,8 @@ a:hover{
 	height: 100%;
 	cursor: pointer;
 	display: none;
-	z-index: 5;
+	background: #202125;
+	z-index: 7;
 }
 /*END overlays */
 /*START playlist */
@@ -1340,13 +1245,15 @@ a:hover{
 	#each-post-content{
 		position: relative;
 		margin: 60px auto 25px auto;
-		width: 100%;
+		width: 90%;
 		max-width: 1548px;
 		text-align: left;
 	}
 		#each-post-content img{
+			margin: 0 auto 15px auto;
 			border-radius: 5px;
 			box-sizing: border-box;
+			display: block;
 		}
 		@media (prefers-color-scheme: dark){
 			#each-post-content img{
