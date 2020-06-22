@@ -22,7 +22,9 @@
 		</div><!-- end #logo-->
 		<div id="search" class="tns tns-m tns-d"><!-- start #search-->
 			<div id="search-menu-cancel">
-				<img id="search-menu-cancel-img" onclick="searchMenuCancel()" class="smc-m" src="<?php echo get_template_directory_uri(); ?>/img/header/search-menu-cancel.png">
+				<a href ="#" onclick="return false;">
+					<img id="search-menu-cancel-img" onclick="searchMenuCancel()" class="smcl" src="<?php echo get_template_directory_uri(); ?>/img/header/search-menu-cancel.png">
+				</a>
 			</div>
 			<div id="search-form">
 				<?php include(TEMPLATEPATH . '/searchform-desktop.php'); ?>
@@ -36,11 +38,9 @@
 				)
 			);
 			?>
-			<ul>
-				<li onclick="searchMenuOpen">Search</li>
-			</ul>
 		</div><!-- end #topnav-->
 	</div>
+	
 	<div id="topnav-mobile-menu" class="tmm tmm-m tmm-d"><!-- start #topnav-mobile-menu-->
 		<div id="topnav-mobile-container" class="tnmc tnmc-m tnmc-d">
 			<div id="topnav-mobile-container-content" class="tnmcc tnmcc-m tnmcc-d">	
@@ -64,6 +64,11 @@
 						?>
 					</span>
 				</div>
+				<div id="search-mobile" class="tnsm tnsm-m tnsm-d"><!-- start #search-->
+					<div id="search-form-mobile">
+						<?php include(TEMPLATEPATH . '/searchform-mobile.php'); ?>
+					</div>
+				</div><!-- end #search-->
 			</div>	
 		</div>
 	</div><!-- end #topnav-mobile-menu-->	

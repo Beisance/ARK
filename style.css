@@ -224,6 +224,10 @@ a:hover{
 			width: 30%;
 			right: 0;
 		}
+		/* don't show the last search li of topnav */
+		.searchMenuOpen{
+			display: none;
+		}
 	}
 	@media screen and (min-width: 701px) and (max-width: 898px){
 		.tmm-m{
@@ -285,7 +289,6 @@ a:hover{
 		position: relative;
 		margin: 0 auto 0 auto;
 		width: 90%;
-		height: 60px;
 		max-width: 1548px;
 		overflow: hidden;
 		padding: 10px 0 10px 0;
@@ -372,9 +375,13 @@ a:hover{
 		}
 		#topnav-mobile-container-content{
 			margin: 0 auto 0 auto;
-			width: 87%;
+			width: 100%;
 			font-size: 0.8em;
 			text-align: left;
+		}
+		#topnav-mobile{
+			margin: 0 auto 0 auto;
+			width: 90%;
 		}
 		/* join-extra-ark */
 		.jea a:link{
@@ -400,56 +407,88 @@ a:hover{
 			color: #b3b3b3;
 			text-decoration: none;
 		}
-		/*topnav menu mobile search is a different beast hence the different media query points*/
-		#search{
-			position: relative;
-			margin-left: 116px;
-			height: 60px;
-			width: 805px;
-			background: #ffffff;
-			display: none;
-			z-index: 9;
-		}
-			#search-menu-cancel{
-				margin-left: 10px;
-				width: 22px;
-				float: right;
-			}	
-			#search-form{
-				width: 100%;
-				max-width: 773px;
-				height: 60px;
-				background: #cccccc;
-				float: right;
+		/*search for desktop*/
+		@media screen and (min-width: 1100px) and (max-width: 1920px){
+			#search{
+				position: relative;
+				margin: 10px 0 0 116px;
+				height: 40px;
+				width: 770px;
+				display: none;
+				z-index: 9;
 			}
-			/* search submit */
+				#search-menu-cancel{
+					margin: -10px 0 0 10px;
+					width: 22px;
+					float: right;
+				}	
+				#search-form{
+					width: 100%;
+					max-width: 738px;
+					height: 40px;
+					float: right;
+				}
 				#search-submit{
 					position: relative;
-					margin: -62px 10px 0 0;
-					height: 60px;
+					margin: -42px 10px 0 0;
+					height: 40px;
 					width: 22px;
 					float: right;
 				}
 				#search-box{
 					position: relative;
 					width: 100%;
-					max-width: 731px;
-					height: 60px;
+					max-width: 698px;
+					height: 40px;
 					padding: 0 20px 0 20px;
 					color: #000000;
 					border: 1px solid #cccccc;
-					border-radius: 5px;
+					border-radius: 10px;
 				}
-					@media (prefers-color-scheme: dark){
-						#search-submit{
-							background: none;
-						}
-						#search-box{
-							color: #4d4d4d;
-							border: 1px solid #ffffff;
-							background: #72acba;
-						}
-					}			
+		}			
+		/*search for mobile*/	
+		@media screen and (max-width: 1099px){
+			/* do not display topnav search */
+			.tns{
+				display: none;
+			}
+			#search-mobile{
+				margin: 0 auto 0 auto;
+				width: 90%;
+				border: 1px solid #ffccaa;
+				display: block;
+			}
+			#search-form-mobile{
+				height: 40px;
+				text-align: center;
+				display: inline-block;
+			}
+			#search-submit-mobile{
+				position: relative;
+				margin: -40px -75px 0 0;
+				height: 40px;
+				width: 22px;
+				float: right;
+			}
+			#search-box-mobile{
+				position: relative;
+				width: 100%;
+				height: 38px;
+				padding: 0 20px 0 20px;
+				color: #000000;
+				border: 1px solid #000;
+			}
+		}		
+		@media (prefers-color-scheme: dark){
+			#search-submit{
+				background: none;
+			}
+			#search-box{
+				color: #4d4d4d;
+				border: 1px solid #ffffff;
+				background: #72acba;
+			}
+		}
 /*END Header */
 /*START main-showcase */
 #main-showcase{

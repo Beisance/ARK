@@ -122,4 +122,12 @@
 
 <?php include("inc/js-mobile-menu-topnav.php"); ?>
 
+<?php include("inc/js-search-menu-open.php"); ?>
+
+<?php include("inc/js-search-menu-close.php"); ?>
+
+<?php include("inc/js-outside-modal-click-search.php"); ?>
+
+<?php include("inc/js-outside-modal-click-mobile-menu.php"); ?>
+
 <?php include("inc/topnav.php"); ?>
