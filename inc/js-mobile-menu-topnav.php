@@ -16,6 +16,8 @@
 				$(".ovl-m").css("display", "block");
 				//Transitioning the overlay background-color with transition.min.js
 				transition.begin(overlay, "background-color #202125 rgba(32,33,37,0.3) 1ms ease-in-out");
+				//Toggling the mobile menu
+				$(".tmm-m").animate({right: "0"}, 800);
 			}
 			else 
 			{
@@ -23,9 +25,9 @@
 				transition.begin(overlay, "background-color rgba(32,33,37,0.5) #35434a 4000ms ease-out");
 				$(".hcb").css("background-color", "rgba(255,255,255,1)");
 				$(".ovl-m").css("display", "none");
+				//Toggling the mobile menu
+				$(".tmm-m").animate({right: "-100vh"}, 800);
 			}
-			//Toggling the mobile menu
-			$(".tmm-m").slideToggle("slow");
-		}
+}
 	</script>');
 ?>

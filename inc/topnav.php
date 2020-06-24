@@ -20,13 +20,13 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/img/header/logo.png"/>
 			</a>
 		</div><!-- end #logo-->
-		<div id="search" class="tns tns-m tns-d"><!-- start #search-->
+		<div id="search-desktop" class="tns tns-m tns-d"><!-- start #search-->
 			<div id="search-menu-cancel">
 				<a href ="#" onclick="return false;">
 					<img id="search-menu-cancel-img" onclick="searchMenuCancel()" class="smcl" src="<?php echo get_template_directory_uri(); ?>/img/header/search-menu-cancel.png">
 				</a>
 			</div>
-			<div id="search-form">
+			<div id="search-form-desktop">
 				<?php include(TEMPLATEPATH . '/searchform-desktop.php'); ?>
 			</div>
 		</div><!-- end #search-->

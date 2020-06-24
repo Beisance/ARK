@@ -11,12 +11,12 @@
 			$(".smcl").click(function() {
 				if ($(window).width() > 1099) {
 					$(".tnm").css("display", "block");
+					$(".tns").css("display", "none");
+					$(".searchMenuOpen").css("display", "inline-block");
 				}
 				else{
 					$(".tnm").css("display", "none");
 				}	
-				$(".tns").css("display", "none");
-				$(".searchMenuOpen").css("display", "inline-block");
 			});
 		});	
 	</script>');
