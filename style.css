@@ -212,13 +212,22 @@ a:hover{
 #topnav-mobile-menu{
 	position: absolute;
 	right: -100vh;
-	padding-top: 82px;
 	top: 0;
 	height: 100vh;
 	background: #ffffff;
 	display: block;
-	z-index: 9;
+	z-index: 10;
 }
+	/* mobile-menu-button-close */
+	.mmbc{
+		margin: 0 auto 0 auto;
+		width: 90%;
+		height: 60px;
+	}
+		.mmbc img{
+			margin: 10px 40px 0 0;
+			float: right;
+		}
 	/* start topnav mobile menu div widths */
 	@media screen and (max-width: 1099px){
 		/* don't show the last search li of topnav */
@@ -408,7 +417,7 @@ a:hover{
 				border: 1px solid #ffccaa;
 				display: none;
 			}
-				#search-menu-cancel{
+				#search-menu-close{
 					margin: -10px 10px 0 10px;
 					width: 22px;
 					float: right;

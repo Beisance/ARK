@@ -13,7 +13,7 @@
 <div id="header-container"><!-- start #header-container-->
 	<div id="header-container-content" class="hcc hcc-m hcc-d">
 		<div id="topnav-menu-button" class="tnmb tnmb-m tnmb-d">
-			<img id="topnav-menu-button-img" onclick="mobileMenuTopnav()" class="tnmb-m" src="<?php echo get_template_directory_uri(); ?>/img/header/topnav-menu-button.png">
+			<img id="topnav-menu-button-img" onclick="mobileMenuOpen()" class="tnmb-m" src="<?php echo get_template_directory_uri(); ?>/img/header/topnav-menu-button.png">
 		</div>
 		<div id="logo" class="tnl tnl-m tnl-d"><!-- start #logo-->
 			<a href ="<?php echo esc_url( home_url( '/' ) ); ?>">
@@ -21,9 +21,9 @@
 			</a>
 		</div><!-- end #logo-->
 		<div id="search-desktop" class="tns tns-m tns-d"><!-- start #search-->
-			<div id="search-menu-cancel">
+			<div id="search-menu-close">
 				<a href ="#" onclick="return false;">
-					<img id="search-menu-cancel-img" onclick="searchMenuCancel()" class="smcl" src="<?php echo get_template_directory_uri(); ?>/img/header/search-menu-cancel.png">
+					<img id="search-menu-close-img" onclick="searchMenuclose()" class="smcl" src="<?php echo get_template_directory_uri(); ?>/img/header/search-menu-close.png">
 				</a>
 			</div>
 			<div id="search-form-desktop">
@@ -44,6 +44,9 @@
 	<div id="topnav-mobile-menu" class="tmm tmm-m tmm-d"><!-- start #topnav-mobile-menu-->
 		<div id="topnav-mobile-container" class="tnmc tnmc-m tnmc-d">
 			<div id="topnav-mobile-container-content" class="tnmcc tnmcc-m tnmcc-d">	
+				<div id="mobile-menu-button-close" class="mmbc">
+					<img id="mobile-menu-button-close-img" onclick="mobileMenuClose()" class="mmbci" src="<?php echo get_template_directory_uri(); ?>/img/header/mobile-menu-close.png">
+				</div>
 				<div id="topnav-mobile" class="tnmm tnmm-m tnmm-d">
 					<span class="jea">
 						<?php wp_nav_menu( array(
