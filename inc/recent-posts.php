@@ -5,7 +5,7 @@
  */
 ?>
 
-<div id="socket-main" class="sm"><!--start #socket-main-->	
+<div id="socket-main" class="sm-recent"><!--start #socket-main-->	
 	<div id="socket-main-content" class="smc-recent"><!--start #socket-main-content-->	
 		<div id="socket-main-content-stack-2" class="smcs-2-frontpage"><!--start #"socket-main-content-stack-2-->	
 			<div id="socket-main-content-slice-2" class="smcs2"><!--start #socket-main-content-slice-2-->	

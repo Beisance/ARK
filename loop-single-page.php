@@ -98,10 +98,6 @@ The loop that displays singles.
 		</span>
 	</div><!-- end #each-post-title-->
 	
-	<div id="each-post-thumbnail" class="epthumb-single">
-			<?php the_post_thumbnail(); ?>
-	</div>
-	
 	<div id="each-post-author-date-time" class="epadt epadt-m epadt-d epadt-single">
 		<div id="each-post-author" class="epa-single">
 			<?php the_author_link(); ?>

@@ -121,10 +121,16 @@ a:hover{
 	font-family: 'Helvetica', sans-serif;
 	background: #ffffff;
 }
+	.sm, .sm-single{
+		margin: 80px 0 0 0;
+	}
+	.sm-recent{
+		margin: 0 0 0 0;
+	}
 	/* socket-main-content */
 	.smc-frontpage{
 		position: relative;
-		margin: 80px auto 0 auto;
+		margin: 0 auto 0 auto;
 		width: 90%;
 		max-width: 1548px;
 		overflow: hidden;
@@ -280,6 +286,9 @@ a:hover{
 	clear: both;
 	z-index: 9;
 }
+	.hc{
+		background: #ffffff;
+	}
 	@media (prefers-color-scheme: dark){
 		#header-container{
 			background: #72acba;
@@ -1001,13 +1010,12 @@ a:hover{
 			font-size: 1.7em;
 		}
 		.epts-single{
-			margin: -35px auto 0 auto;
+			margin: 0 auto 0 auto;
 			width: 90%;
 			max-width: 1548px;
 			font-size: 2.2em;
 			line-height: 60px;
-			color: #ffffff;
-			z-index: 8;
+			color: #000000;
 		}
 		/* end spans */
 		@media (prefers-color-scheme: dark){
@@ -1023,7 +1031,8 @@ a:hover{
 		}
 	#each-post-author-date-time{
 		position: relative;
-		width: 100%;
+		margin: 0 auto 0 auto 0;
+		width: 90%;
 		font-size: 16px;
 		overflow: hidden;
 	}
@@ -1032,7 +1041,7 @@ a:hover{
 			max-width: 430px;
 		}
 		.epadt-single{
-			margin: -70px auto 0 auto;
+			margin: 0 auto 0 auto;
 			max-width: 1548px;
 		}
 		#each-post-author{
@@ -1044,7 +1053,7 @@ a:hover{
 			.epa-single{
 				font-size: 1.3em;
 				font-weight: bold;
-				color: #ffffff;
+				color: #4d4d4d;
 			}
 			@media (prefers-color-scheme: dark){
 				#each-post-author{
@@ -1059,16 +1068,16 @@ a:hover{
 				color: #999999;	
 			}
 			.epdt-single{
-				color: #e6e6e6;
+				color: #4d4d4d;
 			}
 				.epdt-twitter{
 					margin-left: 5px; 
 				}
 					.epdt-twitter a:link{
-						color: #e6e6e6;
+						color: #4d4d4d;
 					}
 					.epdt-twitter a:visited{
-						color: #e6e6e6;
+						color: #4d4d4d;
 					}
 					.epdt-twitter a:hover{
 						color: #00aa00;
@@ -1131,11 +1140,9 @@ a:hover{
 		}
 		.pc-single{
 			position: relative;
-			margin: 81px auto 30px auto;
+			margin: 0 auto 0 auto;
 			width: 90%;
 			max-width: 1548px;
-			border-top: 1px solid #554400;
-			z-index: 8;
 		}
 			.pc-single-span{
 				width: fit-content;
@@ -1259,7 +1266,7 @@ a:hover{
 			float: left;
 		}
 		.epthumb-single{
-			margin: -239px auto 0 auto;
+			margin: 0 auto 0 auto;
 			max-width: 1920px;
 			height: auto;
 			background: #000000;
@@ -1291,7 +1298,7 @@ a:hover{
 /* Other */	
 	#each-post-content{
 		position: relative;
-		margin: 60px auto 25px auto;
+		margin: 20px auto 25px auto;
 		width: 90%;
 		max-width: 1548px;
 		text-align: left;

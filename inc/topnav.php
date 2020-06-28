@@ -10,7 +10,7 @@
 	</div>
 </div>
 
-<div id="header-container"><!-- start #header-container-->
+<div id="header-container" class="hc"><!-- start #header-container-->
 	<div id="header-container-content" class="hcc hcc-m hcc-d">
 		<div id="topnav-menu-button" class="tnmb tnmb-m tnmb-d">
 			<img id="topnav-menu-button-img" onclick="mobileMenuOpen()" class="tnmb-m" src="<?php echo get_template_directory_uri(); ?>/img/header/topnav-menu-button.png">
