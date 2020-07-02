@@ -44,8 +44,15 @@
 	<div id="topnav-mobile-menu" class="tmm tmm-m tmm-d"><!-- start #topnav-mobile-menu-->
 		<div id="topnav-mobile-container" class="tnmc tnmc-m tnmc-d">
 			<div id="topnav-mobile-container-content" class="tnmcc tnmcc-m tnmcc-d">	
-				<div id="mobile-menu-button-close" class="mmbc">
-					<img id="mobile-menu-button-close-img" onclick="mobileMenuClose()" class="mmbci" src="<?php echo get_template_directory_uri(); ?>/img/header/mobile-menu-close.png">
+				<div id="mobile-header" class="mh">
+					<div id="mobile-logo" class="ml">
+						<a href ="<?php echo esc_url( home_url( '/' ) ); ?>">
+							<img id="logo-mobile-image" src="<?php echo get_template_directory_uri(); ?>/img/header/logo-none.png"/>
+						</a>
+					</div>
+					<div id="mobile-menu-button-close" class="mmbc">
+						<img id="mobile-menu-button-close-img" onclick="mobileMenuClose()" class="mmbci" src="<?php echo get_template_directory_uri(); ?>/img/header/mobile-menu-close.png">
+					</div>
 				</div>
 				<div id="topnav-mobile" class="tnmm tnmm-m tnmm-d">
 					<span class="jea">

@@ -17,6 +17,11 @@
 				$(".hc").css("background-color", "#bbbcbd");
 				//Toggling the mobile menu
 				$(".tmm").animate({right: "0"}, 800);
+					if ($(window).width() < 701) {
+						$(".tnl").css("display", "none");
+						document.getElementById("logo-mobile-image").src = "');bloginfo('stylesheet_directory'); echo('/img/header/logo-white.png";
+						document.getElementById("mobile-menu-button-close-img").src = "');bloginfo('stylesheet_directory'); echo('/img/header/mobile-menu-close-white.png";
+					}	
 			}
 		}
 	</script>');

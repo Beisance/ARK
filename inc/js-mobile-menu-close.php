@@ -12,8 +12,10 @@
 				transition.begin(overlay, "background-color rgba(32,33,37,0.5) #35434a 4000ms ease-out");
 				$(".hc").css("background-color", "#ffffff");
 				$(".ovl-m").css("display", "none");
+				document.getElementById("logo-mobile-image").src = "');bloginfo('stylesheet_directory'); echo('/img/header/logo-none.png";
 				//Toggling the mobile menu
 				$(".tmm-m").animate({right: "-100vh"}, 800);
+				$(".tnl").css("display", "block");
 		}
 	</script>');
 ?>

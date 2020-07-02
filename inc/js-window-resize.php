@@ -20,8 +20,12 @@
 					$(".tmm").css("right", "-100vh");
 				}
 				$(".hcb").css("background-color", "rgba(255,255,255,1)");
+				$(".hc").css("background-color", "#ffffff");
 				$(".tns").css("display", "none");
+				$(".tnl").css("display", "block");
 				$(".ovl-m").css("display", "none");
+				document.getElementById("logo-mobile-image").src = "');bloginfo('stylesheet_directory'); echo('/img/header/logo-none.png";
+				document.getElementById("mobile-menu-button-close-img").src = "');bloginfo('stylesheet_directory'); echo('/img/header/mobile-menu-close.png";
 			});
 		});
 	</script>');	
