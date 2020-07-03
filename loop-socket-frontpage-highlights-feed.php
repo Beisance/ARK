@@ -36,7 +36,7 @@ The loop that displays posts.
 				</span>
 			</div><!-- end #each-post-title-->
 			<div id="each-post-author-date-time" class="epadt epadt-m epadt-d epadt-front-page">
-				<div id="each-post-author">
+				<div id="each-post-author" class="epa-frontpage">
 					<?php the_author_link(); ?>
 				</div>
 				<div id="each-post-date-time">

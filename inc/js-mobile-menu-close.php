@@ -13,6 +13,7 @@
 				$(".hc").css("background-color", "#ffffff");
 				$(".ovl-m").css("display", "none");
 				document.getElementById("logo-mobile-image").src = "');bloginfo('stylesheet_directory'); echo('/img/header/logo-none.png";
+				document.getElementById("search-submit-mobile").src = "');bloginfo('stylesheet_directory'); echo('/img/header/search-icon.png";
 				//Toggling the mobile menu
 				$(".tmm-m").animate({right: "-100vh"}, 800);
 				$(".tnl").css("display", "block");

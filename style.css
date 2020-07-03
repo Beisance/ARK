@@ -31,14 +31,14 @@ body{
 	min-height: 100%;
 	font-family: 'Arimo', sans-serif;
 	font-size: 22px;
-	line-height: 35px;
+	line-height: 25px;
 	word-spacing: 1px;
 	font-kerning: normal;
 	text-align: center;
 	vertical-align: top;
 	color: #4d4d4d;
 	background: #e6e6e6;
-}	
+}
 	@media (prefers-color-scheme: dark){
 		body{
 			background: #202125;
@@ -46,7 +46,7 @@ body{
 		}
 	}
 p{
-	margin: 0 0 30px 0;
+	margin: 0 0 20px 0;
 }
 h2{
 	padding: 0 0 10px 0;
@@ -120,7 +120,7 @@ a:hover{
 		margin: 80px 0 0 0;
 	}
 	.sm-recent{
-		margin: 0 0 0 0;
+		padding: 0 0 10px 0;
 	}
 	/* socket-main-content */
 	.smc-frontpage{
@@ -188,7 +188,7 @@ a:hover{
 			#socket-header{
 				margin: 0 0 10px 0;
 				width: 100%;
-				font-size: 1.1em;
+				font-size: 1em;
 				text-align: left;
 			}
 				.sh-extra-ark{
@@ -277,7 +277,7 @@ a:hover{
 		float: right;
 	}
 		.mmbc img{
-			margin: 10px 25px 0 0;
+			margin: 10px 35px 0 0;
 		}
 		@media screen and (max-width: 700px){
 				.tmm{
@@ -313,6 +313,11 @@ a:hover{
 					color: #ffffff;
 					text-decoration: none;
 				}
+		}
+		@media screen and (max-width: 899px) and (min-width: 701px){
+			.mmbc img{
+				margin: 10px 25px 0 0;
+			}
 		}
 		@media screen and (min-width: 701px){
 				.tmm{
@@ -395,6 +400,7 @@ a:hover{
 	position: fixed;
 	top: 0;
 	width: 100%;
+	height: 80px;
 	clear: both;
 	z-index: 9;
 }
@@ -439,13 +445,12 @@ a:hover{
 			position: absolute;
 			top: 11px;
 			left: 96px;
-			width: fit-content;
 			max-width: 1470px;
 			height: 60px;
 			font-weight: normal;
-			font-size: 1em;
+			font-size: 0.9em;
 			text-transform: none;
-			padding-left: 20px;
+			padding: 17px 0 0 20px;
 			float: left;
 		}
 			/* Top Menu */
@@ -453,7 +458,6 @@ a:hover{
 				margin: 0;
 				width: 100%;
 				height: 100%;
-				padding-top: 13px;
 			}
 			#topnav li{
 				display: inline-block;
@@ -483,7 +487,7 @@ a:hover{
 					#topnav li a:visited{
 						color: #4d4d4d;
 					}
-				}
+				}	
 		@media screen and (max-width: 1099px){
 			#topnav{
 				display: none;
@@ -493,9 +497,9 @@ a:hover{
 		@media screen and (min-width: 1100px) and (max-width: 1920px){
 			#search-desktop{
 				position: relative;
-				margin: 10px 0 0 116px;
+				margin: 10px 0 0 120px;
 				height: 40px;
-				width: 780px;
+				width: 700px;
 				border: 1px solid #ffccaa;
 				display: none;
 			}
@@ -518,8 +522,7 @@ a:hover{
 				}
 				#search-box-desktop{
 					position: relative;
-					margin: 0 0 2px 0;
-					width: 664px;
+					width: 583px;
 					height: 38px;
 					padding: 0 20px 0 20px;
 					color: #000000;
@@ -528,24 +531,51 @@ a:hover{
 				}
 					#search-box-desktop::placeholder{
 						color: #b3b3b3;
+						font-size: 1.2em;
 					}
 		}			
 		/*search for mobile*/	
 		@media screen and (max-width: 700px){
+			/* do not display topnav search */
+			.tns{
+				display: none;
+			}
+			#search-mobile{
+				margin: 0 auto 0 auto;
+				width: 90%;
+				height: 40px;
+				padding: 0 1px 0 1px;
+				border: 1px solid #ffffff;
+			}
+			#search-form-mobile{
+				height: 100%;
+				width: 100%;
+			}
+			#search-container{
+				padding-right: 40px;
+			}
+			#search-submit-mobile{
+				position: relative;
+				margin: 0 -33px 0 0;
+				height: 40px;
+				width: 22px;
+				float: right;
+			}
 			#search-box-mobile{
 				margin: 0 auto 0 auto;
 				width: 100%;
 				height: 29px;
 				padding: 5px 30px 5px 10px;
 				border: none;
-				float: left;
 				background: #67ce9a;
+				float: left;
 			}
-			#search-box-mobile::placeholder{
+				#search-box-mobile::placeholder{
 					color: #ffffff;
+					font-size: 1.2em;
 				}
-		}
-		@media screen and (max-width: 1099px){
+		}	
+		@media screen and (max-width: 1099px) and (min-width: 701px){
 			/* do not display topnav search */
 			.tns{
 				display: none;
@@ -1034,17 +1064,20 @@ a:hover{
 		.epts-extra-ark{
 			margin: 0 auto 0 auto;
 			width: 100%;
-			font-size: 1.7em;
+			font-size: 1.2em;
+			line-height: 30px;
 		}
 		.epts-highlights{
 			margin: 0 auto 0 auto;
 			width: 100%;
-			font-size: 1em;
+			font-size: 0.9em;
+			line-height: 30px;
 		}
 		.epts-latest{
 			margin: 0 auto 0 auto;
 			width: 100%;
-			font-size: 1.7em;
+			font-size: 1.2em;
+			line-height: 30px;
 		}
 		.epts-single{
 			margin: 0 auto 0 auto;
@@ -1054,16 +1087,28 @@ a:hover{
 			line-height: 60px;
 			color: #000000;
 		}
-		@media screen and (max-width: 849px){
+		@media screen and (max-width: 1100px) and (min-width: 850px){
 			.ept-frontpage{
-				font-size: 0.8em;
+				font-size: 0.75em;
 			}
 			.epts-latest{
-				font-size: 1em;
+				font-size: 0.75em;
 			}	
 			.epts-single{
-				font-size: 1.9em;
+				font-size: 1.5em;
 				line-height: 40px;
+			}
+		}
+		@media screen and (max-width: 849px){
+			.ept-frontpage{
+				font-size: 0.7em;
+			}
+			.epts-latest{
+				font-size: 0.75em;
+			}	
+			.epts-single{
+				font-size: 0.75em;
+				line-height: 35px;
 			}
 		}	
 		/* end spans */
@@ -1096,16 +1141,14 @@ a:hover{
 			float: left;
 		}
 			.epa-frontpage{
-				color: #4d4d4d;	
+				color: #ff9955;	
 			}
 			.epa-single{
-				font-size: 1.3em;
-				font-weight: bold;
-				color: #4d4d4d;
+				color: #ff6600;
 			}
 			@media (prefers-color-scheme: dark){
 				#each-post-author{
-					color: #80b3ff;
+					color: #ff6600;
 				}
 			}
 		#each-post-date-time{
@@ -1140,11 +1183,16 @@ a:hover{
 						font-size: 0.6em;
 					}
 			}
-			@media screen and (min-width: 850px){
+			@media screen and (max-width: 1099px) and (min-width: 850px){
 					.epadt{
-						font-size: 0.8em;
+						font-size: 0.6em;
 					}
 			}			
+			@media screen and (min-width: 1100px){
+					.epadt{
+						font-size: 0.7em;
+					}
+			}	
 			@media (prefers-color-scheme: dark){
 				#each-post-date-time{
 					color: #ccaaff;
@@ -1159,6 +1207,7 @@ a:hover{
 		color: #999999;
 		font-family: 'Helvetica';
 		font-size: 0.9em;
+		line-height: 30px;
 		text-align: left;
 	}
 		#each-post-excerpt a:link{
@@ -1170,6 +1219,11 @@ a:hover{
 		#each-post-excerpt a:hover{
 			color: #000000;
 			text-decoration: none;
+		}
+		@media screen and (max-width: 1100px) and (min-width: 850px){
+			#each-post-excerpt{
+				font-size: 0.75em;
+			}
 		}
 		@media (prefers-color-scheme: dark){
 			#each-post-excerpt{
@@ -1301,6 +1355,7 @@ a:hover{
 			display: block;
 		}
 	.epns-3-latest{
+		margin-bottom: 10px;
 		width: 33.3%;
 		max-width: 516px;
 		float: left;
@@ -1392,16 +1447,22 @@ a:hover{
 	}
 	#post-navigation{
 		margin: 5px 0 5px 0;
-		padding: 10px 0 0 0;
-		font-size: 0.88em;
+		padding: 10px 0 5px 0;
+		font-size: 0.8em;
 		text-align: center;
 		border-top: 1px solid #cccccc;
 		clear: both;
 	}		
 	@media screen and (max-width: 849px){
 		#each-post-content{
-			margin: 0 auto 15px auto;
+			margin: 5px auto 15px auto;
+			font-size: 0.71em;
 		}
+	}
+	@media screen and (max-width: 1099px){
+		#post-navigation{
+			font-size: 0.7em;
+		}	
 	}		
 		/* START wp-pagenavi customisations */
 		.wp-pagenavi {
@@ -1409,11 +1470,11 @@ a:hover{
 			clear: both;
 		}
 		.wp-pagenavi a, .wp-pagenavi span {
+			margin: 2px 3px 2px 3px;
 			text-decoration: none;
 			border: 1px solid #cccccc;
 			border-radius: 5px;
 			padding: 3px 5px;
-			margin: 2px;
 		}
 		.wp-pagenavi a:hover, .wp-pagenavi span.current {
 			border-color: #4d4d4d;
@@ -1650,11 +1711,11 @@ a:hover{
 /*END company-showcase */
 /*START Contact Form 7 customizations */
 .grey-text{
+	margin: 15px 0 0 0;
 	width: 100%; 
 	max-width: 320px;
 	color: #666666;
 	padding: 5px 5px 5px 5px;
-	margin: 5px 0 0 0;
 	border: 1px solid #cccccc;
 }
 	@media screen and (max-width:491px){
@@ -1663,11 +1724,11 @@ a:hover{
 		}
 	}
 .text-area{
+	margin: 15px 0 0 0;
 	width: 100%; 
 	max-width: 320px;
 	color: #666666;
 	padding: 5px 5px 5px 5px;
-	margin: 5px 0 0 0;
 	border: 1px solid #cccccc;
 }
 	@media screen and (max-width:491px){
@@ -1867,7 +1928,7 @@ div.wpcf7-form {
 #downnav{
 	position: relative;
 	padding: 10px 0 5px 0;
-	font-weight: normal;
+	font-size: 0.7em;
 	color: #000000;
 	background: #e6e6e6;
 }
