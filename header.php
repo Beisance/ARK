@@ -71,7 +71,7 @@
 <!-- other -->
 <!-- browser header color customization -->
 <meta name="viewport" content="minimum-scale=1">
-<meta name="theme-color" content="#87cdde" />
+<meta name="theme-color" content="#ffffff" />
 <meta charset="<?php bloginfo( 'charset' ); ?>"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="description" content="ARK">

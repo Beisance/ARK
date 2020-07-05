@@ -17,6 +17,8 @@
 				//Toggling the mobile menu
 				$(".tmm-m").animate({right: "-100vh"}, 800);
 				$(".tnl").css("display", "block");
+				//Enable page scrolling: resetting the class for the body
+				$(".mb").css("overflow", "unset");
 		}
 	</script>');
 ?>

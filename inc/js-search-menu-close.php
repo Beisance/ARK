@@ -16,7 +16,7 @@
 				}
 				else{
 					$(".tnm").css("display", "none");
-				}	
+				}
 			});
 		});	
 	</script>');

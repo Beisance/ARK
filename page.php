@@ -6,12 +6,14 @@ Template Name: ARK DefaultPage
 
 <?php get_header(); ?>
 
-<div id="socket-main" class="sm"><!--start #socket-main-->	
+<div id="socket-main" class="sm-page"><!--start #socket-main-->	
 	<?php include("inc/page-showcase-selector.php"); ?>
 	<div id="socket-main-content" class="smc-frontpage"><!--start #socket-main-content-->		
 		<div id="socket-main-content-slice-2" class="smcs2"><!--start #socket-main-content-slice-2-->	
-			<div id="socket-header" class="sh-latest">
+			<div id="socket-header" class="sh-page">
 				<?php wp_title(""); ?>
+			</div>
+			<div id="spacer-1">
 			</div>
 			<?php include("inc/custom-content-selector.php"); ?>
 			<?php include("inc/loop-selector.php"); ?>	
