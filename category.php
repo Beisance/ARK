@@ -114,9 +114,6 @@ Template Name: ARK GenericCategoryPage
 
 <?php include("inc/google-analytics.php"); ?>
 
-<div id="overlay" class="ovl ovl-m ovl-d">
-</div>
-
 </body>
 
 </html>

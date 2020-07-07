@@ -82,5 +82,7 @@
 			</div>	
 		</div>
 	</div><!-- end #topnav-mobile-menu-->	
+	<div id="overlay" class="ovl ovl-m ovl-d ovl-t-m">
+	</div>
 </div><!-- end #header-container-->
 

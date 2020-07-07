@@ -13,7 +13,6 @@
 				if ($(".tmm").css("right") === "0px"){
 					document.getElementById("topnav-menu-button-img").src = "');bloginfo('stylesheet_directory'); echo('/img/header/topnav-menu-button.png";
 					transition.begin(overlay, "background-color rgba(32,33,37,0.5) #35434a 4000ms ease-out");
-					$(".hc").css("background-color", "#ffffff");
 					$(".ovl-m").css("display", "none");
 					//Toggling the mobile menu
 					container2.animate({right: "-100vh"}, 800);

@@ -15,7 +15,6 @@
 						$(".ovl-m").css("display", "block");
 						//Transitioning the overlay background-color with transition.min.js
 						transition.begin(overlay, "background-color #202125 rgba(32,33,37,0.3) 1ms ease-in-out");
-						$(".hc").css("background-color", "#bbbcbd");
 					}	
 				//Toggling the mobile menu
 				$(".tmm").animate({right: "0"}, 800);

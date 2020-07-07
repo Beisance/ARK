@@ -14,9 +14,6 @@ Template Name: ARK FrontPage
 
 <?php include("inc/google-analytics.php"); ?>
 
-<div id="overlay" class="ovl ovl-m ovl-d ovl-t-m">
-</div>
-
 </body>
 
 </html>
