@@ -22,7 +22,7 @@
 				$(".mb").css("overflow", "hidden");
 					if ($(window).width() < 701) {
 						$(".tnl").css("display", "none");
-						document.getElementById("logo-mobile-image").src = "');bloginfo('stylesheet_directory'); echo('/img/header/logo-white.png";
+						document.getElementById("logo-mobile-image").src = "');bloginfo('stylesheet_directory'); echo('/img/header/logo-black.png";
 						document.getElementById("mobile-menu-button-close-img").src = "');bloginfo('stylesheet_directory'); echo('/img/header/mobile-menu-close-white.png";
 						document.getElementById("search-submit-mobile").src = "');bloginfo('stylesheet_directory'); echo('/img/header/search-icon-white.png";
 					}	

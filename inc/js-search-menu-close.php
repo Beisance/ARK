@@ -6,7 +6,7 @@
 <?php
 	echo ('
 	<script>
-		//Switching menu search menu off
+		//Switching search menu off
 		$(document).ready(function () {
 			$(".smcl").click(function() {
 				if ($(window).width() > 1099) {

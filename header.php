@@ -132,4 +132,6 @@
 
 <?php include("inc/js-outside-popup-click-mobile-menu.php"); ?>
 
+<?php include("inc/js-search-menu-close-on-scroll.php"); ?>
+
 <?php include("inc/topnav.php"); ?>

@@ -313,7 +313,7 @@ a:hover{
 		}
 		@media screen and (max-width: 700px){
 				.tmm{
-					background: #12af68;
+					background: #ececec;
 				}
 				.tnmcc{
 					font-size: 0.8em;
@@ -324,31 +324,31 @@ a:hover{
 				/* join-extra-ark */
 				.jea a:link{
 					display: block;
-					color: #d4aa00;
+					color: #216778;
 					font-weight: bold;
 					text-decoration: none;
 				}
 				.jea a:visited{
 					display: block;
-					color: #d4aa00;
+					color: #216778;
 					font-weight: bold;
 					text-decoration: none;
 				}
 				/* other standard mobile menu items */
 				.smi li a:link{
 					display: block;
-					color: #ffffff;
+					color: #4d4d4d;
 					text-decoration: none;
 				}
 				.smi li a:visited{
 					display: block;
-					color: #ffffff;
+					color: #4d4d4d;
 					text-decoration: none;
 				}
 		}
 		@media screen and (max-width: 899px) and (min-width: 701px){
 			.mmbc img{
-				margin: 10px 25px 0 0;
+				margin: 10px 15px 0 0;
 			}
 		}
 		@media screen and (min-width: 701px){
@@ -409,17 +409,17 @@ a:hover{
 		#topnav-mobile-menu{
 			background: #004455;
 		}
-		jea a:link{
+		.jea a:link{
 			color: #d4aa00;
 		}
 		.jea a:visited{
 			color: #d4aa00;
 		}
 		.smi li a:link{
-			color: #2c89a0;
+			color: #87cdde;
 		}
 		.smi li a:visited{
-			color: #2c89a0;
+			color: #87cdde;
 		}
 	}	
 /* header-container-background */
@@ -555,6 +555,7 @@ a:hover{
 				height: 40px;
 				width: 700px;
 				border: 1px solid #ffccaa;
+				border-radius: 5px;
 				display: none;
 			}
 				#search-menu-close{
@@ -576,11 +577,12 @@ a:hover{
 				}
 				#search-box-desktop{
 					position: relative;
-					width: 583px;
-					height: 38px;
+					margin: 1px 0 0 0;
+ 					width: 583px;
+					height: 36px;
 					padding: 0 20px 0 20px;
 					color: #000000;
-					border: 1px solid #000000;
+					border: 1px solid #ffffff;
 					float: right;
 				}
 					#search-box-desktop::placeholder{
@@ -599,7 +601,8 @@ a:hover{
 				width: 90%;
 				height: 40px;
 				padding: 0 1px 0 1px;
-				border: 1px solid #ffffff;
+				border: 1px solid #cccccc;
+				border-radius: 5px;
 			}
 			#search-form-mobile{
 				height: 100%;
@@ -621,11 +624,11 @@ a:hover{
 				height: 29px;
 				padding: 5px 30px 5px 10px;
 				border: none;
-				background: #67ce9a;
+				background: #ececec;
 				float: left;
 			}
 				#search-box-mobile::placeholder{
-					color: #ffffff;
+					color: #4d4d4d;
 					font-size: 1.2em;
 				}
 		}	
@@ -640,6 +643,7 @@ a:hover{
 				height: 40px;
 				padding: 0 1px 0 1px;
 				border: 1px solid #ffccaa;
+				border-radius: 5px;
 			}
 			#search-form-mobile{
 				height: 100%;
@@ -674,6 +678,7 @@ a:hover{
 			#search-desktop, #search-mobile{
 				color: #e6e6e6;
 				border: 1px solid #006680;		
+				border-radius: 5px;
 			}
 			#search-box-desktop{
 				color: #e6e6e6;
@@ -688,7 +693,7 @@ a:hover{
 				color: #e6e6e6;
 			}
 			#search-box-mobile::placeholder{
-				color: #2c89a0;
+				color: #87cdde;
 			}
 		}
 /*END Header */

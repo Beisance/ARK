@@ -6,7 +6,7 @@
 <?php
 	echo ('
 	<script>
-		//Switching menu search menu on
+		//Switching search menu on
 		$(document).ready(function () {
 			$(".searchMenuOpen").click(function() {
 				$(".tnm").css("display", "none");
