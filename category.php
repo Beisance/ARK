@@ -47,56 +47,8 @@ Template Name: ARK GenericCategoryPage
 					elseif ( is_home() ) {
 						echo('Blog');
 					}	
-					else if (in_category( array('messages'))) {
-						echo('Messages');
-					}
-					else if (in_category( array('messages-couples'))) {
-						echo('<a href="'); get_bloginfo(); echo('">Messages: Couples</a>');
-					}
-					else if (in_category( array('messages-faith'))) {
-						echo('Messages: Couples');
-					}
-					else if (in_category( array('messages-professional'))) {
-						echo('Messages Professional');
-					}
-					else if (in_category( array('testimonies'))) {
-						echo('Testimonies');
-					}
-					else if (in_category( array('events'))) {
-						echo('Events');
-					}
-					else if (in_category( array('resources'))) {
-						echo('Resources');
-					}	
-					else if (in_category( array('churches'))) {
-						echo('Resources: Churches');
-					}
-					else if (in_category( array('study'))) {
-						echo('Resources: Study');
-					}
-					else if (in_category( array('media'))) {
-						echo('Resources: Media');
-					}
-					else if (in_category( array('news'))) {
-						echo('News');
-					}
-					else if (in_category( array('thoughts'))) {
-						echo('Thoughts');
-					}
-					else if (in_category( array('thoughts-general'))) {
-						echo('Thoughts: General');
-					}
-					else if (in_category( array('thoughts-politics'))) {
-						echo('Thoughts: Politics');
-					}
-					else if (in_category( array('thoughts-professional'))) {
-						echo('Thoughts: Professional');
-					}
-					else if (in_category( array('updates'))) {
-						echo('Updates');
-					}
 					else {
-						echo('ARK');
+						single_cat_title();
 					}
 				?>	
 			</div>
