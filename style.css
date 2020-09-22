@@ -26,7 +26,7 @@ html{
 
 body{
 	position: relative;
-	margin: 0;
+	margin: 0px;
 	height: 100%;
 	min-height: 100%;
 	font-family: 'Arimo', sans-serif;
@@ -278,6 +278,7 @@ a:hover{
 	top: 0;
 	height: 100vh;
 	display: block;
+	border-left: 1px solid #bcbcbd;
 	z-index: 10;
 }
 /*topnav menu mobile*/	
@@ -323,7 +324,7 @@ a:hover{
 		}
 		@media screen and (max-width: 700px){
 				.tmm{
-					background: #ececec;
+					background: #ffffff;
 				}
 				.tnmcc{
 					font-size: 0.8em;
@@ -417,7 +418,8 @@ a:hover{
 	}	
 	@media (prefers-color-scheme: dark){
 		#topnav-mobile-menu{
-			background: #004455;
+			border-left: 1px solid #4d4d4d;
+			background: #202125;
 		}
 		.jea a:link{
 			color: #d4aa00;
@@ -426,10 +428,10 @@ a:hover{
 			color: #d4aa00;
 		}
 		.smi li a:link{
-			color: #87cdde;
+			color: #e6e6e6;
 		}
 		.smi li a:visited{
-			color: #87cdde;
+			color: #e6e6e6;
 		}
 	}	
 /* header-container-background */
@@ -643,7 +645,7 @@ a:hover{
 				height: 29px;
 				padding: 5px 30px 5px 10px;
 				border: none;
-				background: #ececec;
+				background: #ffffff;
 				float: left;
 			}
 				#search-box-mobile::placeholder{
@@ -696,7 +698,7 @@ a:hover{
 			}
 			#search-desktop, #search-mobile{
 				color: #e6e6e6;
-				border: 1px solid #006680;		
+				border: 1px solid #e6e6e6;		
 				border-radius: 5px;
 			}
 			#search-box-desktop{
@@ -712,7 +714,7 @@ a:hover{
 				color: #e6e6e6;
 			}
 			#search-box-mobile::placeholder{
-				color: #87cdde;
+				color: #e6e6e6;
 			}
 		}
 /*END Header */
@@ -1283,6 +1285,15 @@ a:hover{
 			@media (prefers-color-scheme: dark){
 				#each-post-date-time{
 					color: #ccaaff;
+				}
+				.epdt-twitter a:link{
+					color: #e6e6e6;
+				}
+				.epdt-twitter a:visited{
+					color: #e6e6e6;
+				}
+				.epdt-twitter a:hover{
+					color: #00aa00;
 				}
 			}
 	#each-post-excerpt{
@@ -2044,7 +2055,7 @@ div.wpcf7-form {
 			text-align: left;
 			padding: 5px 0 5px 0;
 		}
-			@media screen and (max-width:926px){
+			@media screen and (max-width:1099px){
 				.dca-m{
 					border-bottom: 1px solid #b3b3b3;
 				}
@@ -2142,6 +2153,16 @@ div.wpcf7-form {
 		}
 		#downnav-menu{
 			border-bottom: 1px solid #4d4d4d;
+		}
+		#downnav a:link{
+			color: #e6e6e6;
+		}
+		#downnav a:visited{
+			color: #e6e6e6;
+		}
+		#downnav a:hover{
+			color: #cccccc;
+			text-decoration: none;
 		}
 	}
 	@media screen and (max-width: 926px) and (prefers-color-scheme: dark){
