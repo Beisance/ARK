@@ -7,7 +7,6 @@ Template Name: ARK SinglePage
 <?php get_header(); ?>
 
 <div id="socket-main" class="sm-single"><!--start #socket-main-->	
-	<?php include("inc/page-showcase-selector.php"); ?>
 	<div id="socket-main-content" class="smc-single"><!--start #socket-main-content-->		
 		<div id="socket-main-content-slice-2" class="smcs2-single"><!--start #socket-main-content-slice-2-->	
 			<?php include("inc/loop-selector.php"); ?>	

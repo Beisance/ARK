@@ -17,7 +17,10 @@
 					$(".searchMenuOpen").css("display", "none");
 				}
 				$(".tns").css("display", "block");
-				$("search-box").focus();
+				//set a timer with a count of zero to run in order to receive focus
+				window.setTimeout(function () { 
+				document.getElementById("search-box-desktop").focus(); 
+				}, 0); 
 			});
 		});	
 	</script>');

@@ -1,8 +1,8 @@
 
 *.svg
 *.dev.css
-dep/
-dev/
+.dep/
+.dev/
 fonts/
 _gsdata_/
 pages-post/
