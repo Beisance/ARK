@@ -46,12 +46,13 @@ body{
 		}
 	}
 p{
-	margin: 0 0 20px 0;
+	margin: 0 0 30px 0;
 }
 h2{
-	padding: 0 0 10px 0;
+	padding: 0 0 30px 0;
 	font-size: 1.1em;
 	font-weight: normal;
+	color: #000000;
 }
 h3{
 	padding: 0 0 10px 0;
@@ -69,6 +70,9 @@ h4{
 			color: #e6e6e6;
 		}
 	}
+ul{
+	margin-bottom: 30px;;
+}
 blockquote{
 	margin: 0 auto 10px auto;
 	width: 95%;
@@ -1110,7 +1114,6 @@ a:hover{
 	/* each-post-news-stack-1 */
 	#each-post-title{
 		position: relative;
-		font-family: 'Helvetica', sans-serif;
 		font-weight: bold;
 		text-align: left;
 	}
@@ -1128,8 +1131,6 @@ a:hover{
 		.epts-extra-ark{
 			margin: 0 auto 0 auto;
 			width: 100%;
-			font-size: 1.2em;
-			line-height: 30px;
 		}
 		.epts-highlights{
 			margin: 0 auto 0 auto;
@@ -1146,9 +1147,7 @@ a:hover{
 		.epts-single{
 			margin: 0 auto 0 auto;
 			width: 90%;
-			max-width: 1548px;
-			font-size: 2.2em;
-			line-height: 60px;
+			max-width: 1045px;
 			color: #000000;
 		}
 		@media screen and (max-width: 1100px) and (min-width: 850px){
@@ -1183,20 +1182,27 @@ a:hover{
 		}	
 		@media screen and (min-width: 850px){
 			.epts-extra-ark{
-				font-size: 1em;
-				line-height: 25px;
+				font-family: 'Roboto', sans-serif;
+				font-size: 1.5em;
+				line-height: 40px;
+				font-weight: 900;
+				
 			}
 			.epts-highlights{
-				font-size: 1em;
-				line-height: 25px;
+				font-family: 'Roboto', sans-serif;
+				font-size: 1.1em;
+				line-height: 30px;
+				font-weight: bold;
 			}
 			.epts-latest{
-				font-size: 1em;
-				line-height: 25px;
+				font-family: 'Roboto', sans-serif;
+				font-size: 1.3em;
+				line-height: 35px;
 			}
 			.epts-single{
-				font-size: 1em;
-				line-height: 25px;
+				font-family: 'Roboto', sans-serif;
+				font-size: 1.95em;
+				line-height: 50px;
 			}	
 		}	
 		/* end spans */
@@ -1213,6 +1219,7 @@ a:hover{
 		}
 	#each-post-author-date-time{
 		position: relative;
+		margin-top: 10px;
 		overflow: hidden;
 	}
 		.epadt-frontpage{
@@ -1223,7 +1230,7 @@ a:hover{
 		.epadt-single{
 			margin: 0 auto 0 auto;
 			width: 90%;
-			max-width: 1548px;
+			max-width: 1045px;
 		}
 		#each-post-author{
 			float: left;
@@ -1343,7 +1350,7 @@ a:hover{
 			position: relative;
 			margin: 0 auto 0 auto;
 			width: 90%;
-			max-width: 1548px;
+			max-width: 1045px;
 		}
 			.pc-single-span{
 				width: fit-content;
@@ -1514,7 +1521,7 @@ a:hover{
 		position: relative;
 		margin: 20px auto 25px auto;
 		width: 90%;
-		max-width: 1548px;
+		max-width: 1045px;
 		text-align: left;
 	}
 		#each-post-content img{

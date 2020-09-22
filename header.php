@@ -17,7 +17,6 @@
 <link href="<?php echo get_template_directory_uri(); ?>/img/header/favicons/favicon-hires-192x192.png" rel="icon" sizes="192x192" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css" media="screen" />
 <!-- our foray into web type/fonts -->
-<link href="https://fonts.googleapis.com/css?family=Abel-Open+Sans-Open+Sans+Condensed:300" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
