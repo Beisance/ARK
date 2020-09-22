@@ -599,7 +599,7 @@ a:hover{
 				#search-box-desktop{
 					position: relative;
 					margin: 1px 0 0 0;
- 					width: 583px;
+ 					width: 582px;
 					height: 36px;
 					padding: 0 20px 0 20px;
 					color: #000000;
@@ -2063,7 +2063,7 @@ div.wpcf7-form {
 			width: 100%;
 			float: left;
 			padding-bottom: 5px;
-			border-bottom: 1px solid #cccccc;
+			border-bottom: 1px solid #e6e6e6;
 		}
 			#downnav-menu ul{
 				margin: 0;
@@ -2081,11 +2081,6 @@ div.wpcf7-form {
 				#downnav-menu li:first-child a{
 					padding: 0 9px 0 0;
 				}
-					@media screen and (max-width: 926px){	
-						#downnav-menu li:first-child a{
-							padding: 7px 0 7px 0;
-						}
-					}
 				#downnav-menu li:last-child a{
 					border-right: none;
 				}
@@ -2124,13 +2119,8 @@ div.wpcf7-form {
 				#downnav-menu li:first-child a{
 					padding: 7px 0 7px 0 ;
 				}
-			}
-			@media (prefers-color-scheme: dark){
-				#downnav-menu li a:link{
-					color: #e6e6e6;
-				}
-				#downnav li a:visited{
-					color: #e6e6e6;
+				#downnav-menu li:last-child a{
+					border-bottom: none;
 				}
 			}
 		#downnav-copyright{
@@ -2149,7 +2139,7 @@ div.wpcf7-form {
 		#downnav-menu li a{
 			border-right: 1px solid #4d4d4d;
 		}
-		.dca-m{
+		#downnav-call-to-action{
 			border-bottom: 1px solid #4d4d4d;
 		}
 		#downnav-menu{
@@ -2165,11 +2155,18 @@ div.wpcf7-form {
 			color: #cccccc;
 			text-decoration: none;
 		}
-	}
-	@media screen and (max-width: 926px) and (prefers-color-scheme: dark){
-		#downnav-menu{
-			border-bottom: none;
+		#downnav-menu li a:link{
+			color: #e6e6e6;
 		}
+		#downnav li a:visited{
+			color: #e6e6e6;
+		}
+		#downnav-call-to-action{
+			border-right: none;
+			border-bottom: 1px solid #4d4d4d;
+		}
+	}
+	@media screen and (max-width: 1099px) and (prefers-color-scheme: dark){
 		#downnav-menu li a{
 			border-right: none;
 			border-bottom: 1px solid #4d4d4d;
