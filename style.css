@@ -295,7 +295,7 @@ a:hover{
 		text-align: left;
 	}
 	#topnav-mobile{
-		margin: 5px auto 0 auto;
+		margin: 22px auto 0 auto;
 		width: 90%;
 	}
 		#topnav-mobile li{
@@ -698,7 +698,7 @@ a:hover{
 			}
 			#search-desktop, #search-mobile{
 				color: #e6e6e6;
-				border: 1px solid #e6e6e6;		
+				border: 1px solid #4d4d4d;		
 				border-radius: 5px;
 			}
 			#search-box-desktop{
@@ -2055,17 +2055,11 @@ div.wpcf7-form {
 			text-align: left;
 			padding: 5px 0 5px 0;
 		}
-			@media screen and (max-width:1099px){
-				.dca-m{
-					border-bottom: 1px solid #b3b3b3;
-				}
-			}
 			#downnav-call-to-action a:link{
 				text-decoration: none;
 			}
 		#downnav-menu{
-			margin-top: 5px;
-			margin-bottom: 5px;
+			margin: 5px 0 5px 0;
 			width: 100%;
 			float: left;
 			padding-bottom: 5px;
@@ -2106,8 +2100,12 @@ div.wpcf7-form {
 					text-decoration: none;
 				}
 			@media screen and (max-width: 1099px){	
+				#downnav-call-to-action{
+					padding: 5px 0 10px 0;
+					border-bottom: 1px solid #e6e6e6;
+				}
 				#downnav-menu{
-					margin-top: 0;
+					margin: 0 0 10px 0;
 					border-bottom: none;
 				}
 				#downnav-menu ul{
@@ -2121,7 +2119,10 @@ div.wpcf7-form {
 					display: block;
 					padding: 7px 0 7px 0;
 					border-right: none;
-					border-bottom: 1px solid #b3b3b3;
+					border-bottom: 1px solid #e6e6e6;
+				}
+				#downnav-menu li:first-child a{
+					padding: 7px 0 7px 0 ;
 				}
 			}
 			@media (prefers-color-scheme: dark){
