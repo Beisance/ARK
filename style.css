@@ -513,10 +513,10 @@ a:hover{
 		}
 			/* Top Menu */
 			#topnav li:nth-child(3n+2) a:link{
-				color: #ff9955;
+				color: #b3b3b3;
 			}
 			#topnav li:nth-child(3n+2) a:visited{
-				color: #ff9955;
+				color: #b3b3b3;
 			}
 			#topnav li:nth-child(3n+2) a:hover{
 				color: #5599ff;
