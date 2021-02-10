@@ -9,7 +9,7 @@
 	<div id="downnav-content"><!-- start #downnav-content-->
 		<div id="downnav-call-to-action" class="dca dca-m dca-d">
 			<?php
-				echo ('Fostering deep connections. <a href="https://xyz">Click here fill out a form to join our Signal group</a>.'); 
+				echo ('Fostering deep connections. <a href="https://forms.gle/bQANmRe2Nx1oXgws7">Click here to fill out a form to join our Signal group</a>.'); 
 			?>
 		</div>
 		<div id="downnav-menu" class="dnm dnm-m dnm-d">
