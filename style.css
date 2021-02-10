@@ -87,11 +87,11 @@ img{
 	border-style:none;
 }  
 a:link{
-	color: #ff9955;
+	color: #ff6600;
 	text-decoration: none;
 }
 a:visited{
-	color: #ff9955;
+	color: #ff6600;
 	text-decoration: none;
 }
 a:hover{
@@ -295,7 +295,7 @@ a:hover{
 		text-align: left;
 	}
 	#topnav-mobile{
-		margin: 22px auto 0 auto;
+		margin: 10px auto 0 auto;
 		width: 90%;
 	}
 		#topnav-mobile li{
@@ -305,7 +305,8 @@ a:hover{
 	.mh{
 		margin: 0 auto 0 auto;
 		width: 90%;
-		height: 70px;
+		height: 80px;
+		border-bottom: 1px solid #e6e6e6;
 		overflow: hidden;
 	}
 	/* mobile-logo */
@@ -332,19 +333,6 @@ a:hover{
 				.mmbc img{
 					margin: 10px 0 0 0;
 				}
-				/* join-extra-ark */
-				.jea a:link{
-					display: block;
-					color: #216778;
-					font-weight: bold;
-					text-decoration: none;
-				}
-				.jea a:visited{
-					display: block;
-					color: #216778;
-					font-weight: bold;
-					text-decoration: none;
-				}
 				/* other standard mobile menu items */
 				.smi li a:link{
 					display: block;
@@ -355,6 +343,13 @@ a:hover{
 					display: block;
 					color: #4d4d4d;
 					text-decoration: none;
+				}
+				/* mobile menu extra ark li styling */
+				.smi li:nth-child(2) a:link{
+					color: #ff6600;
+				}
+				.smi li:nth-child(2) a:visited{
+					color: #ff6600;
 				}
 		}
 		@media screen and (max-width: 899px) and (min-width: 701px){
@@ -368,19 +363,6 @@ a:hover{
 				}
 				.tnmcc{
 					font-size: 0.8em;
-				}
-				/* join-extra-ark */
-				.jea a:link{
-					display: block;
-					color: #d4aa00;
-					font-weight: bold;
-					text-decoration: none;
-				}
-				.jea a:visited{
-					display: block;
-					color: #d4aa00;
-					font-weight: bold;
-					text-decoration: none;
 				}
 				/* other standard mobile menu items */
 				.smi li a:link{
@@ -420,18 +402,6 @@ a:hover{
 		#topnav-mobile-menu{
 			border-left: 1px solid #4d4d4d;
 			background: #202125;
-		}
-		.jea a:link{
-			color: #d4aa00;
-		}
-		.jea a:visited{
-			color: #d4aa00;
-		}
-		.smi li a:link{
-			color: #e6e6e6;
-		}
-		.smi li a:visited{
-			color: #e6e6e6;
 		}
 	}	
 /* header-container-background */
@@ -512,13 +482,13 @@ a:hover{
 			float: left;
 		}
 			/* Top Menu */
-			#topnav li:nth-child(3n+2) a:link{
-				color: #b3b3b3;
+			#topnav li:nth-child(2) a:link{
+				color: #ff6600;
 			}
-			#topnav li:nth-child(3n+2) a:visited{
-				color: #b3b3b3;
+			#topnav li:nth-child(2) a:visited{
+				color: #ff6600;
 			}
-			#topnav li:nth-child(3n+2) a:hover{
+			#topnav li:nth-child(2) a:hover{
 				color: #5599ff;
 			}
 			#topnav ul{
@@ -533,12 +503,12 @@ a:hover{
 			}
 			#topnav li a:link{
 				display: block;
-				color: #b3b3b3;
+				color: #333333;
 				padding: 0 0.7em 0 0;
 			}
 			#topnav li a:visited{
 				display: block;
-				color: #b3b3b3;
+				color: #333333;
 				padding: 0 0.7em 0 0;
 			}
 			#topnav ul li a:hover{
@@ -618,7 +588,7 @@ a:hover{
 				display: none;
 			}
 			#search-mobile{
-				margin: 0 auto 0 auto;
+				margin: -10px auto 0 auto;
 				width: 90%;
 				height: 40px;
 				padding: 0 1px 0 1px;
@@ -797,7 +767,7 @@ a:hover{
 /*START playlist */
 .wp-playlist{
 	margin: 0 0 10px 0!important;
-	border: 1px solid #ff9955!important;
+	border: 1px solid #ff6600!important;
 }
 .mejs-container, .mejs-container .mejs-controls, .mejs-embed, .mejs-embed body{
 	background: #808080!important;
@@ -1229,7 +1199,7 @@ a:hover{
 			float: left;
 		}
 			.epa-frontpage{
-				color: #ff9955;	
+				color: #ff6600;	
 			}
 			.epa-single{
 				color: #ff6600;

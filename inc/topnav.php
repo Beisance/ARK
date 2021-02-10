@@ -55,15 +55,6 @@
 					</div>
 				</div>
 				<div id="topnav-mobile" class="tnmm tnmm-m tnmm-d">
-					<span class="jea">
-						<?php wp_nav_menu( array(
-							'menu' => 'topnav-extra',
-							'class' => 'menu',
-							'container' => 'topnav-mobile-container'
-							)
-						);
-						?>
-					</span>
 					<span class="smi">
 						<?php wp_nav_menu( array(
 							'menu' => 'topnav',
