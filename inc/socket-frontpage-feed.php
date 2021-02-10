@@ -10,7 +10,7 @@
 		<div id="socket-main-content-slice-1" class="smcs1"><!--start #socket-main-content-slice-1-->	
 			<div id="socket-main-content-slice-1-stack-1" class="smcs1-s1"><!--start #socket-main-content-slice-1-stack-1-->
 				<div id="socket-header" class="sh-extra-ark">
-							Extra ARK
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>category/extra-ark">Extra ARK</a>
 						</div>
 						<?php
 							query_posts( array( 

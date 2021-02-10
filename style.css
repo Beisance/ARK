@@ -96,7 +96,7 @@ a:visited{
 }
 a:hover{
 	color: #5599ff;
-	text-decoration: underline;
+	text-decoration: none;
 }
 	@media (prefers-color-scheme: dark){
 		a:link{
@@ -574,7 +574,7 @@ a:hover{
 				position: relative;
 				margin: 10px 0 0 120px;
 				height: 40px;
-				width: 700px;
+				width: 715px;
 				border: 1px solid #ffccaa;
 				border-radius: 5px;
 				display: none;
@@ -599,7 +599,7 @@ a:hover{
 				#search-box-desktop{
 					position: relative;
 					margin: 1px 0 0 0;
- 					width: 582px;
+ 					width: 597px;
 					height: 36px;
 					padding: 0 20px 0 20px;
 					color: #000000;

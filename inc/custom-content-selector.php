@@ -6,8 +6,18 @@
 ?>
 
 <?php
+	//extra ark category
+	if (in_category(array('extra-ark'))) {
+		echo '<div id="custom-content"><!--start #custom-content-->
+		<div id="custom-content-content">';
+		echo '<h3>';
+		_e('Extra ARK content will be subscription only in the coming weeks.');
+		echo '</h3>';
+		echo '</div><!--end #custom-content-content-->
+		</div><!--end #custom-content-->';
+	}
 	//messages
-	if (is_page(array('messages'))) {
+	elseif (is_page(array('messages'))) {
 		echo '<div id="custom-content"><!--start #custom-content-->
 		<div id="custom-content-content">';
 		echo '<h3>';
@@ -26,6 +36,7 @@
 			echo '</div><!--end #custom-content-content-->
 			</div><!--end #custom-content-->';
 		}
+		
 	//thoughts
 	elseif (is_page(array('thoughts'))) {
 		echo '<div id="custom-content"><!--start #custom-content-->
@@ -36,16 +47,16 @@
 		echo '</div><!--end #custom-content-content-->
 		</div><!--end #custom-content-->';
 	}
-	//thoughts sub categories
-		elseif (in_category(array('thoughts', 'thoughts-general', 'thoughts-politics', 'thoughts-professional'))) {
-			echo '<div id="custom-content"><!--start #custom-content-->
-			<div id="custom-content-content">';
-			echo '<h3>';
-			_e('Our quick thoughts on general, political and professional topics.');
-			echo '</h3>';
-			echo '</div><!--end #custom-content-content-->
-			</div><!--end #custom-content-->';
-		}
+		//thoughts sub categories
+			elseif (in_category(array('thoughts', 'thoughts-general', 'thoughts-politics', 'thoughts-professional'))) {
+				echo '<div id="custom-content"><!--start #custom-content-->
+				<div id="custom-content-content">';
+				echo '<h3>';
+				_e('Our quick thoughts on general, political and professional topics.');
+				echo '</h3>';
+				echo '</div><!--end #custom-content-content-->
+				</div><!--end #custom-content-->';
+			}
 	//updates
 	elseif (is_page(array('updates'))) {
 		echo '<div id="custom-content"><!--start #custom-content-->
@@ -57,15 +68,15 @@
 		</div><!--end #custom-content-->';
 	}
 	//updates category
-		elseif (in_category(array('updates'))) {
-			echo '<div id="custom-content"><!--start #custom-content-->
-			<div id="custom-content-content">';
-			echo '<h3>';
-			_e('Information on what\'s new at ARK');
-			echo '</h3>';
-			echo '</div><!--end #custom-content-content-->
-			</div><!--end #custom-content-->';
-		}
+	elseif (in_category(array('updates'))) {
+		echo '<div id="custom-content"><!--start #custom-content-->
+		<div id="custom-content-content">';
+		echo '<h3>';
+		_e('Information on what\'s new at ARK');
+		echo '</h3>';
+		echo '</div><!--end #custom-content-content-->
+		</div><!--end #custom-content-->';
+	}
 	//testimonies
 	else if (is_page(array('testimonies'))) {
 		echo '<div id="custom-content"><!--start #custom-content-->

@@ -51,6 +51,17 @@ The loop that displays posts.
 			<div id="post-categories">
 				<div id="post-categories-socket-front-page-feed" class="post-categories">
 					<?php
+						//subscription
+						if (in_category('50')) {
+							echo '<a href="';
+							bloginfo('wpurl');
+							echo '/category/extra-ark/">Subscription</a>';
+						}
+						else{
+							//nothing
+						}	
+					?>
+					<?php
 						//first category
 						if (in_category('2')) {
 							echo '<a href="';

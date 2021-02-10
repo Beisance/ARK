@@ -103,7 +103,7 @@ The loop that displays singles.
 			<?php the_author_link(); ?>
 		</div>
 		<div id="each-post-date-time" class="epdt-single">
-			<span class="epdt-twitter"><a href="https://twittert.com/bsx_ark" target="_blank">@bsx_ark</a></span><span class="epdt-slash">/</span><?php the_time('F jS, Y') ?> <?php the_time() ?>
+			<span class="epdt-twitter"><a href="https://twitter.com/bsx_ark" target="_blank">@bsx_ark</a></span><span class="epdt-slash">/</span><?php the_time('F jS, Y') ?> <?php the_time() ?>
 		</div>
 	</div><!-- end #each-post-author-date-time-->
 	
