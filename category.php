@@ -73,7 +73,6 @@ Template Name: ARK GenericCategoryPage
 					}
 					elseif (in_category(50)) {
 						echo('Extra Ark');
-						//echo nothing since we already have the extra ark header at the very top of the page.
 					}	
 					else {
 						single_cat_title();
