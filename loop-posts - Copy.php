@@ -8,9 +8,6 @@ The loop that displays posts.
 	
 	<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 	
-	<div id="spacer-1">
-	</div>
-	
 	<div id="each-post-news-stack-content" class="epnsc-latest"><!-- start #each-post-news-stack-content-->	
 	
 		<div id="each-post-news-stack-1" class="epns-1-latest"><!-- start #each-post-news-stack-1-->
@@ -172,6 +169,16 @@ The loop that displays posts.
 		</div><!-- end #each-post-news-stack-3-->	
 	
 	</div><!-- end #each-post-news-stack-content-->	
+		
+		<?php
+			if ($wp_query->current_post +1 == $wp_query->post_count) {
+			// check if this is the last post, if yes, do not output spacer-1 div
+			}
+			else {
+				echo ('<div id="spacer-1">
+				</div>');
+			}
+		?>	
 
 	<?php endwhile; ?>
 
@@ -182,15 +189,14 @@ The loop that displays posts.
 	<?php else : ?>
 	
 	<?php 
-		echo('<div id="socket-header" class="sh-latest">
-				In the Pipeline
-			</div><!-- end #socket-header-->
-			<div id="spacer-1">
-			</div>
-			');
-		
-			_e('There are posts, or additional posts, in the pipeline. Please visit again soon.'); 	
-		echo('<div id="spacer-8"></div>');		
+		echo('<div id="each-post-title" class="ept ept-m ept-d ept-front-page"><!-- start #each-post-title-->
+					<span class="epts-latest">
+						No Posts
+					</span>
+					</div><!-- end #each-post-title-->');
+		echo('<div id="each-post-excerpt">');
+			_e('There are no posts at this time. Please visit again soon.'); 
+		echo('</div>');	
 	?>
 	
 	<?php endif; ?>

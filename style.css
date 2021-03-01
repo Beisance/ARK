@@ -62,8 +62,9 @@ h3{
 }
 h4{
 	padding: 0 0 10px 0;
-	font-size: 1em;
+	font-size: 0.9em;
 	font-weight: normal;
+	color: #4d4d4d;
 }
 	@media (prefers-color-scheme: dark){
 		h1, h2, h3, h4{
@@ -195,10 +196,11 @@ a:hover{
 			#socket-header{
 				width: 100%;
 				text-align: left;
+				font-size: 1.2em;
 			}
 				.sh-extra-ark{
 					margin: 0 0 10px 0;
-					color: #d4aa00;
+					color: #ff6600;
 				}
 				.sh-highlights{
 					margin: 0 0 10px 0;
@@ -1001,6 +1003,13 @@ a:hover{
 			background: #4d4d4d;
 		}
 	}	
+#spacer-8{
+	position: relative;
+	width: 100%;
+	height: 10px;
+	z-index: 4;
+	clear: both;
+}	
 /*START Post Stacks */
 #each-post-news-stack ol li{
 	margin: 0 0 10px 40px;
@@ -1012,11 +1021,11 @@ a:hover{
 }
 #each-post-news-stack ul li{
 	margin: 0 0 10px 15px;
-	list-style-image:url('img/icon-blue-bullet-point.png');
+	list-style-image:url('img/icon-orange-bullet-point.png');
 }
 #each-post-news-stack ul ul li{
 	margin: 10px 0 0 15px;
-	list-style-image:url('img/icon-light-blue-bullet-point.png');
+	list-style-image:url('img/icon-teal-bullet-point.png');
 }	
 @media screen and (max-width:491px){
 	.wrp-m{
@@ -1272,7 +1281,7 @@ a:hover{
 		padding-bottom: 3px;
 		width: 100%;
 		max-width: 1548px;
-		color: #999999;
+		color: #4d4d4d;
 		font-family: 'Helvetica';
 		font-size: 0.9em;
 		line-height: 30px;
@@ -1303,7 +1312,7 @@ a:hover{
 	}	
 	#post-categories{
 		font-size: 0.9em;
-		color: #ffcc00;
+		color: #ff6600;
 	}
 		#post-categories-socket-front-page-feed{
 			position: relative;
@@ -1312,13 +1321,10 @@ a:hover{
 			max-width: 1548px;
 		}
 		#post-categories a:link{
-				color: #d4aa00;
+				color: #ff6600;
 		}
 		#post-categories a:visited{
-			color: #d4aa00;
-		}
-		#post-categories a:visited{
-			color: #ffffff;
+			color: #ff6600;
 			text-decoration: none;
 		}
 		.pc-single{

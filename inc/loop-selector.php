@@ -19,6 +19,16 @@ if ( is_home() ) {
 	wp_reset_query();
 }
 /* ARK media pages */
+else if (in_category( array('extra-ark'))) {
+	query_posts( array( 
+		'category__in' => array(50), 
+		'posts_per_page' => 10,
+		'offset' => 1,
+		//offset because we already have the 1st extra ark post at the top of the page and we don't want to repeat it below
+		'paged' => get_query_var('page')
+	));
+	get_template_part( 'loop-posts', 'index' );
+}
 else if (is_page( array('messages'))) {
 	query_posts( array( 
 		'category__in' => array(2), 
