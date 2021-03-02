@@ -9,8 +9,8 @@ The loop that displays posts.
 	<?php
 		$currentID = get_the_ID();
 		$my_query = new WP_Query( array(
-			'category__in' => array(2, 37, 42), 
-			'showposts' => '5', 
+			'category__in' => array(2, 37, 42, 51), 
+			'showposts' => '10', 
 			'post__not_in' => array($currentID)));
 		while ( $my_query->have_posts() ) : $my_query->the_post(); 
 	?>
@@ -138,7 +138,16 @@ The loop that displays posts.
 							}
 							else{
 								//nothing
-							}	
+							}
+							//highlights sub categories
+							if (in_category('51')) {
+								echo '<a href="';
+								bloginfo('wpurl');
+								echo '/category/highlights">Highlights</a>';
+							}
+							else{
+								//nothing
+							}
 						?>
 						<?php
 							//sub category 2: checking if this is a guest ministry post
