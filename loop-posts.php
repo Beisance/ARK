@@ -88,6 +88,11 @@ The loop that displays posts.
 								bloginfo('wpurl');
 								echo '/category/Updates/">Updates</a>';
 							}
+							elseif (in_category('51')) {
+								echo '<a href="';
+								bloginfo('wpurl');
+								echo '/category/highlights/">Highlights</a>';
+							}
 							else{
 								//nothing
 							}	
@@ -166,7 +171,14 @@ The loop that displays posts.
 		<div id="each-post-news-stack-3" class="epns-3-latest"><!-- start #each-post-news-stack-3-->	
 			
 			<div id="each-post-thumbnail" class="epthumb-standard epthumb-recent epthumb-frontpage">
-				<?php the_post_thumbnail(); ?>
+				<?php
+					if (has_post_thumbnail() ) {
+						the_post_thumbnail();
+					} 
+					else { 
+						echo '<img src="';echo get_template_directory_uri();echo'/img/pages-posts/posts/default-posts-image-template.png"/>';
+					}
+				?>	
 			</div>
 			
 		</div><!-- end #each-post-news-stack-3-->	
@@ -189,7 +201,7 @@ The loop that displays posts.
 			</div>
 			');
 		
-			_e('There are posts, or additional posts, in the pipeline. Please visit again soon.'); 	
+			_e('There are posts in the pipeline. Please visit again soon.'); 	
 		echo('<div id="spacer-8"></div>');		
 	?>
 	

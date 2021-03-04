@@ -72,7 +72,7 @@ Template Name: ARK GenericCategoryPage
 						echo('Blog');
 					}
 					elseif (in_category(50)) {
-						echo('Extra Ark');
+						echo('More Extra Ark');
 					}	
 					else {
 						single_cat_title();

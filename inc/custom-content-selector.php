@@ -6,8 +6,18 @@
 ?>
 
 <?php
+	//search
+	if (is_search()){
+		echo '<div id="custom-content"><!--start #custom-content-->
+		<div id="custom-content-content">';
+		echo '<h3>';
+		_e('Here are some search results.');
+		echo '</h3>';
+		echo '</div><!--end #custom-content-content-->
+		</div><!--end #custom-content-->';
+	}
 	//extra ark category
-	if (in_category(array('extra-ark'))) {
+	elseif (in_category(array('extra-ark'))) {
 		echo '<div id="custom-content"><!--start #custom-content-->
 		<div id="custom-content-content">';
 		echo '<h3>';

@@ -67,6 +67,11 @@ The loop that displays posts.
 							bloginfo('wpurl');
 							echo '/category/Updates/">Updates</a>';
 						}
+						elseif (in_category('51')) {
+							echo '<a href="';
+							bloginfo('wpurl');
+							echo '/category/highlights/">Highlights</a>';
+						}
 						else{
 							//nothing
 						}	

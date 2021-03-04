@@ -19,6 +19,15 @@ if ( is_home() ) {
 	wp_reset_query();
 }
 /* ARK media pages */
+else if (in_category( array('extra-ark'))&is_single()) {
+	query_posts( array( 
+		'category__in' => array(50), 
+		'posts_per_page' => 10,
+		'paged' => get_query_var('page')
+		//no offset if it is extra ark and single page
+	));
+	get_template_part( 'loop-single-page', 'index' );
+}
 else if (in_category( array('extra-ark'))) {
 	query_posts( array( 
 		'category__in' => array(50), 

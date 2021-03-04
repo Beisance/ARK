@@ -5,7 +5,7 @@ Author: Beisance | Intelix
 Author URI: https://www.beisance.com/intelix/
 Github Theme URI: https://github.com/Beisance/ARK
 Description: Full Custom Theme for Beisance | ARK
-Version: 3.0.0
+Version: 3.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: custom theme, beisance, intelix
@@ -68,7 +68,7 @@ h4{
 }
 	@media (prefers-color-scheme: dark){
 		h1, h2, h3, h4{
-			color: #e6e6e6;
+			color: #aaccff;
 		}
 	}
 ul{
@@ -271,6 +271,18 @@ a:hover{
 			.island{
 				background: #313236;
 			}
+			.sh-extra-ark a:link{
+				color: #5599ff;
+			}
+			.sh-extra-ark a:visited{
+				color: #5599ff;
+			}
+			.sh-highlights a:link{
+				color: #5599ff;
+			}
+			.sh-highlights a:visited{
+				color: #5599ff;
+			}
 		}
 /*END socket */
 /*START mobile menu */	
@@ -369,12 +381,12 @@ a:hover{
 				/* other standard mobile menu items */
 				.smi li a:link{
 					display: block;
-					color: #b3b3b3;
+					color: #4d4d4d;
 					text-decoration: none;
 				}
 				.smi li a:visited{
 					display: block;
-					color: #b3b3b3;
+					color: #4d4d4d;
 					text-decoration: none;
 				}	
 		}	
@@ -404,6 +416,12 @@ a:hover{
 		#topnav-mobile-menu{
 			border-left: 1px solid #4d4d4d;
 			background: #202125;
+		}
+		.smi li a:link{
+			color: #e6e6e6;
+		}
+		.smi li a:visited{
+			color: #e6e6e6;
 		}
 	}	
 /* header-container-background */
@@ -1503,6 +1521,7 @@ a:hover{
 		margin: 20px auto 25px auto;
 		width: 90%;
 		max-width: 1045px;
+		font-size: 1em;
 		text-align: left;
 	}
 		#each-post-content img{
@@ -2052,7 +2071,7 @@ div.wpcf7-form {
 				#downnav-menu li a{
 					margin-left: 0;
 					padding: 0 9px 0 5px;
-					border-right: 1px solid #b3b3b3;
+					border-right: 1px solid #4d4d4d;
 				}
 				#downnav-menu li:first-child a{
 					padding: 0 9px 0 0;
