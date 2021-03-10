@@ -1376,29 +1376,31 @@ a:hover{
 			}	
 		#post-categories-socket-front-page-feed > a:nth-child(2n){
 			margin: 0 0 5px 0;
-			color: #ffffff;
+			color: #4d4d4d;
 			text-decoration: none;
 			padding: 2px 8px 2px 8px;
 			display: inline-block;
-			background: #999999;
 			border-radius: 4px;
+			border: 1px solid #ffb380;
 			list-style: none;
 		}
 			#post-categories-socket-front-page-feed > a:hover:nth-child(2n){
-				background: #217867;
+				border: 1px solid #4d4d4d;
+				background: #4d4d4d;
 			}
 		#post-categories-socket-front-page-feed > a:nth-child(3n){
 			margin: 0 0 5px 0;
-			color: #ffffff;
+			color: #4d4d4d;
 			text-decoration: none;
 			padding: 2px 8px 2px 8px;
 			display: inline-block;
-			background: #5f8dd3;
 			border-radius: 4px;
+			border: 1px solid #5f8dd3;
 			list-style: none;
 		}
 			#post-categories-socket-front-page-feed > a:hover:nth-child(3n){
-				background: #2a7fff;
+				border: 1px solid #5f8dd3;
+				background: #5f8dd3;
 			}
 		@media screen and (max-width: 849px){
 			#post-categories{
